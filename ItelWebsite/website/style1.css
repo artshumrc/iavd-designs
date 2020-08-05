@@ -1,0 +1,255 @@
+@charset "UTF-8";
+/* CSS Document */
+  
+  /* CONTAINER DIV */
+div#container {
+	padding: 0;
+	width: 900px;
+	margin: auto;
+}
+
+/* HEADER and MAIN NAVIGATION */
+div#header {
+	width: 100%;
+	height: 40px; 
+	float: left;
+	background-image: url(images/logo.png);
+	background-repeat:no-repeat;
+}
+
+div#logo {
+	width: 220px;
+	height: 40px;
+	float: left;
+}
+
+div#main_nav {
+	padding: 0;
+	width: 680px;
+	height: 40px;
+	float: left;
+	background-color: #dccea9;
+	}
+
+#main_nav ul, #main_nav li{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	float: left;
+	display: inline;
+}
+
+#main_nav a {
+	height: 30px;
+	float: left;
+	color: #505050;
+	text-decoration: none;
+	text-align: center;
+	font-size: 16px;
+	border-right: 1px solid #fff;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-family: Times New Roman, Times, serif;
+}
+
+#main_nav a:hover {
+	background-color: #FFAD5C;
+}
+
+/* toc 
+  ================================== 
+
+  #toc {
+    position: fixed; float: left;
+    top: 50px; left: 10px;
+    height:auto; width:150px;
+    background-color: #DAE6E6;
+    border: solid 2px maroon; 
+  }
+  #toc ul, toc li {
+    text-decoration: none; 
+    list-style-type: none; 
+    margin:0; padding:0;
+ }  
+  
+  #toc a.atoc.ex:link, #toc a.atoc.ex:visited  {
+    background-color: #FFCC99; 
+    border-top:0;
+  }
+#toc a.noshow {display:none;}
+
+#toc a.atoc:link, #toc a.atoc:visited {
+    display: block;
+    text-decoration: none;
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    color: #000;
+    text-decoration: none;
+    font-variant: small-caps; font-weight: 600;
+    font-size: 14px;
+    text-indent: 10px;
+    border-bottom: solid 1px #369;
+  }
+  
+  #toc a.atoc:hover {
+   background-color: #369;
+   color: #fff;
+  }
+  #toc a.atoc.ex:hover {
+   background-color: #369;
+   color: #fff;
+  }
+*/
+/* SUB NAVIGATION */
+
+#sub_nav {
+	width: 220px;
+	float: left;
+	margin-bottom: 10px;
+	background-color: #ebe0bf;
+	font-size: 12px;
+}
+
+#sub_nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+
+#sub_nav li a {
+	display: block;
+	padding-left: 5px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-decoration: none;
+	color: #8a8a8a;
+}
+
+#sub_nav li a:hover {
+	background-color: #FFCC99;
+	color: #8a8a8a;
+}
+
+/* MAIN CONTENT */
+
+div#main_content {
+	float: left;
+	width: 900px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+div#content {
+	font-size: 12px;
+	width: 670px;
+	float: left;
+	margin-left: 10px;
+}
+
+div#photo_reel {
+	background-color: #75AF89;
+	background-image: url(images/longtitle.png);
+	height: 350px;
+	padding-bottom:30px;
+}
+
+.button {
+	margin: 355px 0px 0px 5px;
+	background-color: #75AF89;
+	border: #75AF89;
+}
+
+div#home1 {
+	margin-top: 10px;
+	font-size: 13px;
+	padding: 2px 3px 5px 10px;
+}
+
+div#home2 {
+	float: left;
+	width: 440px;
+	position: relative;
+	margin-top: 5px;
+	margin-left: 5px;
+	font-size: 12px;
+}
+
+div#home3 {
+	float: left;
+	width: 440px;
+	position: relative;
+	margin-top: 5px;
+	margin-left: 10px;
+	font-size: 12px;
+}
+
+h1 {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	letter-spacing: 3px;
+	color: #8E1D00;
+}
+
+h2  {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	letter-spacing: 3px;
+	color: #8E1D00;
+	border-bottom: 1px dashed;
+}
+
+h3 {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 13px;
+	margin-right: 20px;
+	font-weight:bold;
+	display: inline;
+	color: #006B24;
+}
+
+
+a:link, a:visited, a:active {
+	color: #1C86EE;
+}
+
+a:hover {
+	color: #75AF89;
+	text-decoration: none;
+}
+
+img.padrt {
+	padding-right: 10px;
+}
+
+img.padlft {
+	padding-left: 10px;
+}
+
+li.indent {
+	padding-left: 20px;
+	font-style:italic;
+}
+
+li#currentpage {
+	background-color: #FF9933;
+}
+
+li#currentpage2{
+	background-color: #FFC285;
+}
+
+ul.ppt {
+	position: relative;
+}
+
+.ppt li {
+	list-style-type: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+}

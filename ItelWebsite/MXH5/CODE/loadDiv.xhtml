@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>load div Test</title>
+<style type="text/css">
+  #loadDiv {background-color:yellow;}
+</style>
+<script>
+
+function $(x){return document.getElementById(x);}
+function loadDivFn(resId,fileName){
+  send2id(fileName,"GET",null,resId);
+}
+
+function send2id(url,method,val,resId){
+  var req = new XMLHttpRequest(); 
+  req.onreadystatechange=
+    function(){
+      if(req.readyState!=4)return;
+      if(req.status!=200)return alert(req.status+"\n"+req.responseText);
+      var txt=req.responseText;
+      var bodyStart=txt.indexOf("&lt;body&gt;");
+      var bodyEnd=txt.indexOf("&lt;/body");
+      if(bodyStart&gt;=0 &amp;&amp; bodyEnd &gt; bodyStart)
+        txt= txt.substring(bodyStart,bodyEnd+7);
+      if(!confirm("I'm about to load "+resId+" with HTML,"
+            +" which MUST NOT have HTML headers as if it were a full page:\n"
+            +txt))return;
+      
+      $(resId).innerHTML=txt;
+    };
+  req.open(method, url, true); 
+  req.send(val); 
+}
+</script>
+</head><body>
+<form name="theForm" action="javascript:loadDivFn('loadDiv',document.forms.theForm.fileName.value)">
+<input type="button" value="load" onclick="loadDivFn('loadDiv',this.form.fileName.value)"/>
+fileName:<input type="text" name="fileName" value="" size="30"/>
+</form>
+<div id="loadDiv">
+</div>
+ </body></html>

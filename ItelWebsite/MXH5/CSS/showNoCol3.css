@@ -1,0 +1,4 @@
+/** for use in comm01.html **/
+   div.col3 { display : none; }
+   div.translation {background : white; }
+   .selected {background-color:red;border:2px solid black;}

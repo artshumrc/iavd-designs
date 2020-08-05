@@ -1,0 +1,100 @@
+/* @import url(editdiv.css) */
+
+   body{  background : url(null) fixed no-repeat; background-color: black;}
+  
+  /*** MAIN COMPONENTS; LOOKS LIKE TWO LAYERS OF STYLING to be MERGED ***/
+  #glossFrame {display:none;}
+  #search {display:none;}
+  #exercises {display:none;}
+  #toggleExercisesButton {display:none;}
+
+  #movieDiv {
+    height:50%; width:45%; position: absolute;  
+    top: 0; left: 0; 
+    background-color: aliceblue; overflow:hidden; 
+    padding-top: 1.5%;
+  }
+ 
+  #scriptDiv {
+    height:52%; width:55%; position: absolute; 
+    top: 1.5%;  right: 0; background-color: aliceblue; 
+  }
+  
+  #editDiv {
+    height:48%; width:100%; position:absolute; 
+    bottom:0px; left:0px; 
+    background-color:aliceblue;overflow:auto; 
+    padding: 0; }
+
+  /*** EDIT DIV BUTTONS ***/
+  
+  #ctrlDiv {
+	position:absolute; width: 33%; top: 2%; left: 2%;
+	border: 2px solid maroon; padding: 1%; margin-right:2%;
+  }
+  #editArea {
+  	position:absolute; width: 60%; 
+  	top: 1%; right: 0px;
+  	overflow: hidden;
+  }
+  #editForm input { margin: 2px 5px;  }
+  #editForm p {text-align: center; margin: 4px 2px; font-weight: bold;}
+  #editForm input[type='button'] { width: auto  }
+  
+    #saveButton {background-color:#99FFCC;}
+    #replaceNodeButton {background-color:#c7deb6;}
+    #expandButton {background-color:lightgreen;}
+
+
+ /*** SCRIPT DIV FORMATTING ***/ 
+  #scriptDiv { margin: 0px auto; background-color: #FFFF66;overflow:auto; padding: 0px}
+  div.segment {padding: 10px; background-color: #FFFF66;overflow:auto; border: solid 1px;}
+  div.comm.subject {padding: 10px 15px 10px 15px; margin-left: 5px; margin-top: 5px; background-color: #99FFCC }
+  div.comm.grammar, div.comm.afterword {padding: 10px 15px; margin-left: 5px; background-color: #c7deb6}
+
+  span.synch {font-family: verdana, helvetica, sans-serif; font-weight: bold; 
+              font-size: 12px; color: #43895c; margin-top:1em; text-align: left; padding-left: 15px; }
+
+/*** MOVIE DIV and BOX ***/
+  
+  #movieContainer {text-align:center;}
+  #movieBox {width:360px; height:260px; margin:10px; text-align:center; 
+             border:0px solid #333; background-color:#eee;}
+  
+  #movieControls  {margin: auto; width: 300px; background-color:lightgreen; }
+  #movieControls  button {margin:0px; padding:0px;}
+
+
+/*********** Div Styles ************/
+
+   div.clearit {clear:both;}
+
+   div.category {margin: 10px 20px 10px 30px; color:#006AA6; font-size: 11px; 
+              font-family: verdana, helvetica, sans-serif; text-align: left; 
+              font-weight: bold; float: left; letter-spacing: .03em;}
+
+   div.padding {width:100px;height:600px;}
+
+/*** span AND col styles, FOR DEL INTERLINEAR ***/
+
+/* make more specific: where is this needed?
+   span {display:block; margin-left:1em; padding:0px}
+*/
+  span.mb {color:blue;display:table-row;}
+  span.ge {color:green;display:table-row;}
+  span.ps {color:maroon;display:table-row;}
+  span.class {color:brown;display:table-row;}
+  span.ref {margin-top:0em;}
+  span.tx {display:table; margin-top:2px;}
+  .tx span {margin-left:0em;}
+  .col {display:table-cell; border:2px; border-style:groove; text-align:center;margin:0px;}
+  .subcol {display:inline; border:1px; border-style:solid; } 
+/* from sasha arkhipov */
+  .col {color:red;display:table-cell; border:0px; border-style:groove; text-align:left; padding-right:2ex;margin:0px;}
+  .subcol {display:table-cell; border:0px; border-style:solid;padding:0px;margin:0px; } 
+  .sc {display:inline; border:0px; border-style:solid;padding:0px;margin:0px; } 
+
+.viewbuttons {display:none;}
+.comm em {padding: 3pt;}
+.comm {border:1px; border-style:solid;border:1px; border-style:solid;  background-color:white;}
+

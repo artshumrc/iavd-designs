@@ -1,0 +1,181 @@
+/* in CODE/config.js:
+  cssFiles:{msdc:"movieScriptDictComm.css", // [movie/script, dict/comm]
+            msc:"movieScriptComm.css",      // [movie/script, comm]
+            msd:"movieScriptDict.css",      // [movie/script, comm]
+            mse:"movieScriptExercises.css", // [movie/script, exercises]
+            mdt:"movieDictTiers.css"},     //  [movie,dict]/tiers
+  initStyle:"msdc",
+*/
+body{  background : url(null) fixed no-repeat; overflow:hidden;}
+  
+
+
+/*********** ID Styles ************/
+
+/* #FlowPlayer { position: fixed; top: 36px; left: 65px; }   */
+ span.synch {display:none;}
+ 
+ #topnavbar {
+position: fixed; top: 0px; left: 0px; 
+margin: 0px auto; background-color:#96c8e2;overflow: hidden;height:27px;width:100%;
+background-image: url(../IMG/header2.gif); background-repeat: no-repeat; float: left;
+}
+
+#container { position: absolute; top: 27px; left: 0px;
+width: 100%; height: 96%}
+ 
+#glossFrame  {position: absolute; top: 0px; right: 0px; 
+margin: 0px auto; background-color:#DAE6E6;overflow:auto;height:55%;width:50%;
+border: 2px solid #009DDC; border-right: 4px solid #009DDC; border-top: 3px solid #009DDC; padding: 0px;}
+
+#movieDiv {position: absolute; top: 0px; left: 0px; 
+margin: 0px auto; background-color:#ABD49A;overflow:auto;height:55%;width:49%;
+border: 2px solid #009DDC; border-left: 4px solid #009DDC; border-top: 3px solid #009DDC; 
+ text-align: center;}
+
+ 
+#scriptDiv {position: absolute; bottom: 0px;  left: 0px; border-top: 2px solid #009DDC; border-bottom: 4px solid #009DDC; border-left: 4px solid #009DDC; border-right: 4px solid #009DDC;
+    margin: 0px auto;  background-color:#EFF7EA; overflow:auto; height:45%;width:99.2%;}
+    
+#g_0 {display:none}
+
+
+
+/*********** Div Styles ************/
+
+div.navlist {position: absolute; left: 200px; top: 0px; float: left;}
+
+div.clearit {clear:both;}
+
+
+ /****Movie Styles*****/
+
+div.viewbuttons {display: none;float: left; position: absolute; left:0px;
+width: 40px; height: 260px;  margin-top: 18px; text-align: left;}
+
+div.playbuttons {position: relative; left: 15px; margin-left: auto; margin-right: auto; text-align: left; width: 363px; height: 30px; margin-top: 5px; }
+
+#viewButtons  button { height: 32px; width: 40px;  background: none; border: 1px solid #009DDC; margin-bottom: 2px }
+
+#playerButtons button {height: 24px; width: 43px; margin:5px; padding:0px; background: none; border: 1px solid #009DDC }
+
+#viewButtons img {margin-left: -4px; margin-top: -3px; }
+
+#playerButtons img {margin-left: -3px; margin-top: -2px; }
+
+div.movie {/*position: relative; left: 15px; */ text-align: center; margin-left: auto; margin-right: auto;
+background-color: #ABD49A /* #cecece */; width: 363px; height: 260px; margin-top: 15px; }
+
+/** div.padding {width:100px;height:600px;} **/
+
+ /***Script & Commentary Styles***/
+ 
+/***.title {font-weight: bold; font-size: 13px}
+
+span.synch:before {content:"";display:block;}
+span.synch {font-family: verdana, helvetica, sans-serif; font-weight: bold; font-size: 12px; color: #43895c; text-align: left;  padding-left: 15px; margin-top: 15px;}
+
+.scriptNode {font-size: 12px; font-family: verdana, helvetica, sans-serif ; 
+text-align: left; font-weight: normal; color: #0076a5;}
+
+#commDiv .subject {padding: 10px 15px 10px 15px; }
+
+#commDiv .grammar {padding: 10px 15px 10px 15px; background-color: #c7deb6}
+
+.scriptNode.selected {background-color: lightblue;}
+.commGroup.selected {border: 1px solid #009DDC;} ***/
+
+/***Tom's Styles***/
+
+table {empty-cells:show; margin-top: 10px;}
+ 
+tdX { /** border: 1px solid red; **/ vertical-align:top; white-space:nowrap;  }
+
+
+.comm  {font-family: verdana, helvetica, sans-serif;font-size: 12px; color: #0076a5; /** overflow-y:hidden; overflow-x:scroll; **/ }
+ 
+.subject {background-color:#ABD49A; font-family: verdana, helvetica, sans-serif;font-size: 12px; color: #0076a5;}
+ 
+.grammar {background-color: #c7deb6; font-family: verdana, helvetica, sans-serif; font-size: 12px; color: #0076a5;}
+
+.scriptNode {font-size: 13px; font-family: verdana, helvetica, sans-serif ; 
+text-align: left; font-weight: normal; color: #0076a5; vertical-align: top;}
+
+.scriptNode.selected {background-color: lightblue;}
+ 
+h3 {color: #009DDC; margin:0px; border:0px; font-size:20px;}
+
+.segmentRow {background-color: white}
+.commentRow {}
+.col_1 {}
+
+#tr_1 {background-color: #EFF7EA}
+#tr_2 {background-color: #e5f0dd}
+#tr_3 {background-color: #d8e8cc}
+#tr_4 {background-color: #c7deb6}
+#tr_5 {background-color: #ABD49A}
+   
+/*
+   > If we choose a tiers view, as with movieDictTiers.css, then the script data moves
+> into a generated table
+>    #tiersTable of class tiersTable containing
+>    #tr_0 of class segmentRow as the first row, containing the actual transcript
+>      (each one is preceding by the synch-span);
+>    #tr_1, #tr_2, ... of class commentRow are the remaining rows, one for each
+>    commentClass in the config data;
+>    every td in column 0 is of class col_0; column 1 is of class col_1, and so on.
+>    Each segment is comprised of one or more DOM subtrees which must be edited
+>    separately if they get edited, so each td actually contains a one-row table
+>    of subtrees, but that should not be important until we start editing. Still,
+>    if you go into tiers view and say
+>      javascript:alert(doc2String($('tr_0'))) or even
+>      javascript:"<textarea rows='20' cols='120'>"+doc2String($('tr_0'))+"</textarea>"
+> you can see the actual XHTML source for the generated DOM structure, if desired.
+*/
+
+ 
+ 
+ /**td.col_0 {display:none;}**/
+
+   /** div.padding {width:100px;height:600px;}   -- not for tiers **/
+   #tiersTable td {border:inset 0px black; border-spacing:0pt 0pt;border-collapse:separate; }
+ 
+ #tiersTable { border:outset 0pt; border-spacing:0pt 0pt;border-collapse:separate;
+   } 
+   
+
+
+
+
+
+
+/*********** List Styles ************/
+
+#topnavlist li  {display: inline; list-style-type: none; padding-right: 38px; margin-top: -9px;
+font-family: verdana, helvetica, sans-serf; font-size: 12px; font-weight: 700; letter-spacing: .04em; float: left;}
+
+/*****this puts the blue outline around COURSES*****/
+
+li#courses a {padding: 5px 14px 5px 14px; margin-left: -15px; margin-right: -15px; border-top: 3px solid #009DDC; 
+border-left: 3px solid #009DDC; border-right: 3px solid #009DDC;}
+
+li#courses a:hover {padding: 5px 14px 5px 14px; margin-left: -15px; margin-right: -15px; 
+border-top: 3px solid #009DDC; border-left: 3px solid #009DDC; border-right: 3px solid #009DDC;}
+
+/*****this sets the styles for the rest of the list items*****/
+
+li#home a, li#courses a, li#about a, li#contact a, li#help a 
+{color: white}
+
+li#home a:hover, li#courses a:hover, li#about a:hover, li#contact a:hover, li#help a:hover 
+{color: #00975F;}
+
+/*****Basic Link Styles*****/
+
+a {text-decoration: none}
+a:visited {text-decoration: none}
+a:hover {text-decoration: none}
+
+
+   
+.comm em {padding: 3pt;}

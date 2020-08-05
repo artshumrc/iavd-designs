@@ -1,0 +1,6 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@import url('../style1.css');
+@import url('VK.css');
+div.hidden {display:none;}

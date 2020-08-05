@@ -1,0 +1,22 @@
+/* make all of the info boxes the same height
+from http://stackoverflow.com/a/22892773 */
+.row-height-equal, .row-height-equal > div[class*='col-'], .panel-gmap, .panel-gmap iframe {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    flex:1 0 auto;
+}
+
+/* push the more info buttons to the bottom of the info box */
+.row-height-equal .btn {
+    position: absolute;
+    bottom: 35px;
+}
+.row-height-equal .panel-body {
+    margin-bottom: 35px;
+}
+
+/* make the carousel taller */
+header.carousel {
+    height: 70%;
+}

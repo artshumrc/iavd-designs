@@ -1,0 +1,880 @@
+<tr xmlns="http://www.w3.org/1999/xhtml" class="segRow" id="segRow">
+  <td class="col_0" id="col_0">
+    <span class="synch" id="g_0">0</span>
+    <span class="_sh"/><span class="scriptNode" id="g_93">
+         </span>
+    <span class="scriptNode" id="g_94">Текст 12</span>
+  </td>
+  <td class="col_1" id="col_1">
+    <span class="synch" id="g_1">2</span>
+    <span class="commWrapper"><span class="comm ref" id="g_2">12.000  Time: </span></span>
+    <span class="scriptNode" id="g_95">
+            </span>
+    <span class="tx"><span class="scriptNode" id="g_96">
+               </span>
+    <span class="col"><span class="scriptNode" id="g_97">ʕali+</span></span><span class="scriptNode" id="g_98">
+               </span><span class="col"><span class="scriptNode" id="g_99">ʕašatlirak</span></span><span class="scriptNode" id="g_100">
+               </span><span class="col"><span class="scriptNode" id="g_101">šijtʼammul</span></span><span class="scriptNode" id="g_102">
+               </span><span class="col"><span class="scriptNode" id="g_103">aʟmul</span></span><span class="scriptNode" id="g_104">
+               </span><span class="commWrapper"><span class="comm mb" id="g_3">
+                  <span class="col">
+                     <span class="subcol">ʕali+</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">ʕašat</span>
+                     <span class="subcol">-li</span>
+                     <span class="subcol">-ra</span>
+                     <span class="subcol">-k</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">šijtʼam</span>
+                     <span class="subcol">-mul</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">aʟ</span>
+                     <span class="subcol">-mul</span>
+                  </span>
+               </span></span><span class="scriptNode" id="g_105">
+               </span><span class="commWrapper"><span class="comm ge" id="g_4">
+                  <span class="col">
+                     <span class="subcol">Ali</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">Ashat</span>
+                     <span class="subcol">-OBL</span>
+                     <span class="subcol">-CONT</span>
+                     <span class="subcol">-LAT</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">devil</span>
+                     <span class="subcol">-PL(NOM)</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">NPL.come</span>
+                     <span class="subcol">-NMLZ</span>
+                  </span>
+               </span></span><span class="scriptNode" id="g_106">
+               </span><span class="commWrapper"><span class="comm class" id="g_5">
+                  <span class="col"/>
+                  <span class="col">2</span>
+                  <span class="col">3</span>
+                  <span class="col"/>
+               </span></span><span class="scriptNode" id="g_107">
+            </span></span><span class="scriptNode" id="g_108">
+            </span><span class="commWrapper"><span class="comm ft" id="g_6">Как к Али-Ашат пришли черти</span></span><span class="scriptNode" id="g_109">
+            </span><span class="commWrapper"><span class="comm comment" id="g_7"/></span><span class="scriptNode" id="g_110">
+            </span></td><td class="col_2" id="col_2"><span class="synch" id="g_8">7</span><span class="commWrapper"><span class="comm ref" id="g_9">12.001  Time: </span></span><span class="scriptNode" id="g_111">
+            </span><span class="tx"><span class="scriptNode" id="g_112">
+               </span><span class="col"><span class="scriptNode" id="g_113">os</span></span><span class="scriptNode" id="g_114">
+               </span><span class="col"><span class="scriptNode" id="g_115">ʕali+</span></span><span class="scriptNode" id="g_116">
+               </span><span class="col"><span class="scriptNode" id="g_117">ʕašat</span></span><span class="scriptNode" id="g_118">
+               </span><span class="col"><span class="scriptNode" id="g_119">erdili,</span></span><span class="scriptNode" id="g_120">
+               </span><span class="col"><span class="scriptNode" id="g_121">jamurmin</span></span><span class="scriptNode" id="g_122">
+               </span><span class="col"><span class="scriptNode" id="g_123">qӀʼ˳ewu</span></span><span class="scriptNode" id="g_124">
+               </span><span class="commWrapper"><span class="comm mb" id="g_10">
+                  <span class="col">
+                     <span class="subcol">os</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">ʕali+</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">ʕašat</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">e‹r›di</span>
+                     <span class="subcol">-li</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">jamu</span>
+                     <span class="subcol">-r</span>
+                     <span class="subcol">-mi</span>
+                     <span class="subcol">-n</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">qӀʼ˳e</span>
+                     <span class="subcol">-wu</span>
+                  </span>
+               </span></span><span class="scriptNode" id="g_125">
+               </span><span class="commWrapper"><span class="comm ge" id="g_11">
+                  <span class="col">
+                     <span class="subcol">one</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">Ali</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">Ashat(NOM)</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">‹2›</span>
+                     <span class="subcol">be.PF</span>
+                     <span class="subcol">-EVID</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">that</span>
+                     <span class="subcol">-2</span>
+                     <span class="subcol">-OBL</span>
+                     <span class="subcol">-GEN</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">two</span>
+                     <span class="subcol">-1.R</span>
+                  </span>
+               </span></span><span class="scriptNode" id="g_126">
+               </span><span class="commWrapper"><span class="comm class" id="g_12">
+                  <span class="col"/>
+                  <span class="col"/>
+                  <span class="col">2</span>
+                  <span class="col"/>
+                  <span class="col"/>
+                  <span class="col"/>
+               </span></span><span class="scriptNode" id="g_127">
+            </span></span><span class="scriptNode" id="g_128">
+            </span><span class="tx"><span class="scriptNode" id="g_129">
+               </span><span class="col"><span class="scriptNode" id="g_130">lowu</span></span><span class="scriptNode" id="g_131">
+               </span><span class="col"><span class="scriptNode" id="g_132">iwdili,</span></span><span class="scriptNode" id="g_133">
+               </span><span class="col"><span class="scriptNode" id="g_134">os</span></span><span class="scriptNode" id="g_135">
+               </span><span class="col"><span class="scriptNode" id="g_136">ʕabdul+</span></span><span class="scriptNode" id="g_137">
+               </span><span class="col"><span class="scriptNode" id="g_138">mutʼallip,</span></span><span class="scriptNode" id="g_139">
+               </span><span class="col"><span class="scriptNode" id="g_140">os</span></span><span class="scriptNode" id="g_141">
+               </span><span class="col"><span class="scriptNode" id="g_142">ʕabdul+</span></span><span class="scriptNode" id="g_143">
+               </span><span class="col"><span class="scriptNode" id="g_144">qʼahir.</span></span><span class="scriptNode" id="g_145">
+               </span><span class="commWrapper"><span class="comm mb" id="g_13">
+                  <span class="col">
+                     <span class="subcol">lo</span>
+                     <span class="subcol">-wu</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">i‹w›di</span>
+                     <span class="subcol">-li</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">os</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">ʕabdul+</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">mutʼallip</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">os</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">ʕabdul+</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">qʼahir</span>
+                  </span>
+               </span></span><span class="scriptNode" id="g_146">
+               </span><span class="commWrapper"><span class="comm ge" id="g_14">
+                  <span class="col">
+                     <span class="subcol">lad(NOM)</span>
+                     <span class="subcol">-and</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">‹1›</span>
+                     <span class="subcol">be.PF</span>
+                     <span class="subcol">-EVID</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">one</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">Abdul</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">Mutallib(NOM)</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">one</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">Abdul</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">Qahir(NOM)</span>
+                  </span>
+               </span></span><span class="scriptNode" id="g_147">
+               </span><span class="commWrapper"><span class="comm class" id="g_15">
+                  <span class="col">1</span>
+                  <span class="col"/>
+                  <span class="col"/>
+                  <span class="col"/>
+                  <span class="col">1</span>
+                  <span class="col"/>
+                  <span class="col"/>
+                  <span class="col">1</span>
+               </span></span><span class="scriptNode" id="g_148">
+            </span></span><span class="scriptNode" id="g_149">
+            </span><span class="commWrapper"><span class="comm ft" id="g_16">1. Жила-была Али-Ашат, и было у нее два сына, один Абдул Муталиб, другой Абдул Кагир.</span></span><span class="scriptNode" id="g_150">
+            </span><span class="commWrapper"><span class="comm comment" id="g_17">А как глоссировать lo в значении "У нее было двое детей", если эти дети уже взрослые?))</span></span><span class="scriptNode" id="g_151">
+            </span></td><td class="col_3" id="col_3"><span class="synch" id="g_18">14</span><span class="commWrapper"><span class="comm ref" id="g_19">12.002  Time: </span></span><span class="scriptNode" id="g_152">
+            </span><span class="tx"><span class="scriptNode" id="g_153">
+               </span><span class="col"><span class="scriptNode" id="g_154">jemim</span></span><span class="scriptNode" id="g_155">
+               </span><span class="col"><span class="scriptNode" id="g_156">ebdili</span></span><span class="scriptNode" id="g_157">
+               </span><span class="col"><span class="scriptNode" id="g_158">lap</span></span><span class="scriptNode" id="g_159">
+               </span><span class="col"><span class="scriptNode" id="g_160">ɬ̄aӀmat̄ib</span></span><span class="scriptNode" id="g_161">
+               </span><span class="col"><span class="scriptNode" id="g_162">adamtil.</span></span><span class="scriptNode" id="g_163">
+               </span><span class="commWrapper"><span class="comm mb" id="g_20">
+                  <span class="col">
+                     <span class="subcol">jemim</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">e‹b›di</span>
+                     <span class="subcol">-li</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">lap</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">ɬ̄aӀma</span>
+                     <span class="subcol">-t̄</span>
+                     <span class="subcol">-ib</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">adam</span>
+                     <span class="subcol">-til</span>
+                  </span>
+               </span></span><span class="scriptNode" id="g_164">
+               </span><span class="commWrapper"><span class="comm ge" id="g_21">
+                  <span class="col">
+                     <span class="subcol">that.PL(NOM)</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">‹HPL›</span>
+                     <span class="subcol">be.PF</span>
+                     <span class="subcol">-EVID</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">very</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">be.rich</span>
+                     <span class="subcol">-ATR</span>
+                     <span class="subcol">-ATR.PL</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">person</span>
+                     <span class="subcol">-PL</span>
+                  </span>
+               </span></span><span class="scriptNode" id="g_165">
+               </span><span class="commWrapper"><span class="comm class" id="g_22">
+                  <span class="col"/>
+                  <span class="col"/>
+                  <span class="col"/>
+                  <span class="col"/>
+                  <span class="col">8</span>
+               </span></span><span class="scriptNode" id="g_166">
+            </span></span><span class="scriptNode" id="g_167">
+            </span><span class="commWrapper"><span class="comm ft" id="g_23">2. Они были очень богатые люди.</span></span><span class="scriptNode" id="g_168">
+            </span><span class="commWrapper"><span class="comm comment" id="g_24"/></span><span class="scriptNode" id="g_169">
+            </span></td><td class="col_4" id="col_4"><span class="synch" id="g_25">17</span><span class="commWrapper"><span class="comm ref" id="g_26">12.003  Time: </span></span><span class="scriptNode" id="g_170">
+            </span><span class="tx"><span class="scriptNode" id="g_171">
+               </span><span class="col"><span class="scriptNode" id="g_172">jamurmin</span></span><span class="scriptNode" id="g_173">
+               </span><span class="col"><span class="scriptNode" id="g_174">edili</span></span><span class="scriptNode" id="g_175">
+               </span><span class="col"><span class="scriptNode" id="g_176">ɬibijbu</span></span><span class="scriptNode" id="g_177">
+               </span><span class="col"><span class="scriptNode" id="g_178">qʼili</span></span><span class="scriptNode" id="g_179">
+               </span><span class="col"><span class="scriptNode" id="g_180">kamart̄ut</span></span><span class="scriptNode" id="g_181">
+               </span><span class="commWrapper"><span class="comm mb" id="g_27">
+                  <span class="col">
+                     <span class="subcol">jamu</span>
+                     <span class="subcol">-r</span>
+                     <span class="subcol">-mi</span>
+                     <span class="subcol">-n</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">edi</span>
+                     <span class="subcol">-li</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">ɬib</span>
+                     <span class="subcol">-ijbu</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">qʼili</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">kama</span>
+                     <span class="subcol">-r</span>
+                     <span class="subcol">-t̄u</span>
+                     <span class="subcol">-t</span>
+                  </span>
+               </span></span><span class="scriptNode" id="g_182">
+               </span><span class="commWrapper"><span class="comm ge" id="g_28">
+                  <span class="col">
+                     <span class="subcol">that</span>
+                     <span class="subcol">-2</span>
+                     <span class="subcol">-OBL</span>
+                     <span class="subcol">-GEN</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">4.be.PF</span>
+                     <span class="subcol">-EVID</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">three</span>
+                     <span class="subcol">-3.EMPH</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">measure(NOM)</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">throw</span>
+                     <span class="subcol">-IPF</span>
+                     <span class="subcol">-ATR</span>
+                     <span class="subcol">-4</span>
+                  </span>
+               </span></span><span class="scriptNode" id="g_183">
+               </span><span class="commWrapper"><span class="comm class" id="g_29">
+                  <span class="col"/>
+                  <span class="col"/>
+                  <span class="col"/>
+                  <span class="col">3</span>
+                  <span class="col"/>
+               </span></span><span class="scriptNode" id="g_184">
+            </span></span><span class="scriptNode" id="g_185">
+            </span><span class="tx"><span class="scriptNode" id="g_186">
+               </span><span class="col"><span class="scriptNode" id="g_187">uχ.</span></span><span class="scriptNode" id="g_188">
+               </span><span class="commWrapper"><span class="comm mb" id="g_30">
+                  <span class="col">
+                     <span class="subcol">uχ</span>
+                  </span>
+               </span></span><span class="scriptNode" id="g_189">
+               </span><span class="commWrapper"><span class="comm ge" id="g_31">
+                  <span class="col">
+                     <span class="subcol">field(NOM)</span>
+                  </span>
+               </span></span><span class="scriptNode" id="g_190">
+               </span><span class="commWrapper"><span class="comm class" id="g_32">
+                  <span class="col">4</span>
+               </span></span><span class="scriptNode" id="g_191">
+            </span></span><span class="scriptNode" id="g_192">
+            </span><span class="commWrapper"><span class="comm ft" id="g_33">3. Поле у нее засеивалось тридцатью мерами зерна.</span></span><span class="scriptNode" id="g_193">
+            </span><span class="commWrapper"><span class="comm comment" id="g_34"/></span><span class="scriptNode" id="g_194">
+            </span></td><td class="col_5" id="col_5"><span class="synch" id="g_35">21</span><span class="commWrapper"><span class="comm ref" id="g_36">12.004  Time: </span></span><span class="scriptNode" id="g_195">
+            </span><span class="tx"><span class="scriptNode" id="g_196">
+               </span><span class="col"><span class="scriptNode" id="g_197">jamut</span></span><span class="scriptNode" id="g_198">
+               </span><span class="col"><span class="scriptNode" id="g_199">as</span></span><span class="scriptNode" id="g_200">
+               </span><span class="col"><span class="scriptNode" id="g_201">zaħmat</span></span><span class="scriptNode" id="g_202">
+               </span><span class="col"><span class="scriptNode" id="g_203">edili</span></span><span class="scriptNode" id="g_204">
+               </span><span class="col"><span class="scriptNode" id="g_205">adam</span></span><span class="scriptNode" id="g_206">
+               </span><span class="col"><span class="scriptNode" id="g_207">itʼukulla.</span></span><span class="scriptNode" id="g_208">
+               </span><span class="commWrapper"><span class="comm mb" id="g_37">
+                  <span class="col">
+                     <span class="subcol">jamu</span>
+                     <span class="subcol">-t</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">a</span>
+                     <span class="subcol">-s</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">zaħmat</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">edi</span>
+                     <span class="subcol">-li</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">adam</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">i</span>
+                     <span class="subcol">-tʼu</span>
+                     <span class="subcol">-kul</span>
+                     <span class="subcol">-l</span>
+                     <span class="subcol">-a</span>
+                  </span>
+               </span></span><span class="scriptNode" id="g_209">
+               </span><span class="commWrapper"><span class="comm ge" id="g_38">
+                  <span class="col">
+                     <span class="subcol">that</span>
+                     <span class="subcol">-4</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">4.do</span>
+                     <span class="subcol">-INF</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">labour(NOM)?</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">be.PF</span>
+                     <span class="subcol">-EVID</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">person(NOM)</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">4.be</span>
+                     <span class="subcol">-NEG</span>
+                     <span class="subcol">-NMLZ</span>
+                     <span class="subcol">-OBL</span>
+                     <span class="subcol">-IN</span>
+                  </span>
+               </span></span><span class="scriptNode" id="g_210">
+               </span><span class="commWrapper"><span class="comm class" id="g_39">
+                  <span class="col"/>
+                  <span class="col"/>
+                  <span class="col">4</span>
+                  <span class="col"/>
+                  <span class="col">8</span>
+                  <span class="col"/>
+               </span></span><span class="scriptNode" id="g_211">
+            </span></span><span class="scriptNode" id="g_212">
+            </span><span class="commWrapper"><span class="comm ft" id="g_40">4. Обработать его было трудно, так как помощников у них не было.</span></span><span class="scriptNode" id="g_213">
+            </span><span class="commWrapper"><span class="comm comment" id="g_41">в словаре нет слова захIмат</span></span><span class="scriptNode" id="g_214">
+            </span></td><td class="col_6" id="col_6"><span class="synch" id="g_42">24</span><span class="commWrapper"><span class="comm ref" id="g_43">12.005  Time: </span></span><span class="scriptNode" id="g_215">
+            </span><span class="tx"><span class="scriptNode" id="g_216">
+               </span><span class="col"><span class="scriptNode" id="g_217">jamut</span></span><span class="scriptNode" id="g_218">
+               </span><span class="col"><span class="scriptNode" id="g_219">uχ</span></span><span class="scriptNode" id="g_220">
+               </span><span class="col"><span class="scriptNode" id="g_221">eɬ̄as</span></span><span class="scriptNode" id="g_222">
+               </span><span class="col"><span class="scriptNode" id="g_223">χӀereš</span></span><span class="scriptNode" id="g_224">
+               </span><span class="col"><span class="scriptNode" id="g_225">s̄̌umaj</span></span><span class="scriptNode" id="g_226">
+               </span><span class="col"><span class="scriptNode" id="g_227">daqӀali,</span></span><span class="scriptNode" id="g_228">
+               </span><span class="commWrapper"><span class="comm mb" id="g_44">
+                  <span class="col">
+                     <span class="subcol">jamu</span>
+                     <span class="subcol">-t</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">uχ</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">eɬ̄a</span>
+                     <span class="subcol">-s</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">χӀere</span>
+                     <span class="subcol">-š</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">s̄̌umaj</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">da</span>
+                     <span class="subcol">-qӀa</span>
+                     <span class="subcol">-li</span>
+                  </span>
+               </span></span><span class="scriptNode" id="g_229">
+               </span><span class="commWrapper"><span class="comm ge" id="g_45">
+                  <span class="col">
+                     <span class="subcol">that</span>
+                     <span class="subcol">-4</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">field(NOM)</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">4.lay</span>
+                     <span class="subcol">-INF</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">Archi</span>
+                     <span class="subcol">-EL</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">downstream</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">2-</span>
+                     <span class="subcol">come.PF</span>
+                     <span class="subcol">-EVID</span>
+                  </span>
+               </span></span><span class="scriptNode" id="g_230">
+               </span><span class="commWrapper"><span class="comm class" id="g_46">
+                  <span class="col"/>
+                  <span class="col">4</span>
+                  <span class="col"/>
+                  <span class="col"/>
+                  <span class="col"/>
+                  <span class="col"/>
+               </span></span><span class="scriptNode" id="g_231">
+            </span></span><span class="scriptNode" id="g_232">
+            </span><span class="tx"><span class="scriptNode" id="g_233">
+               </span><span class="col"><span class="scriptNode" id="g_234">qӀʼ˳ewu</span></span><span class="scriptNode" id="g_235">
+               </span><span class="col"><span class="scriptNode" id="g_236">lowu</span></span><span class="scriptNode" id="g_237">
+               </span><span class="col"><span class="scriptNode" id="g_238">χir+</span></span><span class="scriptNode" id="g_239">
+               </span><span class="col"><span class="scriptNode" id="g_240">uwli.</span></span><span class="scriptNode" id="g_241">
+               </span><span class="commWrapper"><span class="comm mb" id="g_47">
+                  <span class="col">
+                     <span class="subcol">qӀʼ˳e</span>
+                     <span class="subcol">-wu</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">lo</span>
+                     <span class="subcol">-wu</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">χir+</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">uw</span>
+                     <span class="subcol">-li</span>
+                  </span>
+               </span></span><span class="scriptNode" id="g_242">
+               </span><span class="commWrapper"><span class="comm ge" id="g_48">
+                  <span class="col">
+                     <span class="subcol">two</span>
+                     <span class="subcol">-1.R</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">lad(NOM)</span>
+                     <span class="subcol">-and</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">bring</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">1.DO.PF</span>
+                     <span class="subcol">-EVID</span>
+                  </span>
+               </span></span><span class="scriptNode" id="g_243">
+               </span><span class="commWrapper"><span class="comm class" id="g_49">
+                  <span class="col"/>
+                  <span class="col">1</span>
+                  <span class="col"/>
+                  <span class="col"/>
+               </span></span><span class="scriptNode" id="g_244">
+            </span></span><span class="scriptNode" id="g_245">
+            </span><span class="commWrapper"><span class="comm ft" id="g_50">5. Пошла Али-Ашат со своими сыновьями вниз по реке на жатву.</span></span><span class="scriptNode" id="g_246">
+            </span><span class="commWrapper"><span class="comm comment" id="g_51"/></span><span class="scriptNode" id="g_247">
+            </span></td><td class="col_7" id="col_7"><span class="synch" id="g_52">30</span><span class="commWrapper"><span class="comm ref" id="g_53">12.006  Time: </span></span><span class="scriptNode" id="g_248">
+            </span><span class="tx"><span class="scriptNode" id="g_249">
+               </span><span class="col"><span class="scriptNode" id="g_250">eɬ̄uli</span></span><span class="scriptNode" id="g_251">
+               </span><span class="col"><span class="scriptNode" id="g_252">jamut</span></span><span class="scriptNode" id="g_253">
+               </span><span class="col"><span class="scriptNode" id="g_254">uχ,</span></span><span class="scriptNode" id="g_255">
+               </span><span class="col"><span class="scriptNode" id="g_256">χat̄aqʼmi+</span></span><span class="scriptNode" id="g_257">
+               </span><span class="col"><span class="scriptNode" id="g_258">čʼem,</span></span><span class="scriptNode" id="g_259">
+               </span><span class="col"><span class="scriptNode" id="g_260">margə+</span></span><span class="scriptNode" id="g_261">
+               </span><span class="col"><span class="scriptNode" id="g_262">čʼem</span></span><span class="scriptNode" id="g_263">
+               </span><span class="commWrapper"><span class="comm mb" id="g_54">
+                  <span class="col">
+                     <span class="subcol">eɬ̄</span>
+                     <span class="subcol">-u</span>
+                     <span class="subcol">-li</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">jamu</span>
+                     <span class="subcol">-t</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">uχ</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">χat̄aqʼmi+</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">čʼem</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">margə+</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">čʼem</span>
+                  </span>
+               </span></span><span class="scriptNode" id="g_264">
+               </span><span class="commWrapper"><span class="comm ge" id="g_55">
+                  <span class="col">
+                     <span class="subcol">4.lay</span>
+                     <span class="subcol">-PF</span>
+                     <span class="subcol">-EVID</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">that</span>
+                     <span class="subcol">-4</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">field(NOM)</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">evening+</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">time(NOM)</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">dusk+</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">time(NOM)</span>
+                  </span>
+               </span></span><span class="scriptNode" id="g_265">
+               </span><span class="commWrapper"><span class="comm class" id="g_56">
+                  <span class="col"/>
+                  <span class="col"/>
+                  <span class="col">4</span>
+                  <span class="col"/>
+                  <span class="col">4</span>
+                  <span class="col"/>
+                  <span class="col">4</span>
+               </span></span><span class="scriptNode" id="g_266">
+            </span></span><span class="scriptNode" id="g_267">
+            </span><span class="tx"><span class="scriptNode" id="g_268">
+               </span><span class="col"><span class="scriptNode" id="g_269">kelkan.</span></span><span class="scriptNode" id="g_270">
+               </span><span class="commWrapper"><span class="comm mb" id="g_57">
+                  <span class="col">
+                     <span class="subcol">ke</span>
+                     <span class="subcol">-l</span>
+                     <span class="subcol">-kan</span>
+                  </span>
+               </span></span><span class="scriptNode" id="g_271">
+               </span><span class="commWrapper"><span class="comm ge" id="g_58">
+                  <span class="col">
+                     <span class="subcol">become</span>
+                     <span class="subcol">-INF</span>
+                     <span class="subcol">-TEMP5</span>
+                  </span>
+               </span></span><span class="scriptNode" id="g_272">
+               </span><span class="commWrapper"><span class="comm class" id="g_59">
+                  <span class="col"/>
+               </span></span><span class="scriptNode" id="g_273">
+            </span></span><span class="scriptNode" id="g_274">
+            </span><span class="commWrapper"><span class="comm ft" id="g_60">6. Убирали они поле вплоть до сумерек.</span></span><span class="scriptNode" id="g_275">
+            </span><span class="commWrapper"><span class="comm comment" id="g_61">В словаре хаттакъми чем пишется раздельно</span></span><span class="scriptNode" id="g_276">
+            </span></td><td class="col_8" id="col_8"><span class="synch" id="g_62">34</span><span class="commWrapper"><span class="comm ref" id="g_63">12.007  Time: </span></span><span class="scriptNode" id="g_277">
+            </span><span class="tx"><span class="scriptNode" id="g_278">
+               </span><span class="col"><span class="scriptNode" id="g_279">jemim</span></span><span class="scriptNode" id="g_280">
+               </span><span class="col"><span class="scriptNode" id="g_281">loburu</span></span><span class="scriptNode" id="g_282">
+               </span><span class="col"><span class="scriptNode" id="g_283">duχaj</span></span><span class="scriptNode" id="g_284">
+               </span><span class="col"><span class="scriptNode" id="g_285">obqӀali,</span></span><span class="scriptNode" id="g_286">
+               </span><span class="col"><span class="scriptNode" id="g_287">erχ̄uli</span></span><span class="scriptNode" id="g_288">
+               </span><span class="commWrapper"><span class="comm mb" id="g_64">
+                  <span class="col">
+                     <span class="subcol">jemim</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">lobur</span>
+                     <span class="subcol">-u</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">duχaj</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">o‹b›qӀa</span>
+                     <span class="subcol">-li</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">e‹r›χ̄u</span>
+                     <span class="subcol">-li</span>
+                  </span>
+               </span></span><span class="scriptNode" id="g_289">
+               </span><span class="commWrapper"><span class="comm ge" id="g_65">
+                  <span class="col">
+                     <span class="subcol">that.PL</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">children(NOM)</span>
+                     <span class="subcol">-and</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">upstream</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">‹HPL›</span>
+                     <span class="subcol">go.PF</span>
+                     <span class="subcol">-EVID</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">‹2›</span>
+                     <span class="subcol">stay.PF</span>
+                     <span class="subcol">-EVID</span>
+                  </span>
+               </span></span><span class="scriptNode" id="g_290">
+               </span><span class="commWrapper"><span class="comm class" id="g_66">
+                  <span class="col"/>
+                  <span class="col">(1)</span>
+                  <span class="col"/>
+                  <span class="col"/>
+                  <span class="col"/>
+               </span></span><span class="scriptNode" id="g_291">
+            </span></span><span class="scriptNode" id="g_292">
+            </span><span class="tx"><span class="scriptNode" id="g_293">
+               </span><span class="col"><span class="scriptNode" id="g_294">inžaru.</span></span><span class="scriptNode" id="g_295">
+               </span><span class="commWrapper"><span class="comm mb" id="g_67">
+                  <span class="col">
+                     <span class="subcol">inž</span>
+                     <span class="subcol">-aru</span>
+                  </span>
+               </span></span><span class="scriptNode" id="g_296">
+               </span><span class="commWrapper"><span class="comm ge" id="g_68">
+                  <span class="col">
+                     <span class="subcol">LOGOPH</span>
+                     <span class="subcol">-2.R(NOM)</span>
+                  </span>
+               </span></span><span class="scriptNode" id="g_297">
+               </span><span class="commWrapper"><span class="comm class" id="g_69">
+                  <span class="col"/>
+               </span></span><span class="scriptNode" id="g_298">
+            </span></span><span class="scriptNode" id="g_299">
+            </span><span class="commWrapper"><span class="comm ft" id="g_70">7. Тогда сыновья пошли назад, а она осталась.</span></span><span class="scriptNode" id="g_300">
+            </span><span class="commWrapper"><span class="comm comment" id="g_71">вопреки буквальному переводу, предполагаю, что здесь конверб "уйдя", а не эвиеднциальность</span></span><span class="scriptNode" id="g_301">
+            </span></td><td class="col_9" id="col_9"><span class="synch" id="g_72">38</span><span class="commWrapper"><span class="comm ref" id="g_73">12.008  Time: </span></span><span class="scriptNode" id="g_302">
+            </span><span class="tx"><span class="scriptNode" id="g_303">
+               </span><span class="col"><span class="scriptNode" id="g_304">jamur</span></span><span class="scriptNode" id="g_305">
+               </span><span class="col"><span class="scriptNode" id="g_306">qʼardili</span></span><span class="scriptNode" id="g_307">
+               </span><span class="col"><span class="scriptNode" id="g_308">jatma</span></span><span class="scriptNode" id="g_309">
+               </span><span class="col"><span class="scriptNode" id="g_310">doɬuma,</span></span><span class="scriptNode" id="g_311">
+               </span><span class="col"><span class="scriptNode" id="g_312">qӀʼabaqӀʼurčen</span></span><span class="scriptNode" id="g_313">
+               </span><span class="commWrapper"><span class="comm mb" id="g_74">
+                  <span class="col">
+                     <span class="subcol">jamu</span>
+                     <span class="subcol">-r</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">qʼa‹r›di</span>
+                     <span class="subcol">-li</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">jat</span>
+                     <span class="subcol">-ma</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">doɬum</span>
+                     <span class="subcol">-a</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">qӀʼabaqӀʼur</span>
+                     <span class="subcol">-če</span>
+                     <span class="subcol">-n</span>
+                  </span>
+               </span></span><span class="scriptNode" id="g_314">
+               </span><span class="commWrapper"><span class="comm ge" id="g_75">
+                  <span class="col">
+                     <span class="subcol">that</span>
+                     <span class="subcol">-2(NOM)</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">‹2›</span>
+                     <span class="subcol">sit.down.PF</span>
+                     <span class="subcol">-EVID</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">on</span>
+                     <span class="subcol">-IN</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">cowshed</span>
+                     <span class="subcol">-IN</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">dumplings</span>
+                     <span class="subcol">-OBL.PL</span>
+                     <span class="subcol">-GEN</span>
+                  </span>
+               </span></span><span class="scriptNode" id="g_315">
+               </span><span class="commWrapper"><span class="comm class" id="g_76">
+                  <span class="col"/>
+                  <span class="col"/>
+                  <span class="col"/>
+                  <span class="col">3</span>
+                  <span class="col">NPL</span>
+               </span></span><span class="scriptNode" id="g_316">
+            </span></span><span class="scriptNode" id="g_317">
+            </span><span class="tx"><span class="scriptNode" id="g_318">
+               </span><span class="col"><span class="scriptNode" id="g_319">dīqʼu</span></span><span class="scriptNode" id="g_320">
+               </span><span class="col"><span class="scriptNode" id="g_321">arši.</span></span><span class="scriptNode" id="g_322">
+               </span><span class="commWrapper"><span class="comm mb" id="g_77">
+                  <span class="col">
+                     <span class="subcol">dīqʼ</span>
+                     <span class="subcol">-u</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">a</span>
+                     <span class="subcol">-r</span>
+                     <span class="subcol">-ši</span>
+                  </span>
+               </span></span><span class="scriptNode" id="g_323">
+               </span><span class="commWrapper"><span class="comm ge" id="g_78">
+                  <span class="col">
+                     <span class="subcol">soup(NOM)</span>
+                     <span class="subcol">-and</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">4.do</span>
+                     <span class="subcol">-IPF</span>
+                     <span class="subcol">-CVB</span>
+                  </span>
+               </span></span><span class="scriptNode" id="g_324">
+               </span><span class="commWrapper"><span class="comm class" id="g_79">
+                  <span class="col">4</span>
+                  <span class="col"/>
+               </span></span><span class="scriptNode" id="g_325">
+            </span></span><span class="scriptNode" id="g_326">
+            </span><span class="commWrapper"><span class="comm ft" id="g_80">8. Она сидела в верхнем хлеву для баранов и варила похлебку из муки.</span></span><span class="scriptNode" id="g_327">
+            </span><span class="commWrapper"><span class="comm comment" id="g_81">jatma!!! нет в словаре. Можно было бы предположить, что -ma отклеилось от конверба и переехало на jat</span></span><span class="scriptNode" id="g_328">
+            </span><span class="commWrapper"><span class="comm comment" id="g_82">Но тогда неясно, какая предикация главная. Основной вариант - неожиданная локативная форма.</span></span><span class="scriptNode" id="g_329">
+            </span></td><td class="col_10" id="col_10"><span class="synch" id="g_83">43</span><span class="commWrapper"><span class="comm ref" id="g_84">12.009  Time: </span></span><span class="scriptNode" id="g_330">
+            </span><span class="tx"><span class="scriptNode" id="g_331">
+               </span><span class="col"><span class="scriptNode" id="g_332">qʼardimak</span></span><span class="scriptNode" id="g_333">
+               </span><span class="col"><span class="scriptNode" id="g_334">jat̄ik</span></span><span class="scriptNode" id="g_335">
+               </span><span class="col"><span class="scriptNode" id="g_336">baqӀali</span></span><span class="scriptNode" id="g_337">
+               </span><span class="col"><span class="scriptNode" id="g_338">šijtʼammulčen</span></span><span class="scriptNode" id="g_339">
+               </span><span class="col"><span class="scriptNode" id="g_340">aӀri.</span></span><span class="scriptNode" id="g_341">
+               </span><span class="commWrapper"><span class="comm mb" id="g_85">
+                  <span class="col">
+                     <span class="subcol">qʼa‹r›di</span>
+                     <span class="subcol">-ma</span>
+                     <span class="subcol">-k</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">jat̄ik</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">ba</span>
+                     <span class="subcol">-qӀa</span>
+                     <span class="subcol">-li</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">šijtʼam</span>
+                     <span class="subcol">-mul</span>
+                     <span class="subcol">-če</span>
+                     <span class="subcol">-n</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">aӀri</span>
+                  </span>
+               </span></span><span class="scriptNode" id="g_342">
+               </span><span class="commWrapper"><span class="comm ge" id="g_86">
+                  <span class="col">
+                     <span class="subcol">‹2›</span>
+                     <span class="subcol">sit.down.PF</span>
+                     <span class="subcol">-CVB.LOC</span>
+                     <span class="subcol">-LAT</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">on.top</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">3-</span>
+                     <span class="subcol">come.PF</span>
+                     <span class="subcol">-EVID</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">devil</span>
+                     <span class="subcol">-PL</span>
+                     <span class="subcol">-OBL.PL</span>
+                     <span class="subcol">-GEN</span>
+                  </span>
+                  <span class="col">
+                     <span class="subcol">troop</span>
+                  </span>
+               </span></span><span class="scriptNode" id="g_343">
+               </span><span class="commWrapper"><span class="comm class" id="g_87">
+                  <span class="col"/>
+                  <span class="col"/>
+                  <span class="col"/>
+                  <span class="col">3</span>
+                  <span class="col">3</span>
+               </span></span><span class="scriptNode" id="g_344">
+            </span></span><span class="scriptNode" id="g_345">
+            </span><span class="commWrapper"><span class="comm ft" id="g_88">9. К ней в верхний хлев пришла толпа чертей.</span></span><span class="scriptNode" id="g_346">
+            </span><span class="commWrapper"><span class="comm comment" id="g_89">Опять употребление морфологического латива но семантического (согласно словарю) эссива в лативном</span></span><span class="scriptNode" id="g_347">
+            </span><span class="commWrapper"><span class="comm comment" id="g_90">значении. Надо, кажется, проверять, насколько он эссивен все-таки - м.б. он совмещает по меньшей мере</span></span><span class="scriptNode" id="g_348">
+            </span><span class="commWrapper"><span class="comm comment" id="g_91">обе функции?</span></span><span class="scriptNode" id="g_349">
+            </span></td><td class="col_11" id="col_11"><span class="synch" id="g_92">47</span><span class="scriptNode" id="g_350">
+         </span><span class="scriptNode" id="g_351">
+      </span><span class="scriptNode" id="g_352">
+   </span></td></tr>

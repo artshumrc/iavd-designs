@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>Unicode Numbers</TITLE>
+<SCRIPT>
+<!--
+ function uniNumber(first, form) {
+   form.results.value="";
+   form.results.value += first+"\n";
+   form.results.value += uniStr(first)+"\n";
+   form.results.value += uniHexStr(first)+"\n";
+   
+   return;
+}
+function uniStr(str) {
+  var len=str.length;
+  var res="";
+  var c;
+  for(var i=0; i<len; ++i) {
+    c=str.charCodeAt(i);
+//    res += String.fromCharCode(c);
+    res += c + " ";
+  }
+  return res;
+}
+function uniHexStr(str) {
+  var len=str.length;
+  var res="";
+  var c;
+  for(var i=0; i<len; ++i) {
+    c=str.charCodeAt(i);
+	h=c.toString(16);
+//    res += String.fromCharCode(c);
+    res += "U+"+h + " ";
+  }
+  return res;
+}
+
+function decimalToHex(d) {
+  var hex = Number(d).toString(16);
+  hex = "000000".substr(0, 6 - hex.length) + hex; 
+  return hex;
+}
+// -->
+</SCRIPT>
+</HEAD>
+
+<BODY>
+<H3>Unicode Numbers</H3>
+<FORM NAME="form1">
+Enter text string: <INPUT TYPE="TEXT" NAME="FName" SIZE="20"><br>
+
+<INPUT TYPE="Button" VALUE="Submit Names"
+  onClick="uniNumber(document.form1[0].value,
+                     this.form)"
+>
+<HR>
+<H4> The result: </H4>
+<TEXTAREA NAME="results" COLS="60" ROWS="10"></TEXTAREA><BR>
+<INPUT TYPE="RESET" VALUE="Clear Form">
+</FORM>
+</BODY>
+</HTML>

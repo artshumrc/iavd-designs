@@ -1,0 +1,40 @@
+#nav2table {
+  float:none; 
+  margin:30px 10%;
+}
+
+#nav2table td {
+	padding: 5px;
+	padding-bottom: 0px;
+	border: solid 1px #009DDC;
+}
+
+#nav2table th {
+	padding:0px;
+	margin: 0px;
+}
+
+div#nav2 {
+	background-color: #009DDC;
+}
+
+div#nav2 a {
+	color: #ffffff;
+}
+
+div#nav2 a:hover {
+	background-color: #999999;
+}
+
+div#nav2 li.highlight {
+	background-color: #999999;
+}
+
+div#nav2 ul ul {
+	background-color: #666666;
+	border: 1px solid #800000;
+}
+
+div#nav2 li li a {
+}
+

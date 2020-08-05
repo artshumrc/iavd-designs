@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>segTexts.xhtml</title>
+<style type="text/css">
+  #kwic {font-size:10pt; background-color : lightgray; overflow : auto; height : 300px; width : 800px; }
+  .inp  {font-size:8pt; background-color:lightgreen;}
+</style>
+<script src="../CODE/mfDomLib.js"></script>
+<!-- <script src="../../MX.js"></script> -->
+<!-- <script src="../../CODE/alpha.js"></script> -->
+<script src="segTexts.js"></script>
+<script>
+function loadFn(){
+  $('theForm').units.value=unitSeq;// unitSeq defined in config.js="algo01/algo0101,algo01/..."
+}
+
+
+
+var iFrameNames=null; var iFrameIDs=null;
+
+function findSegTexts(frm){
+  if(!iFrameNames)return alert("loadFrames first!");
+  var A=[];
+  for(var i in iFrameNames)addSegTexts(A,iFrameNames[i],iFrameIDs[i]);
+  alert(A);
+  frm.ta.value=segTextsStr(A);
+}
+
+function ob2Str(ob){
+  var A=[];for(var x in ob)A.push(x+":'"+ob[x]+"'");
+  return "{"+A.join(",\n")+"}";
+}
+function segTextsStr(A){
+  var sT=function(p){
+    return " ['"+p[0]+"',\n  "+ob2Str(p[1])+"]";
+  };
+  return A.map(sT).join(",\n");
+}
+
+function loadFrames(frm){
+var ifnn=frm.units.value.split(","); 
+iFrameNames=[]; iFrameIDs=[];
+for(var i=0;i&lt;ifnn.length;i++)
+  if(ifnn[i]&amp;&amp;ifnn[i].length&gt;1)
+    iFrameNames.push(ifnn[i]);
+var iFrameList=[];
+for(var i=0;i&lt;iFrameNames.length;i++){
+  var ifn=iFrameNames[i]; 
+  var ifid="ifn_"+i; iFrameIDs[iFrameIDs.length]=ifid;
+  if(ifn.indexOf("http:")!=0)ifn="../../"+ifn;
+  ifn+=".xhtml?initStyle=";
+  var S= "&lt;tr>&lt;td>"+
+       '&lt;iframe  name="'+ifid+'" id="'+ifid+'" src="'+ifn+'">&lt;/iframe>'+
+       "&lt;/td>&lt;/tr>";
+  iFrameList.push(S);
+  }
+  var iFrameTable=$('iFrameTable');
+  iFrameTable.innerHTML=iFrameList.join("\n");
+  return [iFrameList,iFrameNames];
+}
+// javascript:alert($(iFrameIDs[0]).contentDocument.getElementById('configData').value)
+
+function isCommentNode(nd){
+  if(!nd)return false;
+  if(nd.nodeType!=1)return false;
+  if(!nd.className)return false;
+  if(nd.className.indexOf("comm")!=0)return false;
+  return true;
+}
+function isSynchNode(nd){
+  if(!nd)return false;
+  if(nd.nodeType!=1)return false;
+  if(nd.nodeName.toLowerCase()!="span")return false;
+  if(nd.className!="synch")return false;
+  return true;
+}
+
+function commentTier(nd){ // it is  a comment node.
+  return nd.className.split(" ")[1];
+}
+
+function simpleStr(str){
+ return str.replace(/\s+/g," ").replace(/\"/g,"&amp;quot;").replace(/\'/g,"&amp;apos;");
+}
+
+function simpleStrOb(ob){
+  var O={};
+  for(var x in ob)O[x]=simpleStr(ob[x]);
+  return O;
+}
+
+function addToStringInOb(ob,key,str){
+  var soFar=ob[key];
+  if(!soFar)ob[key]=str;
+  else ob[key]+=" "+str;
+}
+
+function textValueNC(node){if(!node)return "";
+  if(node.nodeType==8)return ""; // comment node
+  if(!node.firstChild)return (node.nodeValue)?node.nodeValue:"";
+  var S="";
+  for(var nd=node.firstChild;nd;nd=nd.nextSibling)S+=" "+textValueNC(nd);
+  return S;
+}
+
+/**
+  * addSegTexts(A,"algo01/algo0104","ifn_3")
+  *   where array A has the texts of the previous iframes,
+  *   and algo01/algo0104 is the name of the iframe whose id is ifn_3
+  * will extend and return A with loc/object pairs of the form
+  * ["algo01/algo0104#s0",{_:"segtext",grammar:"gramcomm",...}]
+**/
+
+function addSegTexts(A,ifName,ifID){ // ob has textarrays so far, 
+  var justStarted=true; // nothing until first synch-point
+  var scr=$(ifID).contentDocument.getElementById('scriptDiv');
+  if(!scr)throw "addSegTexts: no scriptDiv in "+ifName;
+  var nd=scr.firstChild;
+  while(nd)if(isSynchNode(nd))break; else nd=nextNode(nd,scr);
+  if(!nd)throw "addSegTexts: no synch node in scriptDiv of "+ifName+"\n"+doc2String(scr);
+  var N=0; var ob={_:""}; nd=nd.nextSibling;
+  while(nd){  // is nd in segment N of scr;
+    if(isSynchNode(nd)){A.push([ifName+"#s"+N,simpleStrOb(ob)]);ob={_:""};N++;nd=nextNodeOver(nd,scr);}
+    else if(nd.nodeType==3){addToStringInOb(ob,"_",nd.nodeValue);nd=nextNodeOver(nd,scr);}
+    else if(isCommentNode(nd)){addToStringInOb(ob,commentTier(nd),textValueNC(nd));nd=nextNodeOver(nd,scr);}
+    else nd=nextNode(nd,scr);
+  }
+  A.push([ifName+"#s"+N,simpleStrOb(ob)]); // final segment
+  return A;
+}
+
+</script>
+</head><body onload="loadFn()">
+<p></p>
+
+
+<form name="theForm" id="theForm" action="javascript:void(0)">
+<input name="units" title="units to be processed for search" type="text" value="" size="70"/>
+<input name="tiers" title="tiers for search" type="text" value="subject,grammar,afterword" size="70"/>
+<input name="loadFramesButton" type="button" value="loadFrames" onclick="loadFrames(this.form)"/>
+<input name="findSegTextsButton" type="button" value="findTexts" onclick="findSegTexts(this.form)"/>
+<textarea name="ta" id="ta" rows="20" cols="120"></textarea>
+</form>
+<table border="1" title="iFrameTable" id="iFrameTable"/>
+</body></html>
+

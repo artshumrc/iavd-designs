@@ -1,0 +1,53 @@
+<html>
+  <head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+    <script src="../CODE/mfDomLib.js">/* base lib */</script>
+    <script src="../MX.js">/* base lib */</script>
+    <title>makeMXPageFromElan</title>
+<script src="makeMXPageFromElan.js">/* page code */ </script>
+<style type="text/css">
+span.synch {color:red}
+#MannX_data {display:block}
+div.padding {width:100px;height:600px;}
+
+</style>
+  </head>
+  <body>
+  <form name="theForm" action="javascript:void(0)">
+  Use mouseover for title attributes.
+  <table>
+    <tr title="true if this unit is within a repository"
+    ><td>inRepository:</td><td><input type="checkbox" name="inRepository" 
+      onchange="onChangeInRepository(this.form)" checked="false"/></td></tr>
+    <tr title="e.g.,'burble23.eaf' to find burble23.eaf.webm"
+    ><td>unit name</td>
+         <td><input type="text" name="unitName" 
+              onchange="onChangeUnit(this.form)" size="50" value="qamloncax_web.eaf"/></td></tr>
+    <tr title="name of movie file; defaults to unitName+'.flv'"
+    ><td>file name</td><td><input type="text" name="fileName" size="50" value="MD1.flv"/></td></tr>
+    <tr title="in pixels"><td>movie width</td><td><input type="text" name="moviewidth" size="10" value="352"/></td></tr>
+    <tr title="in pixels"><td>movie height</td><td><input type="text" name="movieheight" size="10" value="288"/></td></tr>
+    <tr>
+      <input type="button" value="loadEAF" onclick="$('scriptFrame').src=this.form.unitName.value"/>
+      <input type="button" value="readEAF" onclick="tierManager.init('scriptFrame','theForm')"/>
+      <input type="button" value="genHTML" 
+         onclick="this.form.ta.value=tierManager.genHTML()"/>
+      <input type="button" value="showDoc" onclick="alert($('scriptFrame').contentDocument.getElementsByTagName('ANNOTATION_DOCUMENT')[0])" />
+    </tr>
+  </table>
+  <table><tr>
+     <td><textarea name="tierTypeTA" rows="5" cols="20">hidden
+script
+comm subject
+comm grammar</textarea></td>
+     </tr>
+  </table>
+
+  <textarea title="copy the unit from this textarea into the actual unit.html file"
+    name="ta" rows="10" cols="120"></textarea><br/>
+</form>
+<iframe name="scriptFrame" id="scriptFrame" title="the source file should appear in here" width="1000px" height="55000px">
+</iframe>
+  </body>
+</html>
+

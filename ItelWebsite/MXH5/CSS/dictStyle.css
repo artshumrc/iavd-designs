@@ -1,0 +1,42 @@
+* { padding:0px; margin:0px; }
+
+#container {
+	background-color:#DAE6E6; 
+	width: 99%; max-width: 100%; padding-top: 10px;}
+
+#glossTable {
+  margin-left: 20px; margin-right: 5px;
+  border-bottom: 1px solid #009DDC; 
+  border-right: 0px; border-left: 0px; 
+  font-size: 12px; font-family: verdana, helvetica, sans-serif; text-align: left; 
+  color: #0076a5; 
+  table-layout: fixed; width: 95%;
+}
+
+td {border: none;}
+
+#glossTable td {
+  border-bottom: 1px solid #009DDC; padding: 5px;
+}
+
+.ntPatList {display:none}
+.ntExList {
+  display: none;
+}  
+.selected {background-color:white}
+.ntTriples {display: none}
+
+.ntTerm {
+  border-right: 1px solid #009DDC;  
+  font-weight: bold; color:#43895c; 
+  width: 25%;  
+}
+.ntPos {
+  width: 5%;
+  border-right: 1px solid #009DDC; 
+  padding:0;
+}
+.ntDesc {
+  width: 70%; 
+}
+.ntDef.selected {background-color:white;}

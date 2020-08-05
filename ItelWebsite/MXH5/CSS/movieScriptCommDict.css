@@ -1,0 +1,20 @@
+   body{ background : url(null) fixed no-repeat; }
+  #glossDiv {
+  position: absolute; bottom: 0px; left: 0px; 
+  background-color:red;overflow:auto;height:50%;width:40%;}
+  
+  #movieDiv {position: absolute;  top: 0px; left: 0px; 
+  background-color:gray;overflow:auto;height:50%;width:40%;}
+  
+  #scriptDiv {position: absolute; top: 0px;  right: 0px; 
+  background-color:red;overflow:auto;height:50%;width:60%;}
+  
+  #commDiv {position: absolute;  bottom: 0px;  right: 0px;
+  background-color:red;overflow:auto;height:50%;width:60%;}
+  
+  div.subject { background : lightgray; }
+  div.grammar {background : white; }
+   .selected {background-color:yellow;border:2px solid black;}
+
+   div.padding {width:100px;height:600px;}
+.comm em {padding: 3pt;}

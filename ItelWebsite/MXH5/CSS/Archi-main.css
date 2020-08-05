@@ -1,0 +1,25 @@
+span {display:block; padding:4px;}
+  
+
+span._sh {display:none;}
+span.id {font-size: large; font-family:"Charis SIL", "Gentium", "Lucida Sans Unicode";}
+span.ref {margin-top:1em; font-weight:bold; font-size:90%; font-family: "Times New Roman", Times, serif; border-top:2px;border-top-style:solid;}
+  
+span.txr {color:blue;}
+
+span.tx {display:table; margin-top:2px; color:maroon;}
+  
+span.mb {color:black; display:table-row;}
+  
+span.ge {color:black; display:table-row; font-size:85%; font-family: "Times New Roman", Times, serif;}
+  
+span.comment {color:red; font-style:italic;}
+span.ps {color:green; display:table-row;}
+  
+span.cat {display:none;}
+span.class {color:blue; font-weight:bold; font-size: 75%; font-family: Tahoma, "Courier New", Courier, monospace; display:table-row;}
+
+.col {display:table-cell; border:0px; border-style:groove; margin:auto; padding:0px 4px;}
+.subcol {display:table-cell; margin:0px; padding:0px; border:0px;}
+
+input {font-family:"Charis SIL", "Gentium", "Lucida Sans Unicode";}

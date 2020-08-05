@@ -1,0 +1,1142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ANNOTATION_DOCUMENT AUTHOR="" DATE="2013-06-11T07:14:11-05:00" FORMAT="2.7" VERSION="2.7" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.mpi.nl/tools/elan/EAFv2.7.xsd">
+    <HEADER MEDIA_FILE="" TIME_UNITS="milliseconds">
+        <MEDIA_DESCRIPTOR MEDIA_URL="file:///C:/dropbox/Dropbox/Itelmen AV Project (1)/ELAN/Ono/lEmlEm03/lEmlEm_it.wav" MIME_TYPE="audio/x-wav" RELATIVE_MEDIA_URL="./lEmlEm_it.wav"/>
+        <PROPERTY NAME="lastUsedAnnotationId">312</PROPERTY>
+    </HEADER>
+    <TIME_ORDER>
+        <TIME_SLOT TIME_SLOT_ID="ts1" TIME_VALUE="1"/>
+        <TIME_SLOT TIME_SLOT_ID="ts2" TIME_VALUE="14945"/>
+        <TIME_SLOT TIME_SLOT_ID="ts3" TIME_VALUE="14999"/>
+        <TIME_SLOT TIME_SLOT_ID="ts4" TIME_VALUE="29133"/>
+        <TIME_SLOT TIME_SLOT_ID="ts5" TIME_VALUE="29210"/>
+        <TIME_SLOT TIME_SLOT_ID="ts6" TIME_VALUE="37200"/>
+        <TIME_SLOT TIME_SLOT_ID="ts7" TIME_VALUE="37234"/>
+        <TIME_SLOT TIME_SLOT_ID="ts8" TIME_VALUE="58800"/>
+        <TIME_SLOT TIME_SLOT_ID="ts9" TIME_VALUE="58849"/>
+        <TIME_SLOT TIME_SLOT_ID="ts10" TIME_VALUE="67508"/>
+        <TIME_SLOT TIME_SLOT_ID="ts11" TIME_VALUE="70852"/>
+        <TIME_SLOT TIME_SLOT_ID="ts12" TIME_VALUE="72810"/>
+        <TIME_SLOT TIME_SLOT_ID="ts13" TIME_VALUE="72936"/>
+        <TIME_SLOT TIME_SLOT_ID="ts14" TIME_VALUE="77703"/>
+        <TIME_SLOT TIME_SLOT_ID="ts15" TIME_VALUE="77879"/>
+        <TIME_SLOT TIME_SLOT_ID="ts16" TIME_VALUE="82280"/>
+        <TIME_SLOT TIME_SLOT_ID="ts17" TIME_VALUE="82324"/>
+        <TIME_SLOT TIME_SLOT_ID="ts18" TIME_VALUE="90000"/>
+        <TIME_SLOT TIME_SLOT_ID="ts19" TIME_VALUE="90090"/>
+        <TIME_SLOT TIME_SLOT_ID="ts20" TIME_VALUE="92389"/>
+        <TIME_SLOT TIME_SLOT_ID="ts21" TIME_VALUE="92410"/>
+        <TIME_SLOT TIME_SLOT_ID="ts22" TIME_VALUE="93760"/>
+        <TIME_SLOT TIME_SLOT_ID="ts23" TIME_VALUE="93779"/>
+        <TIME_SLOT TIME_SLOT_ID="ts24" TIME_VALUE="95873"/>
+        <TIME_SLOT TIME_SLOT_ID="ts25" TIME_VALUE="95916"/>
+        <TIME_SLOT TIME_SLOT_ID="ts26" TIME_VALUE="100513"/>
+        <TIME_SLOT TIME_SLOT_ID="ts27" TIME_VALUE="100541"/>
+        <TIME_SLOT TIME_SLOT_ID="ts28" TIME_VALUE="103770"/>
+        <TIME_SLOT TIME_SLOT_ID="ts29" TIME_VALUE="103836"/>
+        <TIME_SLOT TIME_SLOT_ID="ts30" TIME_VALUE="110049"/>
+        <TIME_SLOT TIME_SLOT_ID="ts31" TIME_VALUE="110066"/>
+        <TIME_SLOT TIME_SLOT_ID="ts32" TIME_VALUE="114225"/>
+        <TIME_SLOT TIME_SLOT_ID="ts33" TIME_VALUE="114291"/>
+        <TIME_SLOT TIME_SLOT_ID="ts34" TIME_VALUE="115744"/>
+        <TIME_SLOT TIME_SLOT_ID="ts35" TIME_VALUE="115761"/>
+        <TIME_SLOT TIME_SLOT_ID="ts36" TIME_VALUE="119818"/>
+        <TIME_SLOT TIME_SLOT_ID="ts37" TIME_VALUE="119944"/>
+        <TIME_SLOT TIME_SLOT_ID="ts38" TIME_VALUE="121678"/>
+        <TIME_SLOT TIME_SLOT_ID="ts39" TIME_VALUE="121699"/>
+        <TIME_SLOT TIME_SLOT_ID="ts40" TIME_VALUE="131015"/>
+        <TIME_SLOT TIME_SLOT_ID="ts41" TIME_VALUE="131021"/>
+        <TIME_SLOT TIME_SLOT_ID="ts42" TIME_VALUE="134466"/>
+        <TIME_SLOT TIME_SLOT_ID="ts43" TIME_VALUE="134470"/>
+        <TIME_SLOT TIME_SLOT_ID="ts44" TIME_VALUE="149488"/>
+        <TIME_SLOT TIME_SLOT_ID="ts45" TIME_VALUE="149510"/>
+        <TIME_SLOT TIME_SLOT_ID="ts46" TIME_VALUE="153131"/>
+        <TIME_SLOT TIME_SLOT_ID="ts47" TIME_VALUE="153131"/>
+        <TIME_SLOT TIME_SLOT_ID="ts48" TIME_VALUE="158845"/>
+        <TIME_SLOT TIME_SLOT_ID="ts49" TIME_VALUE="158845"/>
+        <TIME_SLOT TIME_SLOT_ID="ts50" TIME_VALUE="175646"/>
+        <TIME_SLOT TIME_SLOT_ID="ts51" TIME_VALUE="175646"/>
+        <TIME_SLOT TIME_SLOT_ID="ts52" TIME_VALUE="181261"/>
+        <TIME_SLOT TIME_SLOT_ID="ts53" TIME_VALUE="181285"/>
+        <TIME_SLOT TIME_SLOT_ID="ts54" TIME_VALUE="190286"/>
+        <TIME_SLOT TIME_SLOT_ID="ts55" TIME_VALUE="190306"/>
+        <TIME_SLOT TIME_SLOT_ID="ts56" TIME_VALUE="198181"/>
+        <TIME_SLOT TIME_SLOT_ID="ts57" TIME_VALUE="198221"/>
+        <TIME_SLOT TIME_SLOT_ID="ts58" TIME_VALUE="215177"/>
+        <TIME_SLOT TIME_SLOT_ID="ts59" TIME_VALUE="215177"/>
+        <TIME_SLOT TIME_SLOT_ID="ts60" TIME_VALUE="225735"/>
+        <TIME_SLOT TIME_SLOT_ID="ts61" TIME_VALUE="225735"/>
+        <TIME_SLOT TIME_SLOT_ID="ts62" TIME_VALUE="241608"/>
+        <TIME_SLOT TIME_SLOT_ID="ts63" TIME_VALUE="241619"/>
+        <TIME_SLOT TIME_SLOT_ID="ts64" TIME_VALUE="247653"/>
+        <TIME_SLOT TIME_SLOT_ID="ts65" TIME_VALUE="247660"/>
+        <TIME_SLOT TIME_SLOT_ID="ts66" TIME_VALUE="249805"/>
+        <TIME_SLOT TIME_SLOT_ID="ts67" TIME_VALUE="249805"/>
+        <TIME_SLOT TIME_SLOT_ID="ts68" TIME_VALUE="250971"/>
+        <TIME_SLOT TIME_SLOT_ID="ts69" TIME_VALUE="250971"/>
+        <TIME_SLOT TIME_SLOT_ID="ts70" TIME_VALUE="261703"/>
+        <TIME_SLOT TIME_SLOT_ID="ts71" TIME_VALUE="261703"/>
+        <TIME_SLOT TIME_SLOT_ID="ts72" TIME_VALUE="276833"/>
+        <TIME_SLOT TIME_SLOT_ID="ts73" TIME_VALUE="276838"/>
+        <TIME_SLOT TIME_SLOT_ID="ts74" TIME_VALUE="280221"/>
+        <TIME_SLOT TIME_SLOT_ID="ts75" TIME_VALUE="280221"/>
+        <TIME_SLOT TIME_SLOT_ID="ts76" TIME_VALUE="295076"/>
+        <TIME_SLOT TIME_SLOT_ID="ts77" TIME_VALUE="295076"/>
+        <TIME_SLOT TIME_SLOT_ID="ts78" TIME_VALUE="309953"/>
+        <TIME_SLOT TIME_SLOT_ID="ts79" TIME_VALUE="309955"/>
+        <TIME_SLOT TIME_SLOT_ID="ts80" TIME_VALUE="318345"/>
+        <TIME_SLOT TIME_SLOT_ID="ts81" TIME_VALUE="318345"/>
+        <TIME_SLOT TIME_SLOT_ID="ts82" TIME_VALUE="322105"/>
+    </TIME_ORDER>
+    <TIER ANNOTATOR="CO" LINGUISTIC_TYPE_REF="default-lt" PARTICIPANT="ADI" TIER_ID="itl IPA">
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a43" TIME_SLOT_REF1="ts1" TIME_SLOT_REF2="ts2">
+                <ANNOTATION_VALUE>itʼ qaʔta, wančk kzunɬquknen čʼamzaleʔn, i xoqen qnʲiŋenk, kasχank sʲemʲjank raznojank kʼənsχtiʔn nin nʲenʲekeʔnč, qnʲiŋ iɸɬχʔin, a qulaʔan sine wimsxčχʔin.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a2" TIME_SLOT_REF1="ts3" TIME_SLOT_REF2="ts4">
+                <ANNOTATION_VALUE>i tχeank χelaʔn kzəlʔiʔn,  enu parnʲiškaʔnɬ kʼočʼin ləmləm, sine dʲefkačχ kʼočʼin jeməlq.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a3" TIME_SLOT_REF1="ts5" TIME_SLOT_REF2="ts6">
+                <ANNOTATION_VALUE>jaq qaʔt plaχaʔn kʼlekneʔn i kʼəsχtikneʔn i kʼŋaɬxaɬqzukneʔn.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a4" TIME_SLOT_REF1="ts7" TIME_SLOT_REF2="ts8">
+                <ANNOTATION_VALUE>v eto vreme məziniʔn plaχaʔn enuʔn iɸɬχeʔn ksxeziqukneʔn i enunk ŋejenk tawɬonk, štobi qojaʔnč txiink ɬes, a əŋqanu, tχeank sine nənč txin kʼəntxlaqzukneʔn i kχeneknen.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a5" TIME_SLOT_REF1="ts9" TIME_SLOT_REF2="ts10">
+                <ANNOTATION_VALUE>"davaj ne omokom məzank qzalʲtxč, nu fsʲo ravno χaɬč ničxalq ŋaɬxqzaaɬč, nada tχəltχəl tɸɬkes."</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a6" TIME_SLOT_REF1="ts11" TIME_SLOT_REF2="ts12">
+                <ANNOTATION_VALUE>ləmləm qneŋ kχeneknen.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a7" TIME_SLOT_REF1="ts13" TIME_SLOT_REF2="ts14">
+                <ANNOTATION_VALUE>"tsxeziaɬkičen ne, tolʲka nada navʲerna nʲevesta predpredʲit iɬes."</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a8" TIME_SLOT_REF1="ts15" TIME_SLOT_REF2="ts16">
+                <ANNOTATION_VALUE>qneŋ kpikiknen i ləmləm jeməlqank kχenequknen.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a9" TIME_SLOT_REF1="ts17" TIME_SLOT_REF2="ts18">
+                <ANNOTATION_VALUE>"kma ne tsxeziaɬkičen sʲejčas, qojačin tχəltχəl tɬaɬkičen, ktepaʔn možet ntɬəmaɬeʔn."</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a10" TIME_SLOT_REF1="ts19" TIME_SLOT_REF2="ts20">
+                <ANNOTATION_VALUE>nu i jeməlq qneŋ kχeneknen.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a11" TIME_SLOT_REF1="ts21" TIME_SLOT_REF2="ts22">
+                <ANNOTATION_VALUE>"qsxezixč."</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a12" TIME_SLOT_REF1="ts23" TIME_SLOT_REF2="ts24">
+                <ANNOTATION_VALUE>qenk kprovazaqzuin nin.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a13" TIME_SLOT_REF1="ts25" TIME_SLOT_REF2="ts26">
+                <ANNOTATION_VALUE>itʼe kijenk kʼəŋkɬqukneʔn, xoqen kʼelʲčkuin nin tswetkaʔnč nʲezabutkaʔnč, i qneŋ kχeneknen.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a14" TIME_SLOT_REF1="ts27" TIME_SLOT_REF2="ts28">
+                <ANNOTATION_VALUE>"tixt knank tswetkaʔnč, zaq kma əntxaq."</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a257" TIME_SLOT_REF1="ts29" TIME_SLOT_REF2="ts30">
+                <ANNOTATION_VALUE>i qneŋ tswetkaʔnč nen əŋqanu, kʼəzuin nin ənank karmanank ləmləmank.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a16" TIME_SLOT_REF1="ts31" TIME_SLOT_REF2="ts32">
+                <ANNOTATION_VALUE>"qkʼoɬqes ne lʲi tkzuquaɬin kza."</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a17" TIME_SLOT_REF1="ts33" TIME_SLOT_REF2="ts34">
+                <ANNOTATION_VALUE>ləmləm qneŋ kχeneknen.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a18" TIME_SLOT_REF1="ts35" TIME_SLOT_REF2="ts36">
+                <ANNOTATION_VALUE>"zaq enu čʼexčʼeɬ kʼenezikaq, fsʲo ravno knank tkʼoɬaɬkičen."</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a19" TIME_SLOT_REF1="ts37" TIME_SLOT_REF2="ts38">
+                <ANNOTATION_VALUE>nu i ksxezikneʔn.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a20" TIME_SLOT_REF1="ts39" TIME_SLOT_REF2="ts40">
+                <ANNOTATION_VALUE>nu i dʲiwna qaʔta osʲenʲju ksxezikneʔn, a sinex qaʔt itʼe kij kʼejpaɬqzuknen, miɬ itχ kʼrajtkneʔn enuʔn oxotnʲikaʔn.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a21" TIME_SLOT_REF1="ts41" TIME_SLOT_REF2="ts42">
+                <ANNOTATION_VALUE>a sine ləmləm xoqen i kkzeɬknen tawɬonk.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a22" TIME_SLOT_REF1="ts43" TIME_SLOT_REF2="ts44">
+                <ANNOTATION_VALUE>lʲi čʼinəŋlaχ xoqen enu wimsxčaχ nin kʼelʲčkuin nin, min čʼinəŋq kčʼiŋniɬqzuknen, kkokazoquknen čʼinəŋq, i qneŋ xoqen i kkzeɬknen i jeməlq nin safsʲem kʼəntxaʔan nin.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a23" TIME_SLOT_REF1="ts45" TIME_SLOT_REF2="ts46">
+                <ANNOTATION_VALUE>dʲiwna xoqen tseloj got kzunɬqzuknen.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a24" TIME_SLOT_REF1="ts47" TIME_SLOT_REF2="ts48">
+                <ANNOTATION_VALUE>a potom quneɬeŋ kpikiknen ktepaʔnk enu oxotʲeɬnoŋ.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a25" TIME_SLOT_REF1="ts49" TIME_SLOT_REF2="ts50">
+                <ANNOTATION_VALUE>kʼuratknen i skalank i kʼəlʲčknen, i prosta wonk karmanank xkʼeʔn enu ktniɬʔiʔn nin, i xoxal kʼəntsʔiʔn nin tswetkaʔnč enuʔn nʲezabutkaʔnč, i qneŋ nin kʼəntxeɬknen nin jeməlqčaχ.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a26" TIME_SLOT_REF1="ts51" TIME_SLOT_REF2="ts52">
+                <ANNOTATION_VALUE> i qneŋ atnoŋ kʼrajtknen i enu ŋičenk novojank kχeneknen.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a28" TIME_SLOT_REF1="ts53" TIME_SLOT_REF2="ts54">
+                <ANNOTATION_VALUE>"kma ne atnoŋ tsxeziaɬkičen, i sʲejčas təmtəm tskəaɬčen i tsxeziaɬkičen atnoŋ."</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a29" TIME_SLOT_REF1="ts55" TIME_SLOT_REF2="ts56">
+                <ANNOTATION_VALUE>qneŋ nin lʲi niqa nin kskʼan enu təmtəm i wotk kʼrajtqzuknen kijenχal atnoŋ.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a30" TIME_SLOT_REF1="ts57" TIME_SLOT_REF2="ts58">
+                <ANNOTATION_VALUE>a sine jeməlqčaχ sine enu wodʲeren (əzan) enu kɬalequknen kijenk lʲi pəlq nin kkzuquin enu əŋqanu, ləmləm, a ləmləm fsʲo kʼutuquknen kʼoɬaɬki.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a31" TIME_SLOT_REF1="ts59" TIME_SLOT_REF2="ts60">
+                <ANNOTATION_VALUE>i potom em lʲi pəlq kčačaqzuknen, zaimkank kɬalequknen, xoqen ulʲulʲaχ sopkačχ kɬquknen, xoqen wank ɬawolatezin kčačaqzuknen.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a32" TIME_SLOT_REF1="ts61" TIME_SLOT_REF2="ts62">
+                <ANNOTATION_VALUE>ɬakəlnu xoqen potom enuʔn kəɬɸaʔn kskqzukneʔn i wonk i kʼisχknen, potom miɬ prastoj məzməs kɬqzuknen enu mesta, lʲi nin qečʼiq zalʲit kʼiɬʔin.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a290" TIME_SLOT_REF1="ts63" TIME_SLOT_REF2="ts64">
+                <ANNOTATION_VALUE>i itʼe ləmləm kkʼoɬknen, atnoŋ kʼrajtknen i qneŋ nin kpəŋloqzuʔan.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a34" TIME_SLOT_REF1="ts65" TIME_SLOT_REF2="ts66">
+                <ANNOTATION_VALUE>"ma za kəman jeməlqčaχ?"</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a35" TIME_SLOT_REF1="ts67" TIME_SLOT_REF2="ts68">
+                <ANNOTATION_VALUE>qneŋ ənank kχeneknen.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a36" TIME_SLOT_REF1="ts69" TIME_SLOT_REF2="ts70">
+                <ANNOTATION_VALUE>"knin jeməlq χi enu zaimkank ɬaleqzuin, xoqen wodʲeren čačaqzuin, tʲeperʲ ɬəŋəɬiin kʼoɬetki, qaʔt miɬ nin enu miɬ prastoj məzməs kʼleknen."</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a37" TIME_SLOT_REF1="ts71" TIME_SLOT_REF2="ts72">
+                <ANNOTATION_VALUE>i qneŋ ləmləm kpikiknen enun mestank zaimkank, səmtank owekonɬ nin ktkəlʔin i kʼelɸskowaɬquknen, i qneŋ lʲi mečʼaq ma nin kʼilɸsqzuin nin kotχ na nočʼesčen.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a38" TIME_SLOT_REF1="ts73" TIME_SLOT_REF2="ts74">
+                <ANNOTATION_VALUE>"ləmləm, ləmləm…"</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a39" TIME_SLOT_REF1="ts75" TIME_SLOT_REF2="ts76">
+                <ANNOTATION_VALUE>i na qneŋ xkʼeɬ enu lʲi nin ktawolatquknen səmt, ma tawolatesčiŋnen səmt, qneŋ xoqen ləmləm esatezin i qneŋ i vezdʲe wonk i kɬalxteqzuknen.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a291" TIME_SLOT_REF1="ts77" TIME_SLOT_REF2="ts78">
+                <ANNOTATION_VALUE>i ma na xkʼeʔn kʼuzuquin nin ma səmt tawolatqzusčiŋnen i ma enu kʼilɸsquʔin nin mank na nočʼesčen jeməlqčχank, qneŋ xoqen ləmləm kʼesqzuknen.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a41" TIME_SLOT_REF1="ts79" TIME_SLOT_REF2="ts80">
+                <ANNOTATION_VALUE>vot wonk i məzin i kskknan enu jeməlq, ma tʲeperʲ jeməlq obʲazatʲelʲno ɬqzuzin ləmləm.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a42" TIME_SLOT_REF1="ts81" TIME_SLOT_REF2="ts82">
+                <ANNOTATION_VALUE>qaʔt i miɬ i tʼlakičen.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+    </TIER>
+    <TIER ANNOTATOR="CO" LINGUISTIC_TYPE_REF="Free Translation" PARENT_REF="itl IPA" PARTICIPANT="ADI" TIER_ID="EngFT-cp">
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a132" ANNOTATION_REF="a43">
+                <ANNOTATION_VALUE>A long time ago, there lived people upstream. There were two families. One child was born in each family. One of the children was a boy, and the other was a girl.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a133" ANNOTATION_REF="a2">
+                <ANNOTATION_VALUE>The boy was named Lemlem, and the girl was named Yemalq.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a134" ANNOTATION_REF="a3">
+                <ANNOTATION_VALUE>They grew up and wanted to marry each other.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a135" ANNOTATION_REF="a4">
+                <ANNOTATION_VALUE>At this time, the adult men departed for the mountains where koryaks live in order to hunt reindeers, while we gave fish to the koryaks. They carried fish and said,</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a136" ANNOTATION_REF="a5">
+                <ANNOTATION_VALUE>"Well, let's go together, anyway you will marry soon, and you will need to provide meat."</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a137" ANNOTATION_REF="a6">
+                <ANNOTATION_VALUE>Lemlem immediately said,</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a138" ANNOTATION_REF="a7">
+                <ANNOTATION_VALUE>"I will go, but I have to let my fiancée know beforehand."</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a139" ANNOTATION_REF="a8">
+                <ANNOTATION_VALUE>Lemlem immediately went to Yemalk and told her,</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a140" ANNOTATION_REF="a9">
+                <ANNOTATION_VALUE>"I am leaving now, I will bring back reindeer meat, maybe we will kill snow sheep."</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a141" ANNOTATION_REF="a10">
+                <ANNOTATION_VALUE>Yemalk said immediately,</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a142" ANNOTATION_REF="a11">
+                <ANNOTATION_VALUE>"Go."</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a143" ANNOTATION_REF="a12">
+                <ANNOTATION_VALUE>She saw him off.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a144" ANNOTATION_REF="a13">
+                <ANNOTATION_VALUE>When they neared the river, she saw forget-me-not flowers and she said,</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a145" ANNOTATION_REF="a14">
+                <ANNOTATION_VALUE>"Here, take these flowers. Do not forget me."</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a258" ANNOTATION_REF="a257">
+                <ANNOTATION_VALUE>And she immediately put the flowers in Lemlem's pocket.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a147" ANNOTATION_REF="a16">
+                <ANNOTATION_VALUE>"Come back, I will be waiting for you."</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a148" ANNOTATION_REF="a17">
+                <ANNOTATION_VALUE>LemLem said immediately:</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a149" ANNOTATION_REF="a18">
+                <ANNOTATION_VALUE>"Don't worry, I will come back to you."</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a150" ANNOTATION_REF="a19">
+                <ANNOTATION_VALUE>And they left.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a151" ANNOTATION_REF="a20">
+                <ANNOTATION_VALUE>They were gone for a long time. When the river was covered with ice, the hunters came back home.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a152" ANNOTATION_REF="a21">
+                <ANNOTATION_VALUE>However, Lemlem has stayed behind with the koryaks.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a153" ANNOTATION_REF="a22">
+                <ANNOTATION_VALUE>He had met a beautiful woman, who sewed well and cooked well, so he stayed there and completely forgot about Yemalq.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a154" ANNOTATION_REF="a23">
+                <ANNOTATION_VALUE>He lived there for a long time, for an entire year.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a155" ANNOTATION_REF="a24">
+                <ANNOTATION_VALUE>Once, he went hunting for snow sheep.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a156" ANNOTATION_REF="a25">
+                <ANNOTATION_VALUE>He became tired and lay down. He put his hands in his pocket and pulled out the forget-me-nots. He immediately remembered Yemalq.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a259" ANNOTATION_REF="a26">
+                <ANNOTATION_VALUE>He went home straight away and said to his new wife,</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a158" ANNOTATION_REF="a28">
+                <ANNOTATION_VALUE>"I will go home. Now, I will make a raft and go home."</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a159" ANNOTATION_REF="a29">
+                <ANNOTATION_VALUE>He quickly built a raft and went home by traveling along the river.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a160" ANNOTATION_REF="a30">
+                <ANNOTATION_VALUE>Yemalq had stayed near the river to wait for Lemlem, but he did not come.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a161" ANNOTATION_REF="a31">
+                <ANNOTATION_VALUE>Yemalq cried so much, and she went to Zaimka, which is a hill. She sat down on top of the hill and cried.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a162" ANNOTATION_REF="a32">
+                <ANNOTATION_VALUE>From her tears a pond was formed, and she died. Afterward only the tears remained, and the place became very wet.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a292" ANNOTATION_REF="a290">
+                <ANNOTATION_VALUE>As soon as Lemlem reached home, he asked,</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a164" ANNOTATION_REF="a34">
+                <ANNOTATION_VALUE>"Where is my Yemalq?"</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a165" ANNOTATION_REF="a35">
+                <ANNOTATION_VALUE>They told him immediately,</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a166" ANNOTATION_REF="a36">
+                <ANNOTATION_VALUE>"Your Yemalq used to go to Zaimka, where she always cried. Now she has stopped going there, she has became just tears."</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a167" ANNOTATION_REF="a37">
+                <ANNOTATION_VALUE>Lemlem immediately went to Zaimka. He lay down to the earth and listened attentively. As if he heard his name calling,</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a168" ANNOTATION_REF="a38">
+                <ANNOTATION_VALUE>"Lemlem, Lemlem..."</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a169" ANNOTATION_REF="a39">
+                <ANNOTATION_VALUE>He held onto the earth. The earth that he held was covered with moss.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a293" ANNOTATION_REF="a291">
+                <ANNOTATION_VALUE>The moss grew on the place where he put his arms, where he held the earth and where Yemalq called his name.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a171" ANNOTATION_REF="a41">
+                <ANNOTATION_VALUE>This is how our tundra was formed. Now where there is tundra, there must be moss.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a172" ANNOTATION_REF="a42">
+                <ANNOTATION_VALUE>I have told you the entire story.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+    </TIER>
+    <TIER ANNOTATOR="CO" DEFAULT_LOCALE="ja" LINGUISTIC_TYPE_REF="Free Translation" PARENT_REF="itl IPA" PARTICIPANT="ADI" TIER_ID="JpnFT-cp">
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a173" ANNOTATION_REF="a43">
+                <ANNOTATION_VALUE>昔々、上流に人々が暮らしていた。そこで、一つ目、二つ目の別々の家族に子供が生まれた。一人は男の子、もう一人は女の子だった。</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a174" ANNOTATION_REF="a2">
+                <ANNOTATION_VALUE>男の子はルムルム、女の子はイェーマルクと名付けられた。</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a175" ANNOTATION_REF="a3">
+                <ANNOTATION_VALUE>彼らはすでに大きく成長し、結婚を望んでいた。</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a176" ANNOTATION_REF="a4">
+                <ANNOTATION_VALUE>この時期、我々の成人男子は魚と引き換えにトナカイを得るため、あの山脈のコリャークのところに出かけていた。魚を運び、ルムルムに言った。</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a177" ANNOTATION_REF="a5">
+                <ANNOTATION_VALUE>「さあ、私たちと一緒に追って行こう、どちらにせよおまえはもうすぐ結婚するんだろ、早く肉を持って帰らなければ。」</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a178" ANNOTATION_REF="a6">
+                <ANNOTATION_VALUE>ルムルムはすぐに言った。</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a179" ANNOTATION_REF="a7">
+                <ANNOTATION_VALUE>「行くよ。ただ、婚約者に前もって言っておかないと。」</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a180" ANNOTATION_REF="a8">
+                <ANNOTATION_VALUE>ルムルムはすぐに歩き出し、イェーマルクに言った。</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a181" ANNOTATION_REF="a9">
+                <ANNOTATION_VALUE>「僕は今から出発する。トナカイの肉を持って帰るよ。もしかしたらユキヒツジを殺すかも。」</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a182" ANNOTATION_REF="a10">
+                <ANNOTATION_VALUE>イェーマルクはすぐに言った。</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a183" ANNOTATION_REF="a11">
+                <ANNOTATION_VALUE>「行きなさい。」</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a184" ANNOTATION_REF="a12">
+                <ANNOTATION_VALUE>彼は見送られた。</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a185" ANNOTATION_REF="a13">
+                <ANNOTATION_VALUE>池に近づいた時、そこで勿忘草の花を見て、すぐに言った。</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a186" ANNOTATION_REF="a14">
+                <ANNOTATION_VALUE>「ほら、あなたに花をあげる。私を忘れないで。」</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a260" ANNOTATION_REF="a257">
+                <ANNOTATION_VALUE>そしてすぐに花をルムルムのポケットに入れた。</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a188" ANNOTATION_REF="a16">
+                <ANNOTATION_VALUE>「帰ってきて。ずっとあなたを待ってる。」</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a189" ANNOTATION_REF="a17">
+                <ANNOTATION_VALUE>ルムルムはすぐに言った。</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a190" ANNOTATION_REF="a18">
+                <ANNOTATION_VALUE>「余計な事を考えるな。いずれにせよ僕は君の所に戻ってくるよ。」</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a191" ANNOTATION_REF="a19">
+                <ANNOTATION_VALUE>そして彼らは出発した。</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a192" ANNOTATION_REF="a20">
+                <ANNOTATION_VALUE>秋にはすでに出発した。一方川がすでに氷に被われた頃、彼ら狩人たちはみな家に帰った。</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a193" ANNOTATION_REF="a21">
+                <ANNOTATION_VALUE>一方ルムルムはコリャークたちの所に残った。</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a194" ANNOTATION_REF="a22">
+                <ANNOTATION_VALUE>そこでとても美しく、縫物や料理のうまい女を見て、すぐにそこに残った。そして彼はイェーマルクをすっかり忘れた。</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a195" ANNOTATION_REF="a23">
+                <ANNOTATION_VALUE>彼は長いこと、まる一年そこで暮らした。</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a196" ANNOTATION_REF="a24">
+                <ANNOTATION_VALUE>その後、ある時ユキヒツジを狩りに出かけた。</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a197" ANNOTATION_REF="a25">
+                <ANNOTATION_VALUE>疲れて、断崖の上に横になった。そしてふとポケットに手を突っ込んで、あの勿忘草を引っ張り出した。すぐに彼はイェーマルクのことを思い出した。</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a261" ANNOTATION_REF="a26">
+                <ANNOTATION_VALUE>すぐに家に帰って、新しい妻に言った。</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a199" ANNOTATION_REF="a28">
+                <ANNOTATION_VALUE>「僕は故郷に帰る。今いかだを作って、家に帰る。」</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a200" ANNOTATION_REF="a29">
+                <ANNOTATION_VALUE>すぐに急いでいかだを作り、川を下って家に帰った。</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a201" ANNOTATION_REF="a30">
+                <ANNOTATION_VALUE>イェーマルクはいつも川に通い、ルムルムをずっと待っていた。一方ルムルムは帰ってくることができなかった。</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a202" ANNOTATION_REF="a31">
+                <ANNOTATION_VALUE>イェーマルクはその後ずっと泣いていた。ザイムカの小さな丘に登って、泣いたものだった。</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a203" ANNOTATION_REF="a32">
+                <ANNOTATION_VALUE>そこから水たまりができ、イェーマルクは死んだ。ただの涙がそこにあった。この場所は水で濡れた。</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a294" ANNOTATION_REF="a290">
+                <ANNOTATION_VALUE>ルムルムは家に帰って来ると、すぐに尋ねた。</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a205" ANNOTATION_REF="a34">
+                <ANNOTATION_VALUE>「僕のイェーマルクはどこ？」</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a206" ANNOTATION_REF="a35">
+                <ANNOTATION_VALUE>すぐに彼に言った。</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a207" ANNOTATION_REF="a36">
+                <ANNOTATION_VALUE>「おまえのイェーマルクはほら、あのザイムカに行って、いつも泣いていた。今はもう行くのをやめてしまった。もう彼女はただの涙になってしまったんだ。」</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a208" ANNOTATION_REF="a37">
+                <ANNOTATION_VALUE>すぐにルムルムはその場所、ザイムカに行った。彼は地面に体を投げ出すと、耳を澄ました。するとどこか遠くから自分の名を呼ぶ声が聞こえたようだった。</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a209" ANNOTATION_REF="a38">
+                <ANNOTATION_VALUE>「ルムルム、ルムルム…」</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a210" ANNOTATION_REF="a39">
+                <ANNOTATION_VALUE>彼はすぐに地面を強く抱きしめた。その場所にはすぐに苔が生え、辺り一面を覆った。</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a295" ANNOTATION_REF="a291">
+                <ANNOTATION_VALUE>彼が腕を置いた場所、地面を抱いた場所、そしてイェーマルクが彼を呼んだ場所に苔が生えた。</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a212" ANNOTATION_REF="a41">
+                <ANNOTATION_VALUE>このようにして私たちのツンドラは出来たのである。今ではツンドラがあるところには必ずコケが生えているのだ。</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a213" ANNOTATION_REF="a42">
+                <ANNOTATION_VALUE>これでおしまい。</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+    </TIER>
+    <TIER ANNOTATOR="CO" LINGUISTIC_TYPE_REF="Free Translation" PARENT_REF="itl IPA" PARTICIPANT="ADI" TIER_ID="itl Cyr">
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a262" ANNOTATION_REF="a43">
+                <ANNOTATION_VALUE>итʼ ӄаʔта, ванчк кзунԓӄукнэн чʼамзалэʔн, и хоӄэн ӄњиӈэнк, касӽанк семьянк разнойанк кʼәнсӽтиʔн нын њэњэкэʔнч, ӄњиӈ ифԓӽʔин, а ӄулаʔн синэ вимсхчӽʔин. </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a263" ANNOTATION_REF="a2">
+                <ANNOTATION_VALUE>и тӽэанк ӽэлаʔн кзәлʔиʔн, эну парњишкаʔнԓ кʼочʼин ләмләм, синэ дефкачӽ кʼочʼин йэмәлӄ.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a264" ANNOTATION_REF="a3">
+                <ANNOTATION_VALUE>йаӄ ӄаʔт плаӽаʔн кʼлэкнэʔн и кʼәсӽтикнэʔн и кʼӈаԓхаԓӄзукнэʔн.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a265" ANNOTATION_REF="a4">
+                <ANNOTATION_VALUE>в это врэмэ мәзыныʔн плаӽаʔн энуʔн ифԓӽэʔн ксхэзыӄукнэʔн и энунк ӈэйэнк тавԓонк, чтобы ӄойаʔнч тхиинк ԓэс, а әӈӄану, тӽэанк синэ нәнч тхин кʼәнтхлаӄзукнэʔн и кӽэнэкнэн:</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a266" ANNOTATION_REF="a5">
+                <ANNOTATION_VALUE>— давай нэ омоком мәзанк ӄзаљтхч, ну всё равно ӽаԓч нычхалӄ ӈаԓхӄзааԓч, нада тӽәлтӽәл тфԓкэс.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a267" ANNOTATION_REF="a6">
+                <ANNOTATION_VALUE>ләмләм ӄнэӈ кӽэнэкнэн:</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a268" ANNOTATION_REF="a7">
+                <ANNOTATION_VALUE>— тсхэзыаԓкичэн нэ, только нада наверна њэвеста предпредыт иԓэс.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a269" ANNOTATION_REF="a8">
+                <ANNOTATION_VALUE>ӄнэӈ кпикикнэн и ләмләм йэмәлӄанк кӽэнэӄукнэн:</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a270" ANNOTATION_REF="a9">
+                <ANNOTATION_VALUE>— кма нэ тсхэзыаԓкичэн сейчас, ӄойачин тӽәлтӽәл тԓаԓкичэн, ктэпаʔн может нтԓәмаԓэʔн.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a271" ANNOTATION_REF="a10">
+                <ANNOTATION_VALUE>ну и йэмәлӄ ӄнэӈ кӽэнэкнэн:</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a272" ANNOTATION_REF="a11">
+                <ANNOTATION_VALUE>— ӄсхэзыхч.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a273" ANNOTATION_REF="a12">
+                <ANNOTATION_VALUE>ӄэнк кпровазаӄзуин нын.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a274" ANNOTATION_REF="a13">
+                <ANNOTATION_VALUE>итʼэ кийэнк кʼәӈкԓӄукнэʔн, хоӄэн кʼэљчкуин нын цвэткаʔнч њэзабуткаʔнч, и ӄнэӈ кӽэнэкнэн:</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a275" ANNOTATION_REF="a14">
+                <ANNOTATION_VALUE>— тыхт кнанк цвэткаʔнч, заӄ кма әнтхаӄ.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a276" ANNOTATION_REF="a257">
+                <ANNOTATION_VALUE>и ӄнэӈ цвэткаʔнч нэн әӈӄану, кʼәзуин нын әнанк кармананк ләмләманк.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a277" ANNOTATION_REF="a16">
+                <ANNOTATION_VALUE>— ӄкʼоԓӄэс нэ љи ткзуӄуаԓин кза.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a278" ANNOTATION_REF="a17">
+                <ANNOTATION_VALUE>ләмләм ӄнэӈ кӽэнэкнэн:</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a279" ANNOTATION_REF="a18">
+                <ANNOTATION_VALUE>— заӄ эну чʼэхчʼэԓ кʼэнэзыкаӄ, всё равно кнанк ткʼоԓаԓкичэн.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a280" ANNOTATION_REF="a19">
+                <ANNOTATION_VALUE>ну и ксхэзыкнэʔн.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a281" ANNOTATION_REF="a20">
+                <ANNOTATION_VALUE>ну и дивна ӄаʔта осенью ксхэзыкнэʔн, а синэх ӄаʔт итʼэ кий кʼэйпаԓӄзукнэн, миԓ итӽ кʼрайткнэʔн энуʔн охотњикаʔн.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a282" ANNOTATION_REF="a21">
+                <ANNOTATION_VALUE>а синэ ләмләм хоӄэн и ккзэԓкнэн тавԓонк.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a283" ANNOTATION_REF="a22">
+                <ANNOTATION_VALUE>љи чʼинәӈлаӽ хоӄэн эну вимсхчаӽ нын кʼэљчкуин нын, мин чʼинәӈӄ кчʼиӈныԓӄзукнэн, ккоказоӄукнэн чʼинәӈӄ, и ӄнэӈ хоӄэн и ккзэԓкнэн и йэмәлӄ нын совсем кʼәнтхаʔан нын.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a284" ANNOTATION_REF="a23">
+                <ANNOTATION_VALUE>дивна хоӄэн целой год кзунԓӄзукнэн.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a285" ANNOTATION_REF="a24">
+                <ANNOTATION_VALUE>а потом ӄунэԓэӈ кпикикнэн ктэпаʔнк эну охотеԓноӈ.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a286" ANNOTATION_REF="a25">
+                <ANNOTATION_VALUE>кʼураткнэн и скаланк и кʼәљчкнэн, и проста вонк кармананк хкʼэʔн эну ктныԓʔиʔн нын, и хохал кʼәнтсʔиʔн нын цвэткаʔнч энуʔн њэзабуткаʔнч, и ӄнэӈ нын кʼәнтхэԓкнэн нын йэмәлӄчаӽ.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a287" ANNOTATION_REF="a26">
+                <ANNOTATION_VALUE>и ӄнэӈ атноӈ кʼрайткнэн и эну ӈичэнк новойанк кӽэнэкнэн:</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a296" ANNOTATION_REF="a28">
+                <ANNOTATION_VALUE>— кма нэ атноӈ тсхэзыаԓкичэн, и сейчас тәмтәм тскәаԓчэн и тсхэзыаԓкичэн атноӈ.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a297" ANNOTATION_REF="a29">
+                <ANNOTATION_VALUE>ӄнэӈ нын љи ныӄа нын кскʼан эну тәмтәм и вотк кʼрайтӄзукнэн кийэнӽал атноӈ.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a298" ANNOTATION_REF="a30">
+                <ANNOTATION_VALUE>а синэ йэмәлӄчаӽ синэ эну водерэн (әзан) эну кԓалэӄукнэн кийэнк љи пәлӄ нын ккзуӄуин эну әӈӄану, ләмләм, а ләмләм всё кʼутуӄукнэн кʼоԓаԓки.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a299" ANNOTATION_REF="a31">
+                <ANNOTATION_VALUE>и потом эм љи пәлӄ кчачаӄзукнэн, заимканк кԓалэӄукнэн, хоӄэн уљуљаӽ сопкачӽ кԓӄукнэн, хоӄэн ванк ԓаволатэзын кчачаӄзукнэн.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a300" ANNOTATION_REF="a32">
+                <ANNOTATION_VALUE>ԓакәлну хоӄэн потом энуʔн кәԓфаʔн кскӄзукнэʔн и вонк и кʼисӽкнэн, потом миԓ простой мәзмәс кԓӄзукнэн эну мэста, љи нын ӄэчʼиӄ заљит кʼиԓʔин.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a301" ANNOTATION_REF="a290">
+                <ANNOTATION_VALUE>и итʼэ ләмләм ккʼоԓкнэн, атноӈ кʼрайткнэн и ӄнэӈ нын кпәӈлоӄзуʔан:</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a302" ANNOTATION_REF="a34">
+                <ANNOTATION_VALUE>— ма за кәман йэмәлӄчаӽ?</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a303" ANNOTATION_REF="a35">
+                <ANNOTATION_VALUE>ӄнэӈ әнанк кӽэнэкнэн:</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a304" ANNOTATION_REF="a36">
+                <ANNOTATION_VALUE>— кнын йэмәлӄ ӽи эну заимканк ԓалэӄзуин, хоӄэн водерэн чачаӄзуин, теперь ԓәӈәԓиин кʼоԓэтки, ӄаʔт миԓ нын эну миԓ простой мәзмәс кʼлэкнэн.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a305" ANNOTATION_REF="a37">
+                <ANNOTATION_VALUE>и ӄнэӈ ләмләм кпикикнэн энун мэстанк заимканк, сәмтанк овэконԓ нын кткәлʔин и кʼэлфсковаԓӄукнэн, и ӄнэӈ љи мэчʼаӄ ма нын кʼилфсӄзуин нын котӽ на ночʼэсчэн:</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a306" ANNOTATION_REF="a38">
+                <ANNOTATION_VALUE>— ләмләм, ләмләм...</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a307" ANNOTATION_REF="a39">
+                <ANNOTATION_VALUE>и на ӄнэӈ хкʼэԓ эну љи нын ктаволатӄукнэн сәмт, ма таволатэсчиӈнэн сәмт, ӄнэӈ хоӄэн ләмләм эсатэзын и ӄнэн везде вонк и кԓалхтэӄзукнэн.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a308" ANNOTATION_REF="a291">
+                <ANNOTATION_VALUE>и ма на хкʼэʔн кʼузуӄуин нын ма сәмт таволатӄзусчиӈнэн и ма эну кʼилфсӄуиʔн нын манк на ночʼэсчэн йэмәлӄчӽанк, ӄнэӈ хоӄэн ләмләм кʼэсӄзукнэн.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a309" ANNOTATION_REF="a41">
+                <ANNOTATION_VALUE>вот вонк и мәзын и ксккнан эну йэмәлӄ, ма теперь йэмәлӄ обязательно ԓӄзузын ләмләм.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a310" ANNOTATION_REF="a42">
+                <ANNOTATION_VALUE>ӄаʔт и миԓ и тʼлакичэн.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+    </TIER>
+    <TIER ANNOTATOR="CO" LINGUISTIC_TYPE_REF="Free Translation" PARENT_REF="itl IPA" PARTICIPANT="ADI" TIER_ID="RusFT-cp">
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a215" ANNOTATION_REF="a43">
+                <ANNOTATION_VALUE>Давным давно в верховыях жили люди и там в одной, в двух семьях разных, родились дети, один мальчик а в другой  девочка.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a216" ANNOTATION_REF="a2">
+                <ANNOTATION_VALUE>И им имена дали. Этого парня назвали Лымлым а девочку назвали Емалк.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a217" ANNOTATION_REF="a3">
+                <ANNOTATION_VALUE>Уже большими стали и повзрослели и хотели жениться.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a218" ANNOTATION_REF="a4">
+                <ANNOTATION_VALUE>В это время наши взрослые мужчины уезжали и в те хребты корякам, чтобы оленей ихних взять, а им а рыбу. И они сказали:</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a219" ANNOTATION_REF="a5">
+                <ANNOTATION_VALUE>— Давай вместе с нами погонись, все равно, пора скоро жениться будешь, надо
+мясо привезти.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a220" ANNOTATION_REF="a6">
+                <ANNOTATION_VALUE>Лымлым сразу сказал:</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a221" ANNOTATION_REF="a7">
+                <ANNOTATION_VALUE>— Поеду, только надо невесту предпредить.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a222" ANNOTATION_REF="a8">
+                <ANNOTATION_VALUE>Сразу пошел и Лымлым Емалк сказал:</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a223" ANNOTATION_REF="a9">
+                <ANNOTATION_VALUE>Я поеду сейчас, оленье мясо привезу, барану может убьем.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a224" ANNOTATION_REF="a10">
+                <ANNOTATION_VALUE>Емалк сразу сказала:</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a225" ANNOTATION_REF="a11">
+                <ANNOTATION_VALUE>— Езжай.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a226" ANNOTATION_REF="a12">
+                <ANNOTATION_VALUE>Провожала его.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a227" ANNOTATION_REF="a13">
+                <ANNOTATION_VALUE>Когда к реке подходили там увидела цветоцки незабутки и сразу сказала:</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a228" ANNOTATION_REF="a14">
+                <ANNOTATION_VALUE>— Вот тебе цветочки, не меня забывай.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a288" ANNOTATION_REF="a257">
+                <ANNOTATION_VALUE>И сразу цветочки положила ему в карман Лымлыма.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a230" ANNOTATION_REF="a16">
+                <ANNOTATION_VALUE>— Приезжай очень ждать буду тебя.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a231" ANNOTATION_REF="a17">
+                <ANNOTATION_VALUE>Лымлым сразу сказал: </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a232" ANNOTATION_REF="a18">
+                <ANNOTATION_VALUE>— Не зря думай, все равно ктебе вернусь.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a233" ANNOTATION_REF="a19">
+                <ANNOTATION_VALUE>Ну и уехал.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a234" ANNOTATION_REF="a20">
+                <ANNOTATION_VALUE>Ну и давно уже осенью уехали а уже когда река вставала все они домой вернулись эти охотники.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a235" ANNOTATION_REF="a21">
+                <ANNOTATION_VALUE>А Лымлым там и остался у коряков.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a236" ANNOTATION_REF="a22">
+                <ANNOTATION_VALUE>очень красивую там эту женщину выгладел, которая хорошо шила, варила хорошо, и сразу там и остался и Емалк он совсем забыл</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a237" ANNOTATION_REF="a23">
+                <ANNOTATION_VALUE>Долго там целый год жил.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a238" ANNOTATION_REF="a24">
+                <ANNOTATION_VALUE>А потом однажды ушел на баранов охотился.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a239" ANNOTATION_REF="a25">
+                <ANNOTATION_VALUE>Устал и на скалу и лек и просто так в карман руки заснул и и оттуда выташил цветоцки те незабутки и сразу он вспомнил Емалк.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a289" ANNOTATION_REF="a26">
+                <ANNOTATION_VALUE>И сразу домой пришел и жене новой сказал:</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a241" ANNOTATION_REF="a28">
+                <ANNOTATION_VALUE>— Я домой уеду и сейчас плот сделаю и уеду домой.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a242" ANNOTATION_REF="a29">
+                <ANNOTATION_VALUE>Сразу он очень быстро он сделал этот плот и сюда домой поехал по реке домой.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a243" ANNOTATION_REF="a30">
+                <ANNOTATION_VALUE>А Емалк а все время ходила на речку, очень сильно она ждала Лымлым, а Лымлым все не мог приехать.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a244" ANNOTATION_REF="a31">
+                <ANNOTATION_VALUE>И потом очень сильно плакала на заимку ходила, там сопочка была там на верху садится, плакала.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a245" ANNOTATION_REF="a32">
+                <ANNOTATION_VALUE>От этого там потом эти лужи сделались и так и поумерла потом все простой слезы были, это место очень сильно залела.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a311" ANNOTATION_REF="a290">
+                <ANNOTATION_VALUE>И когда Лымлым приехал домой приехал и сразу спросил:</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a247" ANNOTATION_REF="a34">
+                <ANNOTATION_VALUE>— Где моя Емалк?</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a248" ANNOTATION_REF="a35">
+                <ANNOTATION_VALUE>Сразу ему ответили:</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a249" ANNOTATION_REF="a36">
+                <ANNOTATION_VALUE>— Твоя Емалк вон там на заимку ходила, там всегда плакала, теперь перестала приходить, уже все она все простой слезы стала.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a250" ANNOTATION_REF="a37">
+                <ANNOTATION_VALUE>И сразу Лымлым пошел к тому месту на заимку на землю сами себя бросил и начал прислушиваться и сразу очень далеко где-то он услышал как будто его зовут:</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a251" ANNOTATION_REF="a38">
+                <ANNOTATION_VALUE>— Лымлым Лымлым...</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a252" ANNOTATION_REF="a39">
+                <ANNOTATION_VALUE>И он сразу рукой эти очень обнимал землю где обнимается землю, сразу там мох расчет и сразу везде так и полз.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a312" ANNOTATION_REF="a291">
+                <ANNOTATION_VALUE>И где он руки ложил где землю обнимается и где это слышал где его зовет Емалк там мох вырастал.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a254" ANNOTATION_REF="a41">
+                <ANNOTATION_VALUE>Вот так и наша сделалась тундра где теперь тундра там обязательно бывает мох.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a255" ANNOTATION_REF="a42">
+                <ANNOTATION_VALUE>Уже все и рассказала.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+    </TIER>
+    <TIER ANNOTATOR="CO" DEFAULT_LOCALE="en" LINGUISTIC_TYPE_REF="Free Translation" PARENT_REF="itl IPA" PARTICIPANT="ADI" TIER_ID="Notes-cp">
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a256" ANNOTATION_REF="a5">
+                <ANNOTATION_VALUE>originally told: "jeməlq, davaj ne omokom..." in which "jeməlq" is an error of the speaker.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+    </TIER>
+    <LINGUISTIC_TYPE GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="default-lt" TIME_ALIGNABLE="true"/>
+    <LINGUISTIC_TYPE CONSTRAINTS="Symbolic_Association" GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="Free Translation" TIME_ALIGNABLE="false"/>
+    <LOCALE COUNTRY_CODE="JP" LANGUAGE_CODE="ja"/>
+    <LOCALE LANGUAGE_CODE="en" VARIANT="ASCII"/>
+    <CONSTRAINT DESCRIPTION="Time subdivision of parent annotation's time interval, no time gaps allowed within this interval" STEREOTYPE="Time_Subdivision"/>
+    <CONSTRAINT DESCRIPTION="Symbolic subdivision of a parent annotation. Annotations refering to the same parent are ordered" STEREOTYPE="Symbolic_Subdivision"/>
+    <CONSTRAINT DESCRIPTION="1-1 association with a parent annotation" STEREOTYPE="Symbolic_Association"/>
+    <CONSTRAINT DESCRIPTION="Time alignable annotations within the parent annotation's time interval, gaps are allowed" STEREOTYPE="Included_In"/>
+</ANNOTATION_DOCUMENT>

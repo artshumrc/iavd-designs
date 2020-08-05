@@ -1,0 +1,92 @@
+/* Lift2Html.css, stylesheet for the Itelmen dictionary */
+/**
+the html structure is
+body
+	div # container (does the centering!!!)
+  div @main_content
+    [script, button, div --- error material, generated only if bad chars are found]
+    div .letData
+                span .letter
+       div .entry
+         span .citation-form_text, or .lexical-unit_form_text
+         other content.
+       ...   
+    ...
+**/
+@charset "UTF-8";
+@import url("../style1.css");
+
+.unlistedLetters {font-size: xx-large; font-weight:bold;   letter-spacing: 5px;}
+
+h1.big {
+	text-align:center;
+	padding-top: 15px;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 28px;
+	font-weight: 400;
+	letter-spacing: 3px;
+	color: #8E1D00;
+}
+option.bigChar {font-size: LARGE}
+
+#errButton {
+	display: block;
+	margin: 4px auto;
+}
+#errLetTable, #errLetHead {margin: 10px auto;}
+
+.hidden {display:none;}
+
+.letter {
+	display:block;
+    text-align: center;
+    width: 99%;
+    margin: 18pt auto;
+    direction: ltr;
+    font-family: "Charis SIL", serif;	/* default Serif font */
+    font-weight: bold;
+    font-size: 24pt;
+	border: solid 3px maroon;
+	background-color: #DCD07C;
+}
+.letData {
+    text-align: left;
+ 	border:solid 3px #600;
+	margin: 2px auto;
+}
+.entry {
+    font-family: "Lucida Sans Unicode", serif;	/* inherited */
+    font-size: 14pt;	/* inherited */
+    font-weight: normal;	/* inherited */
+    padding-left: 9pt;
+    text-indent: -36pt;
+    margin-left: 36pt;
+    padding-bottom: 12pt;
+    padding-top: 1pt;
+/*	border:solid 2px #600; */
+    counter-reset: sense;
+}
+/*
+.entry:first-child {
+	font-size: 24px; font-weight: bold;
+}
+*/
+.lexical-unit_form_text, .citation_form_text {
+	font-size: medium; font-weight: bold;
+}
+span.strippedHead {display: none}	
+.example {
+	display: block;
+	margin: 0 0 0 15px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size: large; 
+}
+.itl-fonipa:before {
+	content: "[ipa: ";
+}
+.itl-fonipa:after {
+	content: "]";
+}
+
+
+

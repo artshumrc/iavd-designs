@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <script src="mfDomLib.js">/* base lib */</script>
+    <script src="../MX.js">/* base lib */</script>
+    <title>makeMFPageFromTRS</title>
+<script>
+  function $(x){return document.getElementById(x);}
+  var trimExp=/^\s*(()|([^\s].*[^\s]))\s*$/;
+  function trim(S){return S?S.replace(trimExp,"$1"):"";}
+  function trimEnd(S){S=trim(S);return S?S+"\n":S;}
+  function buildUnit(){
+    var frm=document.forms.theForm;
+    var unit=frm.unitName.value;
+    var scriptFrame=$('scriptFrame');
+    scriptFrame.src=unit+".trs";
+    setTimeout("getScr(0)",100);
+ }
+ function getScr(N){
+    var scriptFrame=$('scriptFrame');
+    var transcript=null,errmsg=null;
+    try{ transcript=scriptFrame.contentDocument.getElementsByTagName("Trans")[0];
+       }catch(e){errmsg=e};
+    if(!transcript){
+      if(N&lt;30)return setTimeout("getScr("+(N+1)+")",100);
+      return alert("getScr Failure after "+N+" tries, sorry\n"+
+                   "transcript error="+errmsg+"\n");
+    }
+    doScript(transcript);
+ }
+ function doScript(transcript){
+    var frm=document.forms.theForm;
+    var tiers=trim(frm.tiers.value).split(",");
+    var endTiers=trim(frm.endOnlyTiers.value).split(",");
+    var commentSeparator=frm.commentSeparator.value;
+    var breakAtNewLines=frm.breakAtNewLines.checked;
+    var skipEnds=frm.skipEnds.checked;
+    var S="";
+    var sections=transcript.getElementsByTagName("Section");
+    for(var i=0;i&lt;sections.length;i++)
+      S+=doSection(sections[i],tiers,endTiers,commentSeparator,breakAtNewLines,skipEnds)
+    S+="&lt;div class='padding'&gt;&amp;#160;&lt;/div&gt;\n";
+    // document.forms.theForm.ta.value=S;
+   document.forms.theForm.ta.value=wrapTemplate(S,frm);
+ }
+
+function commentDivs(tiers,A){ // A[0] is script, A[i+1] goes with tiers[i]
+  S="";
+  for(var i=0;i&lt;tiers.length;i++)
+    S+="&lt;div class='comm "+tiers[i]+"'&gt;"+(A[i+1]?A[i+1]:"")+"&lt;/div&gt;\n";
+  return S;
+}
+
+function breakText(S){
+  return S.replace(/[\n][\n]+/g,"&lt;br/&gt;\n");
+}
+
+function sectionSegments(section,skipEnds){
+  var nd=section.firstChild;
+  var R=[],segTime=0.0,segText="";
+  while(nd &amp;&amp; nd.tagName!="Sync")nd=nextNode(nd,section); // got first Sync
+  if(skipEnds){
+    nd=nextNode(nd,section);
+    while(nd &amp;&amp; nd.tagName!="Sync")nd=nextNode(nd,section); // got next Sync
+    }
+  if(nd){
+    segTime=nd.getAttribute('time'); segText="";
+    nd=nextNode(nd,section);
+    for(;nd;nd=nextNode(nd,section)){
+      if(nd.tagName=="Sync"){
+          R.push([segTime,segText]);segTime=nd.getAttribute('time');segText="";
+          }
+      else if(nd.nodeValue)segText+=trimEnd(nd.nodeValue);
+      }
+  }
+  R.push([segTime,segText]); // even if skipEnds, we need this value as endTime
+  if(skipEnds){ 
+    var startTime=parseFloat(R[0][0]);
+    var fileRoot=document.forms.theForm.fileName.value.split(".")[0];
+    for(var i=0;i&lt;R.length;i++)R[i][0]=parseFloat(R[i][0])-startTime;
+    var endTime=R[R.length-1][0];
+    var cmds="mencoder -ss X -endpos Y -oac copy -ovc copy L.avi -o tmp.avi\n"+
+        "ffmpeg -i tmp.avi -s 360x240 -ar 44100 L.flv\n"+
+        "cat L.flv | flvtool2 -U stdin L.flv\n";
+    cmds=cmds.replace(/X/g,""+startTime).replace(/Y/g,""+endTime).replace(/L/g,fileRoot);
+    document.forms.theForm.cmds.value=cmds;
+    R.length--; 
+  }
+  return R;
+
+}
+
+function doSection(section,tiers,endTiers,commentSeparator,breakAtNewLines,skipEnds){
+  var segPairs=sectionSegments(section,skipEnds);
+  var S="";
+  for(var i=0;i&lt;segPairs.length;i++){
+    S+="&lt;div class='segment'&gt;";
+    S+="&lt;span class='synch'&gt;"+segPairs[i][0]+"&lt;/span&gt;\n";
+    var segText=segPairs[i][1];
+    if(breakAtNewLines)segText=breakText(segText);
+    var A=segText.split(commentSeparator); S+=A[0]; 
+    S+=commentDivs(tiers,A)+"&lt;/div&gt;\n";
+  }
+  return S;
+}
+
+function synchVal(nd,attr){
+  var S="&lt;span class='synch'&gt;"+nd.getAttribute(attr)+"&lt;/span&gt;\n";
+  return S;
+}
+
+function olddoSection(section,tiers,endTiers,commentSeparator,breakAtNewLines,skipEnds){
+  var S="&lt;div class='segment'&gt;";
+  var nd=section.firstChild;
+  while(nd &amp;&amp; nd.tagName!="Sync")nd=nextNode(nd,section); // got first Sync
+  if(skipEnds)
+    while(nd &amp;&amp; nd.tagName!="Sync")nd=nextNode(nd,section); // got next Sync
+  if(nd){
+    S+=synchVal(nd,'time'); nd=nextNode(nd,section);
+    var segText="";
+    for(;nd;nd=nextNode(nd,section)){
+      if(nd.tagName=="Sync"){
+        if(S!="" || !skipEnds){
+          if(breakAtNewLines)segText=breakText(segText);
+          var A=segText.split(commentSeparator); S+=A[0]; segText="";
+          S+=commentDivs(tiers,A)+"&lt;/div&gt;";
+          }
+        S+="&lt;div class='segment'&gt;";
+        S+=synchVal(nd,'time');
+      } else if(nd.nodeValue)segText+=trimEnd(nd.nodeValue);
+      }
+  if(!skipEnds){
+    if(breakAtNewLines)segText=breakText(segText);
+    var A=segText.split(commentSeparator); S+=A[0]; segText="";
+    S+=commentDivs(tiers,A)+"&lt;/div&gt;";
+    }
+  S+="&lt;div class='segment'&gt;";
+  S+= synchVal(section,'endTime')+commentDivs(endTiers,[]);
+  S+="&lt;/div&gt;\n"
+  return S;
+}
+}
+function synchVal(nd,attr){
+  var S="&lt;span class='synch'&gt;"+nd.getAttribute(attr)+"&lt;/span&gt;\n";
+  return S;
+}
+
+ var XMLNS=/xmlns="http:\/\/www.w3.org\/1999\/xhtml"/g;
+
+
+function wrapTemplate(divText,frm){
+  var root=frm.inRepository.checked?"../":"./";
+  var fileName=frm.fileName.value;
+  var tiers=trim(frm.tiers.value);
+  var endTiers=trim(frm.endOnlyTiers.value);
+  var commentClasses=tiers;
+  if(endTiers)commentClasses+=","+endTiers;
+divText='&lt;div id="scriptDiv" class="mxScript"&gt;\n'+divText+"&lt;/div&gt;";
+var S='&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" \n';
+S+= '   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt; \n';
+S+= '&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt; \n';
+  S+= '&lt;head&gt; \n';
+    S+= "&lt;title&gt;"+fileName.split(".")[0]+"&lt;/title&gt; \n";
+    S+= '&lt;script src="'+root+'CODE/mfDomLib.js"&gt;&lt;/script&gt; \n';
+    S+= '&lt;script src="'+root+'MX.js"&gt;&lt;/script&gt; \n';
+  S+= '&lt;/head&gt; \n';
+  S+= '&lt;body onload="mxLoad()"&gt; \n';
+  S+= '&lt;form name="theForm" action="javascript:void(0)"&gt; \n';
+  S+= '&lt;textarea name="ta" id="configData" rows="10" cols="100"&gt; \n';
+  S+= "{  // this object overrides the folders.code config.js file's values \n";
+  S+= '// and some of its values can be overridden on the URL \n';
+  S+= 'folders:{code:"'+root+'CODE/", // relative to this file \n';
+  S+= '         images:"'+root+'IMG/",  // relative to unit, e.g. pencil.xhtml \n';
+  S+= '         code:"'+root+'CODE/", \n';
+  S+= '         shared:"./SHARED/", \n';
+  S+= '         css:"'+root+'CSS/", \n';
+  S+= '         docs:"'+root+'docs/"}, \n';
+  S+= 'commentClasses:"'+commentClasses+'", \n';
+  S+= 'dict:"./SHARED/theDict.html", \n';
+  S+= 'cssFiles:{mada:"mada-archi.css", // [movie/script, dict/comm] \n';
+  S+= '     mdaa:"mdaa-archi.css",      // [movie/script, comm] \n';
+  S+= '     author:"author.css"},      // [movie/script, comm] \n';
+  S+= 'movie:{fileName:"'+fileName+'", \n';
+  S+= '       width:'+frm.moviewidth.value+',\n';
+  S+= '       height:'+frm.movieheight.value+',\n';
+  S+= '       playerClass:"FlashFLVMoviePlayer"} \n';
+  S+= ' }   \n';
+  S+='    &lt;/textarea&gt; \n';
+  S+='&lt;/form&gt; \n';
+  S+=divText;
+  S+='&lt;/body&gt;&lt;/html&gt;\n';
+  return S;
+}
+
+function onChangeUnit(frm){
+  var F=frm.unitName.value.split("/");
+  frm.fileName.value=F[F.length-1]+".flv"; // after last "/"
+}
+function onChangeInRepository(frm){
+  var root=frm.inRepository.checked?"../":"./";
+  // frm.cssFolder.value=root+"CSS/";
+}
+
+</script>
+<style type="text/css">
+span.synch {color:red}
+#MannX_data {display:block}
+div.padding {width:100px;height:600px;}
+</style>
+  </head>
+  <body>
+  <form name="theForm" action="javascript:buildUnit()">
+  Use mouseover for title attributes.
+  <table>
+    <tr title="true if this unit is within a repository"
+    ><td>inRepository:</td><td><input type="checkbox" name="inRepository" 
+      onchange="onChangeInRepository(this.form)" checked="true"/></td></tr>
+    <tr title="e.g.,'http://localhost:8080/mfmx/blah/burble23' to find burble23.trs"
+    ><td>unit name</td>
+         <td><input type="text" name="unitName" 
+              onchange="onChangeUnit(this.form)" size="50" value="http://localhost:8080/mfmx/irony/cornell0108"/></td></tr>
+    <tr title="name of movie file; defaults to unitName+'.flv'"
+    ><td>file name</td><td><input type="text" name="fileName" size="50" value="algo0108.flv"/></td></tr>
+    <tr title="in pixels"><td>movie width</td><td><input type="text" name="moviewidth" size="10" value="360"/></td></tr>
+    <tr title="in pixels"><td>movie height</td><td><input type="text" name="movieheight" size="10" value="240"/></td></tr>
+    <tr title="comment classes for every segment"
+    ><td>each-seg tiers</td><td><input type="text" name="tiers" size="50" value="subject,grammar"/></td></tr>
+    <tr title="comment classes to appear at the end, if any"
+    ><td>endOnly tiers</td><td><input type="text" name="endOnlyTiers" size="50" value="afterword"/></td></tr>
+    <tr title="character used in TRS files to split off comments"
+    ><td>commentSeparator</td><td><input type="text" name="commentSeparator" size="3" value="|"/></td></tr>
+    <tr title="if true, we introduce a BR tag at newLine char in TRS file"
+    ><td>breakAtNewLines:</td><td><input type="checkbox" name="breakAtNewLines" 
+      checked="true"/></td></tr>
+    <tr title="if true, we expect to change the video file, deleting the first and last segment of the TRS"
+    ><td>skipEnds:</td><td><input type="checkbox" name="skipEnds" 
+      checked="true"/></td></tr>
+  </table>
+  <textarea title="copy the unit from this textarea into the actual unit.xhtml file"
+    name="ta" rows="10" cols="120"></textarea><br/>
+  <input type="submit" title="this is where you click to do it, okay?" value="buildUnit"/>
+  <textarea title="if skipEnds==true, these commands will delete the first and last segment"
+  name="cmds" rows="3" cols="120"></textarea><br/>
+</form>
+<iframe id="scriptFrame" title="the TRS file should appear in here" width="600px" height="150px"/>
+  </body>
+</html>
+

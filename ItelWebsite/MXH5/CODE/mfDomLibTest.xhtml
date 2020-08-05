@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>Microformats Test</title>
+<style type="text/css">
+  .buttonOn {background-color:lightgreen;}
+  .buttonOff {background-color:red;}
+  .ntDict {background-color:lightblue;} 
+  #glossTable {background-color:yellow;}
+  #status {background-color : lightyellow; overflow : auto; height : 20px; width : 800px; }
+  #report {font-size:10pt; background-color : lightgray; overflow : auto; height : 50px; width : 800px; }
+  .inp  {font-size:8pt; background-color:lightgreen;}
+  #wordnet {display:none}
+</style>
+<script src="./mfDomLib.js"></script>
+<script>
+
+   var G= {ntDict:{ntDef:"*"},
+           ntDef:{ntName:1,ntVal:1,ntComment:"?"},
+           ntName:{},
+           ntVal:{},
+           ntComment:{}
+           };
+   function ntName(){}
+   ntName.prototype=new MicroFormat();
+   ntName.prototype.mf_events={
+     onclick:function(event){
+       var mfOb=mfObjects.obs[this.id];
+       var mfParent=mfOb.mf_parent;
+       var val=mfParent.ntVal;
+       var comm=mfParent.ntComment;
+       var S="I, the object "+this.id+", am the ntName ["+mfOb.mf_textValue()+"]";
+       S+="&lt;br/&gt;My value is the ntVal: ["+val.mf_textValue()+"]";
+       if(comm)S+="&lt;br/&gt;We have the comment:\n"+comm.mf_textValue();
+       if(event.shiftKey)S+="&lt;br/&gt;(shiftKey)"
+       if(event.stopPropagation)event.stopPropagation();else event.cancelBubble=true;
+       $('report').innerHTML=S;
+       }
+     }
+  function ntDict(){}
+  ntDict.prototype=new MicroFormat();
+  ntDict.prototype.toOb=function(){
+    var ntd=this.ntDef;
+    var ob={};
+    for(var i=0;i&lt;ntd.length;i++)
+      ob[ntd[i].ntName.mf_textValue()]
+        =ntd[i].ntVal.mf_textValue().replace(/\s+/g,' ');
+    return ob;
+  }
+  ntDict.prototype.postInit=function(){
+    document.forms.theForm.ta.value+="\n/**\n"+ob2String(this.toOb())+"\n**/\n";
+  }
+  ntDict.prototype.mf_events={
+   onmouseout:function(event){$('status').innerHTML="mouseout";},
+   onmouseover:function(event){$('status').innerHTML="mouseover";}
+
+   }
+/**
+   function ntVal(){}
+   function ntComment(){}
+
+   ntDef.prototype=new MicroFormat();
+   ntVal.prototype=new MicroFormat();
+**/
+function onloadFn(){
+    styleSheetHandler.init(eval(document.forms.theForm.ta.value));
+    try{
+      mfObjects.build($('sampleDict'),G);
+    }catch(e){alert("validation error building 'sampleDict':\n"+e);}
+   document.onkeydown=function(event){$('status').innerHTML=event.which;}
+}
+</script>
+</head><body onload="onloadFn()">
+   <div id="status"/>
+   <div id="report"/>
+    <div class="ntDict" id="sampleDict">
+      <p class="ntDef">
+        <b><span class="ntName">scale</span></b>
+        <span class="ntVal">13</span>
+        <div class="ntComment">It's bad luck to scale this way.</div>
+     </p>
+     <div class="ntDef">
+       <a href="http://google.com/search?q=george" class="ntName">george</a>
+       <blockquote class="ntVal">Now is the time for all <em>good</em>
+         Georges to come to the party
+       </blockquote>
+     </div>  
+   </div>
+  <form name="theForm">
+  <textarea name="ta" rows="10" cols="100">
+  ({
+    "tst1":"tst.css",
+    "tst2":"tst2.css",
+    "tst3":"tst3.css"
+  })
+  </textarea>
+  <div id="buttons"/>
+  </form>
+ </body></html>

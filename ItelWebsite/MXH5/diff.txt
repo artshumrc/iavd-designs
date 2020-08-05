@@ -1,0 +1,8 @@
+cp /var/lib/tomcat6/webapps/MXH5/CODE/GlossTriple.js ./CODE/
+cp /var/lib/tomcat6/webapps/MXH5/CODE/mfDomLib.js ./CODE/
+cp /var/lib/tomcat6/webapps/MXH5/CODE/MoviePlayer.js ./CODE/
+cp /var/lib/tomcat6/webapps/MXH5/MX.js .
+cp /var/lib/tomcat6/webapps/MXH5/qamloncax/makeMXPageFromElan.html ./qamloncax/
+cp /var/lib/tomcat6/webapps/MXH5/qamloncax/makeMXPageFromElan.js ./qamloncax/
+cp /var/lib/tomcat6/webapps/MXH5/qamloncax/qamloncax_web.html ./qamloncax/
+cp /var/lib/tomcat6/webapps/MXH5/qamloncax/SHARED/theDict.html ./qamloncax/SHARED/

@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ANNOTATION_DOCUMENT AUTHOR="" DATE="2013-07-23T09:54:52-09:00" FORMAT="2.7" VERSION="2.7" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.mpi.nl/tools/elan/EAFv2.7.xsd">
+    <HEADER MEDIA_FILE="" TIME_UNITS="milliseconds">
+        <MEDIA_DESCRIPTOR EXTRACTED_FROM="file:///Users/davidkoester/Documents/Dropbox/itelmen av project/ELAN/Ono/k'mE'n/k'mE'n.mov" MEDIA_URL="file:///Users/davidkoester/Documents/Dropbox/itelmen av project/ELAN/Ono/k'mE'n/k'mE'n.wav" MIME_TYPE="audio/x-wav" RELATIVE_MEDIA_URL="file:/./k'mE'n.wav"/>
+        <MEDIA_DESCRIPTOR MEDIA_URL="file:///Users/davidkoester/Documents/Dropbox/itelmen av project/ELAN/Ono/k'mE'n/k'mE'n.mov" MIME_TYPE="video/quicktime" RELATIVE_MEDIA_URL="file:/./k'mE'n.mov"/>
+        <PROPERTY NAME="lastUsedAnnotationId">120</PROPERTY>
+    </HEADER>
+    <TIME_ORDER>
+        <TIME_SLOT TIME_SLOT_ID="ts1" TIME_VALUE="0"/>
+        <TIME_SLOT TIME_SLOT_ID="ts2" TIME_VALUE="12176"/>
+        <TIME_SLOT TIME_SLOT_ID="ts3" TIME_VALUE="12176"/>
+        <TIME_SLOT TIME_SLOT_ID="ts4" TIME_VALUE="18996"/>
+        <TIME_SLOT TIME_SLOT_ID="ts5" TIME_VALUE="18996"/>
+        <TIME_SLOT TIME_SLOT_ID="ts6" TIME_VALUE="29312"/>
+        <TIME_SLOT TIME_SLOT_ID="ts7" TIME_VALUE="29350"/>
+        <TIME_SLOT TIME_SLOT_ID="ts8" TIME_VALUE="38075"/>
+        <TIME_SLOT TIME_SLOT_ID="ts9" TIME_VALUE="38133"/>
+        <TIME_SLOT TIME_SLOT_ID="ts10" TIME_VALUE="41938"/>
+        <TIME_SLOT TIME_SLOT_ID="ts11" TIME_VALUE="42011"/>
+        <TIME_SLOT TIME_SLOT_ID="ts12" TIME_VALUE="56264"/>
+        <TIME_SLOT TIME_SLOT_ID="ts13" TIME_VALUE="56373"/>
+        <TIME_SLOT TIME_SLOT_ID="ts14" TIME_VALUE="64521"/>
+        <TIME_SLOT TIME_SLOT_ID="ts15" TIME_VALUE="64623"/>
+        <TIME_SLOT TIME_SLOT_ID="ts16" TIME_VALUE="75423"/>
+        <TIME_SLOT TIME_SLOT_ID="ts17" TIME_VALUE="75580"/>
+        <TIME_SLOT TIME_SLOT_ID="ts18" TIME_VALUE="81643"/>
+        <TIME_SLOT TIME_SLOT_ID="ts19" TIME_VALUE="81739"/>
+        <TIME_SLOT TIME_SLOT_ID="ts20" TIME_VALUE="89500"/>
+        <TIME_SLOT TIME_SLOT_ID="ts21" TIME_VALUE="89553"/>
+        <TIME_SLOT TIME_SLOT_ID="ts22" TIME_VALUE="98373"/>
+        <TIME_SLOT TIME_SLOT_ID="ts23" TIME_VALUE="98520"/>
+        <TIME_SLOT TIME_SLOT_ID="ts24" TIME_VALUE="110006"/>
+        <TIME_SLOT TIME_SLOT_ID="ts25" TIME_VALUE="110055"/>
+        <TIME_SLOT TIME_SLOT_ID="ts26" TIME_VALUE="115088"/>
+        <TIME_SLOT TIME_SLOT_ID="ts27" TIME_VALUE="115090"/>
+        <TIME_SLOT TIME_SLOT_ID="ts28" TIME_VALUE="121456"/>
+        <TIME_SLOT TIME_SLOT_ID="ts29" TIME_VALUE="121606"/>
+        <TIME_SLOT TIME_SLOT_ID="ts30" TIME_VALUE="127452"/>
+        <TIME_SLOT TIME_SLOT_ID="ts31" TIME_VALUE="127505"/>
+        <TIME_SLOT TIME_SLOT_ID="ts32" TIME_VALUE="129252"/>
+        <TIME_SLOT TIME_SLOT_ID="ts33" TIME_VALUE="129260"/>
+        <TIME_SLOT TIME_SLOT_ID="ts34" TIME_VALUE="133866"/>
+        <TIME_SLOT TIME_SLOT_ID="ts35" TIME_VALUE="133893"/>
+        <TIME_SLOT TIME_SLOT_ID="ts36" TIME_VALUE="137586"/>
+        <TIME_SLOT TIME_SLOT_ID="ts37" TIME_VALUE="137668"/>
+        <TIME_SLOT TIME_SLOT_ID="ts38" TIME_VALUE="147203"/>
+        <TIME_SLOT TIME_SLOT_ID="ts39" TIME_VALUE="147240"/>
+        <TIME_SLOT TIME_SLOT_ID="ts40" TIME_VALUE="156336"/>
+        <TIME_SLOT TIME_SLOT_ID="ts41" TIME_VALUE="156535"/>
+        <TIME_SLOT TIME_SLOT_ID="ts42" TIME_VALUE="162863"/>
+        <TIME_SLOT TIME_SLOT_ID="ts43" TIME_VALUE="163013"/>
+        <TIME_SLOT TIME_SLOT_ID="ts44" TIME_VALUE="175180"/>
+        <TIME_SLOT TIME_SLOT_ID="ts45" TIME_VALUE="175308"/>
+        <TIME_SLOT TIME_SLOT_ID="ts46" TIME_VALUE="177272"/>
+        <TIME_SLOT TIME_SLOT_ID="ts47" TIME_VALUE="177356"/>
+        <TIME_SLOT TIME_SLOT_ID="ts48" TIME_VALUE="177363"/>
+        <TIME_SLOT TIME_SLOT_ID="ts49" TIME_VALUE="177363"/>
+        <TIME_SLOT TIME_SLOT_ID="ts50" TIME_VALUE="189411"/>
+        <TIME_SLOT TIME_SLOT_ID="ts51" TIME_VALUE="189882"/>
+        <TIME_SLOT TIME_SLOT_ID="ts52" TIME_VALUE="197889"/>
+        <TIME_SLOT TIME_SLOT_ID="ts53" TIME_VALUE="198000"/>
+        <TIME_SLOT TIME_SLOT_ID="ts54" TIME_VALUE="199985"/>
+        <TIME_SLOT TIME_SLOT_ID="ts55" TIME_VALUE="200507"/>
+        <TIME_SLOT TIME_SLOT_ID="ts56" TIME_VALUE="207375"/>
+        <TIME_SLOT TIME_SLOT_ID="ts57" TIME_VALUE="207465"/>
+        <TIME_SLOT TIME_SLOT_ID="ts58" TIME_VALUE="213576"/>
+        <TIME_SLOT TIME_SLOT_ID="ts59" TIME_VALUE="213698"/>
+        <TIME_SLOT TIME_SLOT_ID="ts60" TIME_VALUE="218056"/>
+    </TIME_ORDER>
+    <TIER ANNOTATOR="CO" LINGUISTIC_TYPE_REF="default-lt" PARTICIPANT="LEP" TIER_ID="itl IPA">
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a1" TIME_SLOT_REF1="ts1" TIME_SLOT_REF2="ts2">
+                <ANNOTATION_VALUE>tiʔnu məziʔn χeŋniʔn i ntzəlqzuneʔn itʼe, lʲi čʼinəŋlaχaʔn retʼemtʼelʔiʔn nskatezneʔn.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a2" TIME_SLOT_REF1="ts3" TIME_SLOT_REF2="ts4">
+                <ANNOTATION_VALUE>sap lʲi čʼinəŋq npliateznen potom nomnaateznen, čeɬxčeɬx naχɬateznen.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a3" TIME_SLOT_REF1="ts5" TIME_SLOT_REF2="ts6">
+                <ANNOTATION_VALUE>qulaʔn jeslʲi tixt χeŋnin nskaɬquznen, qneŋ nčiŋneqzuzneʔn, lʲi atxlaχaʔn, kotx metkaɬ leateziʔn sap.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a10" TIME_SLOT_REF1="ts7" TIME_SLOT_REF2="ts8">
+                <ANNOTATION_VALUE>qulaʔn ulʲučq tʼitʼəmenk nəntʼaŋnaatezneʔn, štobi ktwelaχaʔn kʼleiʔn, vot.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a11" TIME_SLOT_REF1="ts9" TIME_SLOT_REF2="ts10">
+                <ANNOTATION_VALUE>nčiŋnеqzunen qoɸsqʼəl ujikankəŋ.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a12" TIME_SLOT_REF1="ts11" TIME_SLOT_REF2="ts12">
+                <ANNOTATION_VALUE>i miɬ do čista jimsxeʔn, kʼe mank xaq iɬasnen, enuʔn kulʲelʲaʔn nəntmənɬquzneʔn, vot.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a13" TIME_SLOT_REF1="ts13" TIME_SLOT_REF2="ts14">
+                <ANNOTATION_VALUE>məzin sejčas, tinun vremenk, sapeʔn nʲetu, qojaʔnč kpənɬɸkniʔn.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a14" TIME_SLOT_REF1="ts15" TIME_SLOT_REF2="ts16">
+                <ANNOTATION_VALUE>kma em mešokaʔn tɬčeʔn tinuʔn, lʲi qečiq tstʲirazočeʔn, tgladʲičeʔn, i tskčen kəmank qoɸsqʼəl.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a15" TIME_SLOT_REF1="ts17" TIME_SLOT_REF2="ts18">
+                <ANNOTATION_VALUE>eɬaq meŋsx čʼinəŋq kskkŋan, vot.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a16" TIME_SLOT_REF1="ts19" TIME_SLOT_REF2="ts20">
+                <ANNOTATION_VALUE>kulʲuɬaʔn lem wonkəŋ sejčas čkikes tuga, vot.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a17" TIME_SLOT_REF1="ts21" TIME_SLOT_REF2="ts22">
+                <ANNOTATION_VALUE>i kma tʼənsχlaaɬqučen, tinuʔn kəmaʔn kʼməʔn, tinuʔn kəmaʔn kʼməʔn, aхa.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a18" TIME_SLOT_REF1="ts23" TIME_SLOT_REF2="ts24">
+                <ANNOTATION_VALUE>kma ulʲulʲaχ tɬqukičen, itʼe laχsxenk vodʲeren kunemx tʼloatəznen enuʔn kʼməʔn, a kma qaʔm enu tʼloaɬkaq tɬqukičen.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a19" TIME_SLOT_REF1="ts25" TIME_SLOT_REF2="ts26">
+                <ANNOTATION_VALUE>kotχ pʼamxč tsklʲawlʲatqukičen, pʼamxčeʔn omokom tčeɬqučeʔn</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a20" TIME_SLOT_REF1="ts27" TIME_SLOT_REF2="ts28">
+                <ANNOTATION_VALUE>a kəman lilixɬen, em iɸɬχʔiʔn pʼeʔn ɬqukineʔn.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a21" TIME_SLOT_REF1="ts29" TIME_SLOT_REF2="ts30">
+                <ANNOTATION_VALUE>i itχ pareqzuzniʔn, i kma lem wonk pareatezumnin, miɬ kəmaʔn (kʼməʔn) əmpχeatezumnin.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a22" TIME_SLOT_REF1="ts31" TIME_SLOT_REF2="ts32">
+                <ANNOTATION_VALUE>laχsx kəman qneŋ χenequzen,</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a23" TIME_SLOT_REF1="ts33" TIME_SLOT_REF2="ts34">
+                <ANNOTATION_VALUE>"əŋqənesx, kʲeša, paren qeʔnu lʲumka?"</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a24" TIME_SLOT_REF1="ts35" TIME_SLOT_REF2="ts36">
+                <ANNOTATION_VALUE>"da wuʔnu ne, fšo ravno qaʔm tʼlokaq ɬqzuzin."</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a25" TIME_SLOT_REF1="ts37" TIME_SLOT_REF2="ts38">
+                <ANNOTATION_VALUE>potom qaʔta tpəlsequkičen, i kməlum kəmaʔn kasχaʔn lʲi nomqeʔn ɬquiʔn kosaʔn, vot.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a26" TIME_SLOT_REF1="ts39" TIME_SLOT_REF2="ts40">
+                <ANNOTATION_VALUE>i manu, vot qaʔta tritsatʲ vosʲemʲ, tritsatʲ sʲemʲ, əŋqa ta tkʼenezičeʔn kʼməʔn čilkes.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a63" TIME_SLOT_REF1="ts41" TIME_SLOT_REF2="ts42">
+                <ANNOTATION_VALUE>a itʼe ttxəmtxlaquskičen, vot ənkəmɬ aχɬateziʔn kʼməʔn.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a64" TIME_SLOT_REF1="ts43" TIME_SLOT_REF2="ts44">
+                <ANNOTATION_VALUE>a itʼe kʼeneziqaɬč pəlq əŋqa ta, ilʲi nʲenʲekʼeʔnč əŋksxquziʔn, kəman qəmzan vodʲeren əŋksxquin, lʲi pəlq kʼməʔn aχɬquziʔn, prʲamo lʲi niwniɬ.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a65" TIME_SLOT_REF1="ts45" TIME_SLOT_REF2="ts46">
+                <ANNOTATION_VALUE>i vot tčilqukičeʔn.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a66" TIME_SLOT_REF1="ts47" TIME_SLOT_REF2="ts48">
+                <ANNOTATION_VALUE></ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a67" TIME_SLOT_REF1="ts49" TIME_SLOT_REF2="ts50">
+                <ANNOTATION_VALUE>i tinun jaščikank em kəmaʔn kʼməʔn, vot tixtinuʔn, vosʲemʲ mešokaʔn, tinuʔn em kʼməʔn, vot.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a76" TIME_SLOT_REF1="ts51" TIME_SLOT_REF2="ts52">
+                <ANNOTATION_VALUE>miɬ wotk tʼəzuqzučeʔn tinuʔn mešokaʔnk, vot.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a77" TIME_SLOT_REF1="ts53" TIME_SLOT_REF2="ts54">
+                <ANNOTATION_VALUE>tinu em kəmaʔn kʼməʔn.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a78" TIME_SLOT_REF1="ts55" TIME_SLOT_REF2="ts56">
+                <ANNOTATION_VALUE>sevodnʲa tʼənluʔɬaɬčeʔn pečenk tteɬaɬčeʔn, qečʼeɬ χaɬč əzus.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a79" TIME_SLOT_REF1="ts57" TIME_SLOT_REF2="ts58">
+                <ANNOTATION_VALUE>tʼisχaɬkičen, ekʼnin puduške nskaɬcen, vot.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a80" TIME_SLOT_REF1="ts59" TIME_SLOT_REF2="ts60">
+                <ANNOTATION_VALUE>nu vot, kma miɬ tʼlakičen əŋqa.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+    </TIER>
+    <TIER ANNOTATOR="CO" LINGUISTIC_TYPE_REF="Free Translation" PARENT_REF="itl IPA" PARTICIPANT="LEP" TIER_ID="EngFT-cp">
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a92" ANNOTATION_REF="a1">
+                <ANNOTATION_VALUE>This is our (clothing) we wore it at one time; they make very beautiful appliqués</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a93" ANNOTATION_REF="a2">
+                <ANNOTATION_VALUE>They scrape the hide well, then they remove the fur; they take off the fur</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a94" ANNOTATION_REF="a3">
+                <ANNOTATION_VALUE>Others, if they want to make these, they right away use very white; the hide becomes like white fabric.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a95" ANNOTATION_REF="a10">
+                <ANNOTATION_VALUE>Others they hang a little in smoke so that they become black (get darker).</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a96" ANNOTATION_REF="a11">
+                <ANNOTATION_VALUE>They made kukhlianka for themselves.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a97" ANNOTATION_REF="a12">
+                <ANNOTATION_VALUE>and all the women, who happen to know, sew on large beads.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a98" ANNOTATION_REF="a13">
+                <ANNOTATION_VALUE>Now, at this time, we do not have any hides; the reindeer ended.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a99" ANNOTATION_REF="a14">
+                <ANNOTATION_VALUE>I took just sacks.   I cleaned them well, ironed them and made myself a kukhlianka.  </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a100" ANNOTATION_REF="a15">
+                <ANNOTATION_VALUE>It seems to have come out well.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a101" ANNOTATION_REF="a16">
+                <ANNOTATION_VALUE>Large beads are also difficult to find now.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a102" ANNOTATION_REF="a17">
+                <ANNOTATION_VALUE>I wanted to show (this), this is my hair, this is my hair, uh huh.  </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a103" ANNOTATION_REF="a18">
+                <ANNOTATION_VALUE>I was little when mama always braided my hair; I didn't want to braid it.  </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a104" ANNOTATION_REF="a19">
+                <ANNOTATION_VALUE>I ran like a boy; I was always with the boys.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a105" ANNOTATION_REF="a20">
+                <ANNOTATION_VALUE></ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a106" ANNOTATION_REF="a21">
+                <ANNOTATION_VALUE>An they cut their hair, and they cut mine too; they cut off all my hair</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a107" ANNOTATION_REF="a22">
+                <ANNOTATION_VALUE></ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a108" ANNOTATION_REF="a23">
+                <ANNOTATION_VALUE></ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a109" ANNOTATION_REF="a24">
+                <ANNOTATION_VALUE>Yeah, that's okay; anyway there's not braiding.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a110" ANNOTATION_REF="a25">
+                <ANNOTATION_VALUE>Then I began to grow up and I had two thick braids.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a111" ANNOTATION_REF="a26">
+                <ANNOTATION_VALUE>And somewhere in thirty seven or thirty eight I thought I could keep my hair.  </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a112" ANNOTATION_REF="a63">
+                <ANNOTATION_VALUE>When I scratch, look how much hair falls out.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a113" ANNOTATION_REF="a64">
+                <ANNOTATION_VALUE>And when you're really thinking about something, or the children are sick, my husband was always sick, my hair fell out a lot.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a114" ANNOTATION_REF="a65">
+                <ANNOTATION_VALUE>And I collected (it). </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a115" ANNOTATION_REF="a67">
+                <ANNOTATION_VALUE>And in these box is my hair, eight sacks and it's just my hair.  </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a116" ANNOTATION_REF="a76">
+                <ANNOTATION_VALUE>I put it all in these sacks.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a117" ANNOTATION_REF="a77">
+                <ANNOTATION_VALUE>It's just my hair.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a118" ANNOTATION_REF="a78">
+                <ANNOTATION_VALUE>Today I'm going to burn it in the stove; it's enough, time to put it (away).  </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a119" ANNOTATION_REF="a79">
+                <ANNOTATION_VALUE>I'll die and they'll make a different pillow.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a120" ANNOTATION_REF="a80">
+                <ANNOTATION_VALUE>So I told everything.  </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+    </TIER>
+    <TIER ANNOTATOR="CO" DEFAULT_LOCALE="ja" LINGUISTIC_TYPE_REF="Free Translation" PARENT_REF="itl IPA" PARTICIPANT="LEP" TIER_ID="JpnFT-cp">
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a91" ANNOTATION_REF="a1">
+                <ANNOTATION_VALUE></ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a27" ANNOTATION_REF="a22">
+                <ANNOTATION_VALUE></ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+    </TIER>
+    <TIER ANNOTATOR="CO" LINGUISTIC_TYPE_REF="Free Translation" PARENT_REF="itl IPA" PARTICIPANT="LEP" TIER_ID="itl Cyr">
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a4" ANNOTATION_REF="a1">
+                <ANNOTATION_VALUE>тыʔну мәзыʔн ӽэӈныʔн и нтзәлӄзунэʔн итʼэ, љи чʼинәӈлаӽаʔн рэтʼэмтʼэлʔиʔн нскатэзнэʔн.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a5" ANNOTATION_REF="a2">
+                <ANNOTATION_VALUE>сап љи чʼинәӈӄ нплыатэзнэн потом номнаатэзнэн, чэԓхчэԓх наӽԓатэзнэн.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a6" ANNOTATION_REF="a3">
+                <ANNOTATION_VALUE>ӄулаʔн если тыхт ӽэӈнын нскаԓӄузнэн, ӄнэӈ нчиӈнэӄзузнэʼн, љи атхлаӽаʔн, котх мэткаԓ лэатэзыʔн сап.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a28" ANNOTATION_REF="a10">
+                <ANNOTATION_VALUE>ӄулаʔн уључӄ тʼитʼәмэнк нәнтʼаӈнаатэзнэʔн, чтобы ктвэлаӽаʔн кʼлэиʔн, вот.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a29" ANNOTATION_REF="a11">
+                <ANNOTATION_VALUE>нчиӈнэӄзунэн ӄофсӄʼәл уйиканкәӈ.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a30" ANNOTATION_REF="a12">
+                <ANNOTATION_VALUE>и миԓ до чиста йимсхэʔн, кʼэ манк ӽаӄ иԓаснэн, энуʔн куљэљаʔн нәнтмәнԓӄузнэʔн, вот.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a31" ANNOTATION_REF="a13">
+                <ANNOTATION_VALUE>мәзын сейчас, тынун врэмэнк, сапэʔн њэту, ӄойаʔнч кпәнԓфкныʔн.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a32" ANNOTATION_REF="a14">
+                <ANNOTATION_VALUE>кма эм мэшокаʔн тԓчэʔн тынуʔн, љи ӄэчиӄ тстиразочэʔн, тгладичэʔн, и тскчэн кәманк ӄофсӄʼәл.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a33" ANNOTATION_REF="a15">
+                <ANNOTATION_VALUE>эԓаӄ мэӈсх чʼинәӈӄ ксккӈан, вот.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a34" ANNOTATION_REF="a16">
+                <ANNOTATION_VALUE>куљуљаʔн лэм вонкәӈ сейчас чкикэс туга, вот.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a35" ANNOTATION_REF="a17">
+                <ANNOTATION_VALUE>и кма тʼәнсӽлааԓӄучэн, тынуʔн кәмаʔн кʼмәʔн, тынуʔн кәмаʔн кʼмәʔн, ага.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a36" ANNOTATION_REF="a18">
+                <ANNOTATION_VALUE>кма уљуљаӽ тԓӄукичэн, итʼэ лаӽсхэнк водерэн кунэмх тʼлоатәзнэн энуʔн кʼмәʔн, а кма ӄаʔм эну тʼлоаԓкаӄ тԓӄукичэн.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a37" ANNOTATION_REF="a19">
+                <ANNOTATION_VALUE>котӽ пʼамхч тскљављатӄукичэн, пʼамхчэʔн омоком тчʼэԓӄучэʔн.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a38" ANNOTATION_REF="a20">
+                <ANNOTATION_VALUE>а кәман лылыхԓэн, эм ифԓӽʔиʔн пʼэʔн ԓӄукинэʔн.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a39" ANNOTATION_REF="a21">
+                <ANNOTATION_VALUE>и итӽ парэӄзузныʔн, и кма лэм вонк парэатэзумнын, миԓ кәмаʔн (кʼмәʔн) әмпӽэатэзумнын.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a40" ANNOTATION_REF="a22">
+                <ANNOTATION_VALUE>лаӽсх кәман ӄнэӈ ӽэнэӄузэн:</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a41" ANNOTATION_REF="a23">
+                <ANNOTATION_VALUE>— әӈӄәнэсх, кеша, парэн ӄэʼну люмка?</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a42" ANNOTATION_REF="a24">
+                <ANNOTATION_VALUE>— да вуʔну нэ, всё равно ӄаʔм тʼлокаӄ ԓӄзузын.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a43" ANNOTATION_REF="a25">
+                <ANNOTATION_VALUE>потом ӄаʔта тпәлсэӄукичэн, и кмәлум кәмаʔн касӽаʔн љи номӄэʔн ԓӄуиʔн косаʔн, вот.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a44" ANNOTATION_REF="a26">
+                <ANNOTATION_VALUE>и ману, вот ӄаʔта тридцать восемь, тридцать семь, әӈӄа та ткʼэнэзычэʔн кʼмәʔн чилкэс.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a68" ANNOTATION_REF="a63">
+                <ANNOTATION_VALUE>а итʼэ ттхәмтхлаӄускичэн, вот әнкәмԓ аӽԓатәзыʔн кʼмәʔн.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a69" ANNOTATION_REF="a64">
+                <ANNOTATION_VALUE>а итʼэ кʼэнэзыӄаԓч пәлӄ әӈӄа та, или њэњэкʼэʔнч әӈксхӄузыʔн, кәман ӄәмзан водерэн әӈксхӄуин, љи пәлӄ кʼмәʔн аӽԓӄузыʔн, прямо љи нывныԓ.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a70" ANNOTATION_REF="a65">
+                <ANNOTATION_VALUE>и вот тчилӄукичэʼн.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a71" ANNOTATION_REF="a67">
+                <ANNOTATION_VALUE>и тынун ящиканк эм кәмаʔн кʼмәʔн, вот тыхтынуʔн, восемь мэшокаʔн, тынуʔн эм кʼмәʔн, вот.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a81" ANNOTATION_REF="a76">
+                <ANNOTATION_VALUE>миԓ вотк тʼәзуӄзучэʔн тынуʔн мэшокаʔнк, вот.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a82" ANNOTATION_REF="a77">
+                <ANNOTATION_VALUE>тыну эм кәмаʔн кʼмәʔн.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a83" ANNOTATION_REF="a78">
+                <ANNOTATION_VALUE>сегодня тʼәнлуʔԓаԓчэʔн пэчэнк ттэԓаԓчэʔн, ӄэчʼэԓ ӽаԓч әзус.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a84" ANNOTATION_REF="a79">
+                <ANNOTATION_VALUE>тʼисӽаԓкичэн, экʼнын пудушкэ нскаԓчэн, вот.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a85" ANNOTATION_REF="a80">
+                <ANNOTATION_VALUE>ну вот, кма миԓ тʼлакичэн әӈӄа.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+    </TIER>
+    <TIER ANNOTATOR="CO" LINGUISTIC_TYPE_REF="Free Translation" PARENT_REF="itl IPA" PARTICIPANT="LEP" TIER_ID="RusFT-cp">
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a7" ANNOTATION_REF="a1">
+                <ANNOTATION_VALUE>Это наши такие и носили когда-то, очень красивые замушевые сделают.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a8" ANNOTATION_REF="a2">
+                <ANNOTATION_VALUE>Шкуру хорошо выскоблят, потом видяргивают от шерсти (видерка), шерсть снимут.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a9" ANNOTATION_REF="a3">
+                <ANNOTATION_VALUE>Другие если вот такие хотят сделать, сразу шьют очень белый как белая ткань станут шкура.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a45" ANNOTATION_REF="a10">
+                <ANNOTATION_VALUE>Другие немного на дым повесят, чтобы чёрными стали (потемнели), вот.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a46" ANNOTATION_REF="a11">
+                <ANNOTATION_VALUE>Шили кухлянку себе.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a47" ANNOTATION_REF="a12">
+                <ANNOTATION_VALUE>И все женщины, кто как хочет знать, эти бусы пришивают, вот.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a48" ANNOTATION_REF="a13">
+                <ANNOTATION_VALUE>У нас сейчас, в это время, шкуры нет, олени кончились.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a49" ANNOTATION_REF="a14">
+                <ANNOTATION_VALUE>Я одни мешки взяла, эти хорошо выстирала, выгладила, и сделала себе кухлянку.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a50" ANNOTATION_REF="a15">
+                <ANNOTATION_VALUE>Как будто бы (вродь бы) хорошо получилось (хорошо сделано), вот.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a51" ANNOTATION_REF="a16">
+                <ANNOTATION_VALUE>Бусы тоже также сейчас найти тяжело, вот.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a52" ANNOTATION_REF="a17">
+                <ANNOTATION_VALUE>И я хотела показать, эти мои волосы, эти мои волосы, ага.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a53" ANNOTATION_REF="a18">
+                <ANNOTATION_VALUE>Я маленькая была, когда мама всегда заплетала эти волосы, а я не хотела заплетать.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a54" ANNOTATION_REF="a19">
+                <ANNOTATION_VALUE>Как парнишка бегала с парнишками вместе была.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a55" ANNOTATION_REF="a20">
+                <ANNOTATION_VALUE>А у моего брата дети были одни мальчики.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a56" ANNOTATION_REF="a21">
+                <ANNOTATION_VALUE>И они их стригет, и меня тоже так постригет, все мои волосы отрежит.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a57" ANNOTATION_REF="a22">
+                <ANNOTATION_VALUE>Мать моя сразу говорит:</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a58" ANNOTATION_REF="a23">
+                <ANNOTATION_VALUE>— Зачем, Кеша, выстрег именно эту люмку?</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a59" ANNOTATION_REF="a24">
+                <ANNOTATION_VALUE>— Да пускай, всё равно не заплетается.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a60" ANNOTATION_REF="a25">
+                <ANNOTATION_VALUE>Потом уже стала рости, и сама у меня две очень толстые были косы, вот.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a61" ANNOTATION_REF="a26">
+                <ANNOTATION_VALUE>И где-то, вот уже тридцать восемь, тридцать семь, чего-то надумала я волосы собирать.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a72" ANNOTATION_REF="a63">
+                <ANNOTATION_VALUE>Когда  расчесываюсь, вот столько падают волосы.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a73" ANNOTATION_REF="a64">
+                <ANNOTATION_VALUE>А когда думаешь сильно что-то, или дети болеют, мой муж всегда болел, очень сильно волосы падал, прямо очень много.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a74" ANNOTATION_REF="a65">
+                <ANNOTATION_VALUE>И вот собирала.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a75" ANNOTATION_REF="a67">
+                <ANNOTATION_VALUE>И в этом ящике только мои волосы, восемь мешков, эти только мои волосы, вот.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a86" ANNOTATION_REF="a76">
+                <ANNOTATION_VALUE>все сюда ложила в эти мешки, вот.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a87" ANNOTATION_REF="a77">
+                <ANNOTATION_VALUE>это только мои волосы.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a88" ANNOTATION_REF="a78">
+                <ANNOTATION_VALUE>Сегодня сожгу в печку затолкну, хватит пора ложить.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a89" ANNOTATION_REF="a79">
+                <ANNOTATION_VALUE>умру, другую подушку сделают, вот.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a90" ANNOTATION_REF="a80">
+                <ANNOTATION_VALUE>Ну вот, я всё рассказала.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+    </TIER>
+    <TIER ANNOTATOR="CO" DEFAULT_LOCALE="en" LINGUISTIC_TYPE_REF="Free Translation" PARENT_REF="itl IPA" PARTICIPANT="LEP" TIER_ID="Notes-cp">
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a62" ANNOTATION_REF="a20">
+                <ANNOTATION_VALUE>"lilixɬeʔn" -- it is possibly a mistake for qetkineŋ (?)</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+    </TIER>
+    <LINGUISTIC_TYPE GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="default-lt" TIME_ALIGNABLE="true"/>
+    <LINGUISTIC_TYPE CONSTRAINTS="Symbolic_Association" GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="Free Translation" TIME_ALIGNABLE="false"/>
+    <LOCALE COUNTRY_CODE="JP" LANGUAGE_CODE="ja"/>
+    <LOCALE LANGUAGE_CODE="en" VARIANT="ASCII"/>
+    <CONSTRAINT DESCRIPTION="Time subdivision of parent annotation's time interval, no time gaps allowed within this interval" STEREOTYPE="Time_Subdivision"/>
+    <CONSTRAINT DESCRIPTION="Symbolic subdivision of a parent annotation. Annotations refering to the same parent are ordered" STEREOTYPE="Symbolic_Subdivision"/>
+    <CONSTRAINT DESCRIPTION="1-1 association with a parent annotation" STEREOTYPE="Symbolic_Association"/>
+    <CONSTRAINT DESCRIPTION="Time alignable annotations within the parent annotation's time interval, gaps are allowed" STEREOTYPE="Included_In"/>
+</ANNOTATION_DOCUMENT>

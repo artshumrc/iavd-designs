@@ -1,0 +1,156 @@
+
+
+body{   background : url(null) fixed no-repeat;  }
+
+/*** MAIN COMPONENTS ***/
+  #configData {display:none;}
+  #editDiv {display:none;}
+  
+  #otherDivs {
+    height:98%; width:45%; 
+    position: absolute; top: 0;  left: 0;
+    background-color: gray; overflow:hidden; 
+    padding-top: 1%;
+  }
+  
+  #movieDiv {
+    height:53%; width:100%; 
+    position: absolute;  top: 0px; left: 0px;
+    overflow: hidden;
+    background-color:gray; 
+    padding-top: 1.5%;
+  }
+ 
+#search { 
+  position: absolute; top: 53%; left:0; 
+  height: 10%; width:100%; 
+  padding-left: 2.5%; padding-right: 2.5%; padding-top: 0;
+  border:0;
+  text-align: center;
+  font-family: verdana, helvetica, sans-serif; font-size: 12px; 
+  color:#006AA6; background-color:#DAE6E6;
+}
+
+  #glossFrame {
+    position: absolute; bottom: 0px; left: 0px; 
+    height:36%; width:99%; 
+    margin-top: 5px; background-color: #c7deb6; 
+    overflow: auto;
+    border-top: 2px solid #009DDC; padding: 0px;
+  }
+   
+  #scriptDiv {
+    height:98%; width:55%; 
+    position: absolute; top: 0;  right: 0;
+    background-color: gray;overflow:auto; 
+    padding-top: 1%;
+  }
+  
+  #exercises {
+    display:none; height:99%; width:55%; position: fixed; top: 0;  right: 0px;
+    background-color: #c7deb6;overflow:auto; z-index:10;
+    padding-bottom: 1%;
+  }
+  
+  .exx {display:none;}
+  .exx.selected {display:block;}
+  .exq {display:none;}
+  .exq.selected {display:block; background-color: #FFFF99; font-weight: 600;}
+  .exa {display:none;}
+  .exa.showing {display:block; background-color: white; color:blue; font-weight: 600;}
+  .exq.selected q_ta {display:block;}
+  #exercises h1 {font-size: larger; text-align: center;}
+  #exercises h2 {font-size: medium; padding-left: 1em;padding-bottom:0; margin-bottom:0}
+  input.exLink {height:1.5em; background-color: white;}
+  div.extoc ul {margin:0; padding:0 0 0 2em;list-style: none;}
+  div.extoc blockquote {margin:0; padding:0 0 0 2em;}
+  div.extoc {padding-bottom: 1em; border-bottom: solid 2px maroon;}
+  div.exPreamble {margin:0; padding:0 0 0 2em; background-color: #FFFF99;}
+  #toggleExercisesButton {height: 27px; width: 35px;margin-bottom: 3px; margin-left:2px;}
+  
+  
+  #movieLoadSplash  {
+    display:none;position:fixed;z-index:10;
+    top:0;left:0;width:45%; height:10em; 
+    background-color: #ccc; 
+    color: red;font-weight: bold; text-align: center;
+  }
+  
+  #movieErr {
+    text-align: center; border: 2px solid black; 
+    margin: 3px 3em; padding: 0.5em;
+  }
+              
+ /*** MOVIE DIV and BOX ***/
+  
+  #movieContainer {text-align:center;}
+  #movieBox {width:360px; height:260px; margin:10px; text-align:center; 
+             border:0px solid #333; background-color:#eee;}
+  
+  #playerButtons  {margin: auto; width: 330px; }
+  #playerButtons  button {margin:0px; padding:0px;}
+  #playerButtons img {margin:0px; padding:0px; border:0px;}
+  
+#searchbutton {
+  margin: 6px 0px 6px 1em; 
+  font-family: verdana, helvetica, sans-serif; font-size: 1em; 
+  color:#006AA6; background-color: white; border: 2px solid #009DDC; 
+  width: 5em; height: 2em;
+}
+
+#searchfield { margin: 6px 0 6px 0; }
+#boxes {margin:0; padding-bottom: 1em}
+.checkbox {width:18px; height: 18px; 
+ margin-right: 5px; }
+/*** SCRIPT DIV FORMATTING ***/ 
+  
+  div.segment {
+    margin: 10px 5px 5px; padding: 10px; border: solid 1px; 
+    background-color: #FFFF66;
+  }
+  div.comm.subject {
+    padding: 10px 15px 10px 15px; margin-left: 5px; margin-top: 5px; 
+    background-color: #99FFCC 
+  }
+  div.comm.grammar, div.comm.afterword {
+    padding: 10px 15px; margin-left: 5px; background-color: #c7deb6
+  }
+  div.segment.selected {background-color:#DAE6E6; margin-top: 10px}
+  div.segment.selected div.comm.subject {background-color:#fff;}
+  div.segment.selected div.comm.grammar {background-color:#ccc;}
+  span.synch {font-family: verdana, helvetica, sans-serif; font-weight: bold; 
+              font-size: 12px; color: #43895c; text-align: left; 
+              padding-top: 15px; padding-left: 15px;}
+  div.segment.selected {background-color:#DAE6E6; margin-top: 10px}
+  div.segment.selected div.comm.subject {background-color:#fff;}
+  div.segment.selected div.comm.grammar {background-color:#ccc;}
+/*********** Div Styles ************/
+div.clearit {clear:both;}
+div.category {margin: 10px 20px 10px 30px; color:#006AA6; font-size: 11px; 
+              font-family: verdana, helvetica, sans-serif; text-align: left; 
+              font-weight: bold; float: left; letter-spacing: .03em;}
+div.padding {width:100px;height:700px;}
+
+/*** span AND col styles, FOR DEL INTERLINEAR ***/
+/*  span {display:block; margin-left:1em; padding:0px} */
+  span.mb {color:blue;display:table-row;}
+  span.ge {color:green;display:table-row;}
+  span.ps {color:maroon;display:table-row;}
+  span.class {color:brown;display:table-row;}
+  span.ref {margin-top:0em;}
+  span.tx {display:table; margin-top:2px;}
+  .tx span {margin-left:0em;}
+  .col {display:table-cell; border:2px; border-style:groove; text-align:center;margin:0px;}
+  .subcol {display:inline; border:1px; border-style:solid; } 
+/* from sasha arkhipov */
+  .col {color:red;display:table-cell; border:0px; border-style:groove; text-align:left; padding-right:2ex;margin:0px;}
+  .subcol {display:table-cell; border:0px; border-style:solid;padding:0px;margin:0px; } 
+  .sc {display:inline; border:0px; border-style:solid;padding:0px;margin:0px; } 
+  
+/* background colors for DEL spans */
+   .comm.ref, .comm.ft, .comm.comment, .tx {background-color: #ccccee;}
+
+.viewbuttons {display:none;}
+#saveButton {background-color:red;}
+#replaceNodeButton {background-color:yellow;}
+#expandButton {background-color:lightgreen;}

@@ -1,0 +1,30 @@
+   body{  background : url(null) fixed no-repeat; }
+   
+/* gloss frame is for dictionary */
+  #glossFrame {
+  position: absolute; bottom: 0px; left: 0px; 
+  margin: 0px auto; background-color:red;overflow:auto;height:40%;width:50%;}
+  
+  #movieDiv {position: absolute;  top: 0px; left: 0px; 
+  background-color:gray;overflow:auto;height:60%;width:50%;}
+  
+  #scriptDiv {position: absolute; top: 0px;  right: 0px; 
+  margin: 0px auto; background-color:yellow;overflow:auto;height:100%;width:50%;}
+  
+  #scriptDiv .synch {color:blue;}
+  
+  #commDiv {display: none; position: absolute;  bottom: 0px;  right: 0px;
+  margin: 0px auto; background-color:aliceblue;overflow:auto;height:40%;width:50%;}
+  
+  #commDiv .subject {background-color:green;}
+  
+  #commDiv .grammar {background-color:lightgray;}
+  #movieBox {width:360px; height:260px; margin:10px auto; text-align:left; border:0px solid #333; background-color:#eee;}
+  
+  .scriptNode {background-color:gray;}
+  
+  #movieControls  {margin: auto; width: 300px; background-color:lightgreen; }
+  #movieControls  button {margin:0px; padding:0px;}
+
+   div.padding {width:100px;height:600px;}
+.comm em {padding: 3pt;}

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>Editable Span Test</title>
+<style type="text/css">
+  #glossTable {background-color:yellow;}
+  .inp  {font-size:8pt; background-color:lightgreen;}
+  #wordnet {display:none}
+</style>
+<script>
+function $(x){return document.getElementById(x);}
+var genSymNum=0;
+function genSym(){
+  while($("x_"+genSymNum))genSymNum++;
+  return "x_"+genSymNum++;
+}
+ function toForm(elt){
+   var content=elt.innerHTML;
+   if(!elt.id)elt.id=genSym();
+   var formId=genSym();
+   var formAction="javascript:fromForm('"+elt.id+"','"+formId+"')";
+   var S='&lt;form id="'+formId+'" action="'+formAction+'"'
+        +' xmlns="http://www.w3.org/1999/xhtml" &gt;\n'
+        +"&lt;input type='text' size='80' name='inp' value=''/&gt;\n"
+        +"&lt;/form&gt;";
+   alert(S);
+   elt.innerHTML=S;
+   alert(elt.innerHTML);
+   //$(formId).inp.value=content;
+ }
+  function fromForm(eltId,formId){
+    var content=$(formId).inp.value;
+    alert(content);
+    $(eltId).innerHTML=content;
+  }
+ function onloadFn(){
+   var A=document.getElementsByTagName("span");
+   alert(A.length);
+   for(var i in A)A[i].onclick=toForm;
+ }
+</script>
+</head><body onload="onloadFn()">
+    <div class="ntDict" id="sampleDict" style="background-color:lightblue">
+      <p class="ntDef">
+        <b><span class="ntName">scale</span></b>
+        <span class="ntVal">13</span>
+        <div class="ntComment">It's bad luck to scale this way.</div>
+     </p>
+     <div class="ntDef">
+       <a href="http://google.com/search?q=george" class="ntName">george</a>
+       <span class="ntVal">Now is the time for all <em>good</em>
+         Georges to come to the party
+       </span>
+     </div>  
+   </div>
+ </body></html>

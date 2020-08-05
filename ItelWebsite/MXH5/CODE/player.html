@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>MannX 2.001 Player</title>
+<!-- <script src="../CODE/mfDomLib.js">/* DOM/CSS/etc util; MicroFormat */</script> -->
+<!-- <script src="../CODE/MannX.js">/* MediaPlayer, Dict, Triples, MannX */</script> -->
+<!-- <script src="../SHARED/config.js">/* config ob, repository data */</script> -->
+<script> // player.js
+
+function $(x){var y=document.getElementById(x);return y?y:x;}
+function JSONeval(S){return eval(S);} // replace with JSON parser?
+function newChild(parentId,tag){
+   var pElt=$(parentId);if(!pElt)throw ("no parent for newElt "+tag);
+   var res=null;
+   if(document.createElementNS && pElt.tagName==pElt.tagName.toLowerCase())
+     res=document.createElementNS('http://www.w3.org/1999/xhtml',tag);
+   else res=document.createElement(tag);
+   pElt.appendChild(res);
+   return res;
+ };
+function addJSScript(shref){  // 
+// adds a script element with id sid, href shref
+  var head = document.getElementsByTagName('head')[0];
+  if (!head)return alert("no head in document!")
+  var scrElt=newChild(head,"script");
+  scrElt.language = 'javascript';
+  scrElt.src = shref;
+  scrElt.type = 'text/javascript';
+};
+
+
+
+function onLoadFn(){
+  addJSScript("test.js");
+return;
+  config.update(JSONeval($('theForm').JSONdata.value));
+  config.update(config.getURLParams(top.location.href));
+  mannX.configure(config);
+  mannX.initStylesheets();
+  mannX.initGloss($('glossFrame'));  // $('glossFrame').contentDocument
+  mannX.initMovie($('movieDiv'));
+  mannX.initScript($('scriptDiv'));
+  mannX.initComm($('commDiv'));
+  mannX.initDocEvents();
+}
+</script>
+</head><body onload="onLoadFn()">
+<form name="theForm" id="theForm">
+<textarea name="JSONdata" rows="10" cols="120">
+</textarea>
+</form>
+<div id="movieDiv" class="nt_MoviePlayer"> </div>
+<iframe name="glossFrame" id="glossFrame" src="about:blank"></iframe>
+<div id="scriptDiv" class="nt_Script"> </div>
+<div id="commDiv" class="nt_Comm"> </div>
+</body></html>

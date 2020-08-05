@@ -1,0 +1,542 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="utf-8" lang="utf-8">
+<!--
+There are no spaces or newlines between <span> elements in this file because
+whitespace is significant.  We don't want extraneous spaces appearing in the
+display/printout!
+
+changes from 20121209: 
+change CSS ref to VK.css (for Volodin Khamoilova)
+remove letter div for Ӑ ӑ and the subsequent resumption of letter div for A
+      -->
+<head>
+<script>
+function $(x){return document.getElementById(x);}
+function clearForm(){$('q').value='';$('weird').selectedIndex=0; search('');}
+function nonEmptyEntries(){
+  var lex=$("main_content");
+  var entries=lex.getElementsByTagName("div");
+  alert("found "+entries.length+" possible entries");
+  for(var i=0;i<entries.length;i++){
+    var entry=entries[i]; if(entry.className!="entry")continue;
+    if(entry.getElementsByTagName("span").length==0){
+      var pN=entry.parentNode;
+      pN.removeChild(entry);
+    }
+  }
+  $('ta').value=lex.innerHTML;
+}
+function onLoadFn(){
+//  nonEmptyEntries();
+}
+</script>
+
+<!--title /><link rel="stylesheet" href="VolodinKhamoilova20121115.css" type="text/css" /-->
+<link rel="stylesheet" type="text/css" href="../style1.css" />
+<link rel="stylesheet" type="text/css" href="VK.css" />
+
+<meta name="linkedFilesRootDir" content="D:\dropbox\Dropbox\ItelmenSA\FLExTest\Volodin and Khalojmova\LinkedFiles" /><meta name="filename" content="VolodinKhamoilova20121115.xhtml" />
+<meta name="en" content="English" scheme="Language Name" />
+<meta name="en" content="Times New Roman" scheme="Default Font" />
+<meta name="ru" content="Russian" scheme="Language Name" />
+<meta name="ru" content="Times New Roman" scheme="Default Font" />
+<meta name="itl-Cyrl" content="Itelmen (Cyrillic)" scheme="Language Name" />
+<meta name="itl-Cyrl" content="&lt;Missing: &lt;Missing: &lt;Missing: &lt;Missing: &lt;Missing: &lt;Missing: &lt;Missing: &lt;Missing: &lt;Missing: &lt;Missing: &lt;Missing: &lt;Missing: &lt;Missing: &lt;Missing: &lt;Missing: Andika&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;" scheme="Default Font" />
+<meta name="itl-fonipa" content="Itelmen (International Phonetic Alphabet)" scheme="Language Name" />
+<meta name="itl-fonipa" content="Charis SIL" scheme="Default Font" />
+<style>
+  div.hidden {display:none;}
+</style>
+<script>
+ function $(x){return document.getElementById(x);}
+ function hdwrd(entry){
+   var S="";
+   for(var ch=entry.firstChild;ch;ch=ch.nextSibling){
+     if(!ch.tagName)continue;
+     if(!ch.classList.contains("headword"))continue;
+     S+=ch.textContent;
+     }
+   return S;
+}
+
+ var text_id=[];
+ var letHeadCount=0;
+ var letHead="nosuch";
+ var visibleLetHead={};
+ function onloadFunction(){
+   var f=function(nd){
+     if(!nd || !nd.tagName)return;
+     if(nd.classList.contains("entry")){
+       text_id.push([nd.textContent,nd.id,letHead,hdwrd(nd)]);
+       if(!nd.id)throw alert("nd without id="+nd.tagName+"\n"+nd.innerHTML);
+       return;
+      }
+     if(nd.classList.contains("letHead")){
+       if(!nd.id)nd.id=(letHead="letHead_"+ ++letHeadCount);
+       visibleLetHead[nd.id]=true;
+     // alert("letHead "+nd.id);
+       }
+      for(var ch=nd.firstChild;ch;ch=ch.nextSibling)f(ch);
+     };
+   f($('main_content'));
+  }
+  function search(S,asPrefix,headWordOnly){
+    for(var l in visibleLetHead)visibleLetHead[l]=false;
+    if(!S)S=$('q').value;
+    for(var i in text_id){
+      var tii=text_id[i];
+      var txt=tii[0]; if(headWordOnly)txt=tii[3];
+      var entryId=tii[1];
+      var entry=$(entryId);
+      var foundIt=asPrefix?txt.indexOf(S)==0:txt.indexOf(S)>=0;
+      if(foundIt)visibleLetHead[tii[2]]=true;
+//      if(!confirm("foundIt="+foundIt+"; S=["+S+"]\n"+txt))throw "up";
+      if(foundIt)entry.classList.remove("hidden");
+      else entry.classList.add("hidden");
+    }
+    for(var LH in visibleLetHead){
+      if(visibleLetHead[LH])$(LH).classList.remove("hidden");
+      else $(LH).classList.add("hidden");
+    }
+  }
+
+</script>
+</head>
+<body class="dicBody" onload="onloadFunction()">
+<textarea style="display:none" id="ta" rows="20" cols="120"></textarea>
+<div id="container">
+<div id="header">
+	<div id="logo">
+		<a href="../index.html"><img src="../images/transparentlogo.png" width="220" height="50"/></a>
+	</div>
+	<div id="main_nav">
+		<ul>
+			<li><a href="../pages/currentProjects.html">Current Projects</a></li>
+            <li><a href="../pages/community.html">Local Communities</a></li>
+            <!--li><a href="../pages/scholars.html">Community of Scholars</a></li-->
+            <li><a href="../pages/corpus.html">Corpus</a></li>
+            <li id="currentpage"><a href="../pages/lexicon.html">Lexicon</a></li>
+            <li><a href="../pages/contributors.html">About Us</a></li>
+        </ul>          
+	</div>
+</div><!-- header -->
+  <h1 class="big">Dictionary of All Itelmen</h1>
+<div id="formDiv">
+<form id="lexform" name="lexform" action="javascript:blank" accept-charset="utf-8">
+
+		<p style="display:none" id="searchSelect">
+		 	<label for="searchBy">Search:</label>
+    		<select name="searchBy" id="searchBy" tabindex="1">
+				<option value="all">entire dictionary</option>
+				<option value="lang">Itelmen headword</option>
+				<option value="glossEn">English gloss</option>
+				<option value="glossRu">Russian gloss</option>
+				<option value="glossJp">Japanese gloss</option>
+				<option value="ipa">IPA Transcription</option>
+				<option value="cyr">Approximate pronunciation</option>
+			</select>
+		</p>
+		<div id="query">
+			<label for="q">Search for:</label>
+			<input type="text" name="q" id="q" value=""  tabindex="2" /> 
+			<select id="weird" onchange="$('q').value+=$('weird').options[$('weird').selectedIndex].value">
+			  <option class="bigChar" value="" selected>Select a character</option>
+			  <option class="bigChar" value="ӑ">ӑ</option>
+			  <option class="bigChar" value="ё">ё</option>
+			  <option class="bigChar" value="ӄ">ӄ</option>
+			  <option class="bigChar" value="љ">љ</option>
+			  <option class="bigChar" value="ԓ">ԓ</option>
+			  <option class="bigChar" value="њ">њ</option>
+			  <option class="bigChar" value="ӈ">ӈ</option>
+			  <option class="bigChar" value="ŏ">ŏ</option>
+			  <option class="bigChar" value="ў">ў</option>
+			  <option class="bigChar" value="ҳ">ҳ</option>
+			  <option class="bigChar" value="χ">χ</option>
+			  <option class="bigChar" value="ә">ә</option>
+			  <option class="bigChar" value="˚">˚</option>
+			  <option class="bigChar" value="ʔ">ʔ</option>	
+			</select>
+            <input type="button" value="Go" onclick="search($('q').value)"/>
+            <input type="button" id="SBheadwords"  value="head" onclick="search($('q').value,false,true)"/>
+            <input type="button" id="SBhead_init" value="head_prefix" onclick="search($('q').value,true,true)"/>
+            <input type="button" id="SBclear" value="clear" onclick="clearForm()"/>
+			<div id="search_help">
+				<a href="help.html" rel="help" title="help with queries" target="_blank">Help</a>
+			</div>
+		</div>
+		<p style="display:none" id="submit">
+    		<input type="submit" value="Go" tabindex="3" />
+    		<br/>
+    		<a class="specialsearch imagegallery" href="./?images" title="display entries with images" tabindex="6">
+			   Entries with pictures</a>
+    		<a class="specialsearch random" href="./?random" title="display a random entry" tabindex="7">A random word</a>
+    	</p>	
+
+
+</form>
+</div><!-- formDiv -->
+<div id="main_content">
+
+<div class="letHead">
+<div class="letter">А а</div>
+</div>
+<div class="letData">
+<div class="entry" id="hvo21413">
+<span class="headword" lang="itl-Cyrl">авакас</span><span class="senses"><span class="sense" id="hvo13606"><span class="definition" lang="ru"><span lang="ru">разливаться (о реке)</span></span><span class="examples"><span class="example" lang="itl-Cyrl"><span class="xitem" lang="itl-Cyrl"><span lang="itl-Cyrl">кив кʼавакнан</span></span><span class="xitem" lang="itl-fonipa"><span lang="itl-fonipa">kiw kʼawaknan</span></span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">река разлилась</span></span></span></span></span></span>
+</div>
+<div class="entry" id="hvo17243">
+<span class="headword" lang="itl-Cyrl">авазэкас</span><span class="senses"><span class="sense" id="hvo10559"><span class="definition" lang="ru"><span lang="ru">ласкаться</span></span><span class="examples"><span class="example" lang="itl-Cyrl"><span class="xitem" lang="itl-Cyrl"><span lang="itl-Cyrl">авазэзын</span></span><span class="xitem" lang="itl-fonipa"><span lang="itl-fonipa">awazezin</span></span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">он ласкается</span></span></span></span></span></span>
+</div>
+<div class="entry" id="hvo1449">
+<span class="headword" lang="itl-Cyrl">аваном</span><span class="variantrefs"><span class="variantref-entry-type"><span class="LexEntryType-publishRootVariantType-ReverseAbbrPub" lang="ru"><span lang="ru">мн.</span></span></span><span class="variantref-form" lang="itl-Cyrl">аваноʼн</span></span><span class="senses"><span class="sense" id="hvo7263"><span class="definition" lang="ru"><span lang="ru">разлив (реки); наводнение</span></span></span>
+</span>
+</div>
+
+<div class="entry" id="hvo21528">
+<span class="headword" lang="itl-Cyrl">август</span><span class="LexEntry-publishRootPara-CommentPub" lang="ru"><span lang="ru">мн. нет</span></span><span class="senses"><span class="sense" id="hvo17114"><span class="definition" lang="ru"><span lang="ru">август</span></span><span class="examples"><span class="example" lang="itl-Cyrl"><span class="xitem" lang="itl-Cyrl"><span lang="itl-Cyrl">августанк</span></span><span class="xitem" lang="itl-fonipa"><span lang="itl-fonipa">avgustank</span></span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">в августе</span></span></span></span></span></span>
+</div>
+<div class="entry" id="hvo14495">
+<span class="headword" lang="itl-Cyrl">авлакас</span><span class="senses"><span class="sense" id="hvo19726"><span class="definition" lang="ru"><span lang="ru">выть; лаять (о собаке)</span></span><span class="examples"><span class="example" lang="itl-Cyrl"><span class="xitem" lang="itl-Cyrl"><span lang="itl-Cyrl">˚ӄсҳаʼн эсчаӄ авлазэʼн</span></span><span class="xitem" lang="itl-fonipa"><span lang="itl-fonipa">˚qsχaʔn escaq awlazeʔn</span></span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">собаки сильно воют (лают)</span></span></span></span></span></span>
+</div>
+<div class="entry" id="hvo19044">
+<span class="headword" lang="itl-Cyrl">автобус</span><span class="variantrefs"><span class="variantref-entry-type"><span class="LexEntryType-publishRootVariantType-ReverseAbbrPub" lang="ru"><span lang="ru">мн.</span></span></span><span class="variantref-form" lang="itl-Cyrl">автобусаʼн</span></span><span class="senses"><span class="sense" id="hvo13298"><span class="definition" lang="ru"><span lang="ru">автобус</span></span></span></span>
+</div>
+
+<div class="entry" id="hvo1871">
+<span class="headword" lang="itl-Cyrl">автомобиль</span><span class="variantrefs"><span class="variantref-entry-type"><span class="LexEntryType-publishRootVariantType-ReverseAbbrPub" lang="ru"><span lang="ru">мн.</span></span></span><span class="variantref-form" lang="itl-Cyrl">автомобиляʼн</span></span><span class="senses"><span class="sense" id="hvo21081"><span class="definition" lang="ru"><span lang="ru">автомобиль</span></span></span></span>
+</div>
+
+<div class="entry" id="hvo9022">
+<span class="headword" lang="itl-Cyrl">авут</span><span class="variantrefs"><span class="variantref-entry-type"><span class="LexEntryType-publishRootVariantType-ReverseAbbrPub" lang="ru"><span lang="ru">мн.</span></span></span><span class="variantref-form" lang="itl-Cyrl">авутаʼн</span></span><span class="senses"><span class="sense" id="hvo11706"><span class="definition" lang="ru"><span lang="ru">скребок для выделки шкур</span></span></span></span>
+</div>
+
+<div class="entry" id="hvo15809">
+<span class="headword" lang="itl-Cyrl">авэлас</span><span class="senses"><span class="sense" id="hvo20669"><span class="definition" lang="ru"><span lang="ru">махать рукой; давать знак</span></span><span class="examples"><span class="example" lang="itl-Cyrl"><span class="xitem" lang="itl-Cyrl"><span lang="itl-Cyrl">әннанкэ ӄʼавэлах</span></span><span class="xitem" lang="itl-fonipa"><span lang="itl-fonipa">ənnanke qʼawelax</span></span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">помаши ему</span></span></span></span></span></span>
+</div>
+<div class="entry" id="hvo5924">
+<span class="headword" lang="itl-Cyrl">агроном</span><span class="variantrefs"><span class="variantref-entry-type"><span class="LexEntryType-publishRootVariantType-ReverseAbbrPub" lang="ru"><span lang="ru">мн.</span></span></span><span class="variantref-form" lang="itl-Cyrl">агрономаʼн</span></span><span class="senses"><span class="sense" id="hvo18374"><span class="definition" lang="ru"><span lang="ru">агроном</span></span></span></span>
+</div>
+
+<div class="entry" id="hvo15011">
+<span class="headword" lang="itl-Cyrl">адрэс</span><span class="variantrefs"><span class="variantref-entry-type"><span class="LexEntryType-publishRootVariantType-ReverseAbbrPub" lang="ru"><span lang="ru">мн.</span></span></span><span class="variantref-form" lang="itl-Cyrl">адрэсаʼн</span></span><span class="senses"><span class="sense" id="hvo113"><span class="definition" lang="ru"><span lang="ru">адрес</span></span></span></span>
+</div>
+
+<div class="entry" id="hvo8013">
+<span class="headword" lang="itl-Cyrl">азамскас</span><span class="senses"><span class="sense" id="hvo6059"><span class="definition" lang="ru"><span lang="ru">пришивать заплаты (на одежду)</span></span></span></span>
+</div>
+<div class="entry" id="hvo21562">
+<span class="headword" lang="itl-Cyrl">азамснŏм</span><span class="variantrefs"><span class="variantref-entry-type"><span class="LexEntryType-publishRootVariantType-ReverseAbbrPub" lang="ru"><span lang="ru">мн.</span></span></span><span class="variantref-form" lang="itl-Cyrl">азамсноʼн</span></span><span class="senses"><span class="sense" id="hvo6043"><span class="definition" lang="ru"><span lang="ru">заплата (на одежде)</span></span></span></span>
+</div>
+
+<div class="entry" id="hvo19965">
+<span class="headword" lang="itl-Cyrl">азлаӽ</span><span class="senses"><span class="sense"><span class="xsensenumber">1</span><span class="sense" id="hvo8940"><span class="definition" lang="ru"><span lang="ru">святой</span></span><span class="examples"><span class="example" lang="itl-Cyrl"><span class="xitem" lang="itl-Cyrl"><span lang="itl-Cyrl">лаччаҳ азлаҳ</span></span><span class="xitem" lang="itl-fonipa"><span lang="itl-fonipa">laccaχ azlaχ</span></span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">яркое солнышко</span></span></span></span></span><span class="xsensenumber">2</span><span class="sense" id="hvo10432"><span class="definition" lang="ru"><span lang="ru">святой</span></span></span></span>
+</span></div>
+<div class="entry" id="hvo11418">
+<span class="headword" lang="itl-Cyrl">азоск</span><span class="senses"><span class="sense" id="hvo16980"><span class="definition" lang="ru"><span lang="ru">завтра</span></span></span></span>
+</div>
+<div class="entry" id="hvo14692">
+<span class="headword" lang="itl-Cyrl">айванʼан</span><span class="senses"><span class="sense" id="hvo22062"><span class="definition" lang="ru"><span lang="ru">северный</span></span></span></span>
+</div>
+<div class="entry" id="hvo8143">
+<span class="headword" lang="itl-Cyrl">айваӈ</span><span class="LexEntry-publishRootPara-CommentPub" lang="ru"><span lang="ru">мн. нет</span></span><span class="senses"><span class="sense" id="hvo19083"><span class="definition" lang="ru"><span lang="ru">север</span></span><span class="examples"><span class="xitem"><span class="example" lang="itl-Cyrl"><span class="xitem" lang="itl-Cyrl"><span lang="itl-Cyrl">айванк</span></span><span class="xitem" lang="itl-fonipa"><span lang="itl-fonipa">ajwank</span></span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">на севере</span></span></span></span><span class="xitem"><span class="example" lang="itl-Cyrl"><span class="xitem" lang="itl-Cyrl"><span lang="itl-Cyrl">айванхʼал ккʼоӆкнэн</span></span><span class="xitem" lang="itl-fonipa"><span lang="itl-fonipa">ajwanxʼal kkʼoɬknen</span></span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">он приехал с севера</span></span></span></span></span></span></span>
+</div>
+<div class="entry" id="hvo14187">
+<span class="headword" lang="itl-Cyrl">айтатэс</span><span class="senses"><span class="sense" id="hvo18079"><span class="definition" lang="ru"><span lang="ru">гнать, выгонять</span></span><span class="examples"><span class="xitem"><span class="example" lang="itl-Cyrl"><span class="xitem" lang="itl-Cyrl"><span lang="itl-Cyrl">кʼайтатʼан</span></span><span class="xitem" lang="itl-fonipa"><span lang="itl-fonipa">k'ajtat'an</span></span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">он выгнал его</span></span></span></span><span class="xitem"><span class="example" lang="itl-Cyrl"><span class="xitem" lang="itl-Cyrl"><span lang="itl-Cyrl">˚ӄсҳаʼн ӄʼайтатхиʼн</span></span><span class="xitem" lang="itl-fonipa"><span lang="itl-fonipa">˚qsχaʔn qʼajtatxiʔn</span></span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">выгони собак</span></span></span></span></span></span></span>
+</div>
+<div class="entry" id="hvo15518">
+<span class="headword" lang="itl-Cyrl">акика!</span><span class="senses"><span class="sense" id="hvo12581"><span class="definition" lang="ru"><span lang="ru">горячо!</span></span></span></span>
+</div>
+<div class="entry" id="hvo2076">
+<span class="headword" lang="itl-Cyrl">аккуратной</span><span class="senses"><span class="sense" id="hvo20878"><span class="definition" lang="ru"><span lang="ru">аккуратный</span></span></span></span>
+</div>
+
+<div class="entry" id="hvo6541">
+<span class="headword" lang="itl-Cyrl">акнос</span><span class="variantrefs"><span class="variantref-entry-type"><span class="LexEntryType-publishRootVariantType-ReverseAbbrPub" lang="ru"><span lang="ru">мн.</span></span></span><span class="variantref-form" lang="itl-Cyrl">акнозэʼн</span></span><span class="senses"><span class="sense" id="hvo1105"><span class="definition" lang="ru"><span lang="ru">богатство</span></span></span></span>
+</div>
+<div class="entry" id="hvo8243">
+<span class="headword" lang="itl-Cyrl">активной</span><span class="senses"><span class="sense" id="hvo8598"><span class="definition" lang="ru"><span lang="ru">активный</span></span></span></span>
+</div>
+<div class="entry" id="hvo9920">
+<span class="headword" lang="itl-Cyrl">алвалэкас</span><span class="senses"><span class="sense" id="hvo12169"><span class="definition" lang="ru"><span lang="ru">походить на кого-л., быть похожим</span></span><span class="examples"><span class="example" lang="itl-Cyrl"><span class="xitem" lang="itl-Cyrl"><span lang="itl-Cyrl">кәмман сыллатумх эсханкә алвалэзэн, кәмма лаҳсҳанкэ тʼалвалэскичэн</span></span><span class="xitem" lang="itl-fonipa"><span lang="itl-fonipa">kəmman sillatumx esxankə alwalesen, kəmma laχsχanke tʼalwaleskicen</span></span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">мой брат похож на отца, я - на мать</span></span></span></span></span></span>
+</div>
+<div class="entry" id="hvo6543">
+<span class="headword" lang="itl-Cyrl">алвас</span><span class="LexEntry-publishRootPara-CommentPub" lang="ru"><span lang="ru">мн. нет</span></span><span class="senses"><span class="sense" id="hvo4502"><span class="definition" lang="ru"><span lang="ru">слава (репутация)</span></span></span></span>
+</div>
+<div class="entry" id="hvo4317">
+<span class="headword" lang="itl-Cyrl">алупткʼас</span><span class="senses"><span class="sense" id="hvo22510"><span class="definition" lang="ru"><span lang="ru">шептать</span></span><span class="examples"><span class="xitem"><span class="example" lang="itl-Cyrl"><span class="xitem" lang="itl-Cyrl"><span lang="itl-Cyrl">ӄʼалупткʼах</span></span><span class="xitem" lang="itl-fonipa"><span lang="itl-fonipa">qʼaluptkʼax</span></span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">шепни ему</span></span></span></span><span class="xitem"><span class="example" lang="itl-Cyrl"><span class="xitem" lang="itl-Cyrl"><span lang="itl-Cyrl">ӄʼалупткʼамиӈ</span></span><span class="xitem" lang="itl-fonipa"><span lang="itl-fonipa">qʼaluptkʼamiŋ</span></span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">шепни мне</span></span></span></span></span></span></span>
+</div>
+<div class="entry" id="hvo11192">
+<span class="headword" lang="itl-Cyrl">алупткʼаʼԓкас</span><span class="senses"><span class="sense" id="hvo13673"><span class="definition" lang="ru"><span lang="ru">шептаться</span></span><span class="examples"><span class="example" lang="itl-Cyrl"><span class="xitem" lang="itl-Cyrl"><span lang="itl-Cyrl">заӄ алупткʼаʼӆкаӄ</span></span><span class="xitem" lang="itl-fonipa"><span lang="itl-fonipa">zaq aluptkʼaʔɬkaq</span></span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">не шепчитесь</span></span></span></span></span></span>
+</div>
+<div class="entry" id="hvo6704">
+<span class="headword" lang="itl-Cyrl">алускʼваʼԓкас</span><span class="senses"><span class="sense" id="hvo226"><span class="definition" lang="ru"><span lang="ru">подслушивать</span></span><span class="examples"><span class="example" lang="itl-Cyrl"><span class="xitem" lang="itl-Cyrl"><span lang="itl-Cyrl">алускʼваʼсэн</span></span><span class="xitem" lang="itl-fonipa"><span lang="itl-fonipa">aluskʼwaʔsen</span></span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">подслушивает</span></span></span></span></span></span>
+</div>
+<div class="entry" id="hvo19670">
+<span class="headword" lang="itl-Cyrl">алфавит</span><span class="variantrefs"><span class="variantref-entry-type"><span class="LexEntryType-publishRootVariantType-ReverseAbbrPub" lang="ru"><span lang="ru">мн.</span></span></span><span class="variantref-form" lang="itl-Cyrl">алфавитэʼн</span></span><span class="senses"><span class="sense" id="hvo4199"><span class="definition" lang="ru"><span lang="ru">алфавит</span></span></span></span>
+</div>
+
+<div class="entry" id="hvo18818">
+<span class="headword" lang="itl-Cyrl">алхп</span><span class="variantrefs"><span class="variantref-entry-type"><span class="LexEntryType-publishRootVariantType-ReverseAbbrPub" lang="ru"><span lang="ru">мн.</span></span></span><span class="variantref-form" lang="itl-Cyrl">алхпаʼн</span></span><span class="senses"><span class="sense" id="hvo8967"><span class="definition" lang="ru"><span lang="ru">обработанный и готовый в пищу стебель кипрея (традиционная пища ительменов)</span></span></span></span>
+</div>
+
+<div class="entry" id="hvo6734">
+<span class="headword" lang="itl-Cyrl">альбом</span><span class="variantrefs"><span class="variantref-entry-type"><span class="LexEntryType-publishRootVariantType-ReverseAbbrPub" lang="ru"><span lang="ru">мн.</span></span></span><span class="variantref-form" lang="itl-Cyrl">альбомаʼн</span></span><span class="senses"><span class="sense" id="hvo22339"><span class="definition" lang="ru"><span lang="ru">альбом</span></span></span></span>
+</div>
+
+<div class="entry" id="hvo1287">
+<span class="headword" lang="itl-Cyrl">аља</span><span class="variantrefs"><span class="variantref-entry-type"><span class="LexEntryType-publishRootVariantType-ReverseAbbrPub" lang="ru"><span lang="ru">мн.</span></span></span><span class="variantref-form" lang="itl-Cyrl">аљаʼн</span></span><span class="senses"><span class="sense" id="hvo4862"><span class="definition" lang="ru"><span lang="ru">старший брат</span></span></span></span>
+</div>
+
+<div class="entry" id="hvo524">
+<span class="headword" lang="itl-Cyrl">˚амӄ</span><span class="senses"><span class="sense" id="hvo1054"><span class="definition" lang="ru"><span lang="ru">глубоко</span></span><span class="examples"><span class="example" lang="itl-Cyrl"><span class="xitem" lang="itl-Cyrl"><span lang="itl-Cyrl">˚хэʼамӄ</span></span><span class="xitem" lang="itl-fonipa"><span lang="itl-fonipa">˚xeʔamq</span></span></span><span class="translations"><s pan class="translation" lang="ru"><span lang="ru">очень глубоко</span></span></span></span></span></span>
+</div>
+<div class="entry" id="hvo5249">
+<span class="headword" lang="itl-Cyrl">˚амлаӽ</span><span class="senses"><span class="sense" id="hvo4703"><span class="definition" lang="ru"><span lang="ru">глубокий</span></span><span class="examples"><span class="xitem"><span class="example" lang="itl-Cyrl"><span class="xitem" lang="itl-Cyrl"><span lang="itl-Cyrl">˚хэʼамлаҳ</span></span><span class="xitem" lang="itl-fonipa"><span lang="itl-fonipa">˚xeʔamlaχ</span></span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">очень глубокий</span></span></span></span><span class="xitem"><span class="example" lang="itl-Cyrl"><span class="xitem" lang="itl-Cyrl"><span lang="itl-Cyrl">тыʼн кив ˚хэʔамлаҳ</span></span><span class="xitem" lang="itl-fonipa"><span lang="itl-fonipa">tiʔn kiw ˚xeʔamlaχ</span></span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">эта река очень глубокая</span></span></span></span></span></span></span>
+</div>
+<div class="entry" id="hvo8259">
+<span class="headword" lang="itl-Cyrl">амӈэл</span><span class="variantrefs"><span class="variantref-entry-type"><span class="LexEntryType-publishRootVariantType-ReverseAbbrPub" lang="ru"><span lang="ru">мн.</span></span></span><span class="variantref-form" lang="itl-Cyrl">амӈэʼл</span></span><span class="senses"><span class="sense" id="hvo7568"><span class="definition" lang="ru"><span lang="ru">сказка; легенда</span></span></span></span>
+</div>
+
+<div class="entry" id="hvo6523">
+<span class="headword" lang="itl-Cyrl">ампәлсхэнаʼԓкас</span><span class="senses"><span class="sense" id="hvo3604"><span class="definition" lang="ru"><span lang="ru">кусаться</span></span><span class="examples"><span class="example" lang="itl-Cyrl"><span class="xitem" lang="itl-Cyrl"><span lang="itl-Cyrl">˚ӄсҳай ампәлсхэнаʼскинэн</span></span><span class="xitem" lang="itl-fonipa"><span lang="itl-fonipa">˚qsχaj ampəlsxenaʼskinen</span></span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">собака у него кусается</span></span></span></span></span></span>
+</div>
+<div class="entry" id="hvo9039">
+<span class="headword" lang="itl-Cyrl">ампэлас</span><span class="senses"><span class="sense" id="hvo15548"><span class="definition" lang="ru"><span lang="ru">объявлять</span></span><span class="examples"><span class="example" lang="itl-Cyrl"><span class="xitem" lang="itl-Cyrl"><span lang="itl-Cyrl">тʼампэлачэн</span></span><span class="xitem" lang="itl-fonipa"><span lang="itl-fonipa">tʼampelacen</span></span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">я сделал объявление (букв. я объявил об этом)</span></span></span></span></span></span>
+</div>
+<div class="entry" id="hvo11564">
+<span class="headword" lang="itl-Cyrl">ампэланом</span><span class="senses"><span class="sense" id="hvo10269"><span class="definition" lang="ru"><span lang="ru">весть, известие</span></span></span></span>
+</div>
+<div class="entry" id="hvo6745">
+<span class="headword" lang="itl-Cyrl">амтоʼаԓкас</span><span class="senses"><span class="sense" id="hvo9785"><span class="definition" lang="ru"><span lang="ru">приветствовать</span></span><span class="examples"><span class="example" lang="itl-Cyrl"><span class="xitem" lang="itl-Cyrl"><span lang="itl-Cyrl">Марийа кчʼэкнэн, Элизавэта кʼамтоʼаӆкнан</span></span><span class="xitem" lang="itl-fonipa"><span lang="itl-fonipa">marija kcʼeknen, elizaveta kʼamtoʔaɬknan</span></span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">Мария вошла, приветствовала Елизавету</span></span></span></span></span></span>
+</div>
+
+<div class="entry" id="hvo14297">
+<span class="headword" lang="itl-Cyrl">амэԓаӈ</span><span class="senses"><span class="sense" id="hvo6484"><span class="definition" lang="ru"><span lang="ru">незаметно, скрытно, тайком</span></span></span></span>
+</div>
+<div class="entry" id="hvo13038">
+<span class="headword" lang="itl-Cyrl">амэԓас</span><span class="variantrefs"><span class="variantref-entry-type"><span class="LexEntryType-publishRootVariantType-ReverseAbbrPub" lang="ru"><span lang="ru">мн.</span></span></span><span class="variantref-form" lang="itl-Cyrl">амэԓазэʼн</span></span><span class="senses"><span class="sense" id="hvo13272"><span class="definition" lang="ru"><span lang="ru">тайна</span></span></span></span>
+</div>
+<div class="entry" id="hvo21978">
+<span class="headword" lang="itl-Cyrl">амэԓаткас</span><span class="senses"><span class="sense" id="hvo7135"><span class="definition" lang="ru"><span lang="ru">исчезать, скрываться (из nоля зрения)</span></span><span class="examples"><span class="example" lang="itl-Cyrl"><span class="xitem" lang="itl-Cyrl"><span lang="itl-Cyrl">ӄаʼт кʼамэӆаткнан</span></span><span class="xitem" lang="itl-fonipa"><span lang="itl-fonipa">qaʔt kʼameɬatknan</span></span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">он уже скрылся</span></span></span></span></span></span>
+</div>
+<div class="entry" id="hvo22973">
+<span class="headword" lang="itl-Cyrl">˚амʼам</span><span class="variantrefs"><span class="variantref-entry-type"><span class="LexEntryType-publishRootVariantType-ReverseAbbrPub" lang="ru"><span lang="ru">мн.</span></span></span><span class="variantref-form" lang="itl-Cyrl">˚амʼамэʼн</span></span><span class="senses"><span class="sense" id="hvo14045"><span class="definition" lang="ru"><span lang="ru">глубокое место</span></span></span></span>
+</div>
+<div class="entry" id="hvo5743">
+<span class="headword" lang="itl-Cyrl">анӑс</span><span class="variantrefs"><span class="variantref-entry-type"><span class="LexEntryType-publishRootVariantType-ReverseAbbrPub" lang="ru"><span lang="ru">мн.</span></span></span><span class="variantref-form" lang="itl-Cyrl">анӑзаʼн</span></span><span class="senses"><span class="sense" id="hvo14989"><span class="definition" lang="ru"><span lang="ru">ковш</span></span></span></span>
+</div>
+<!-- div class="entry" id="hvo1763">
+<span class="headword" lang="itl-Cyrl">анзазос</span><span class="senses"><span class="sense" id="hvo6895"><span class="definition" lang="ru"><span lang="ru">красить, покрасить; раскрашивать; мазать, намазать; замазывать</span></span><span class="examples"><span class="example" lang="itl-Cyrl"><span class="xitem" lang="itl-Cyrl"><span lang="itl-Cyrl">миӆ фэваӈ әннанкэ кʼанзазоʼан</span></span><span class="xitem" lang="itl-fonipa"><span lang="itl-fonipa">miɬ ʍewaŋ ənnanke kʼanzazoʔan</span></span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">всё лицо ему раскрасили</span></span></span><span class="LexExampleSentence-publishRoot-ReferencePub"><lexexamplesentence_reference><str><run ws="ru">фольк.</run></str></lexexamplesentence_reference></span></span></span></span>
+</div-->
+
+<div class="entry" id="hvo5378">
+<span class="headword" lang="itl-Cyrl">чэстэʼԓкас</span><span class="senses"><span class="sense" id="hvo13449"><span class="definition" lang="ru"><span lang="ru">чистить</span></span><span class="examples"><span class="example" lang="itl-Cyrl"><span lang="itl-Cyrl">чистыʼсын</span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">он чистит</span></span></span></span></span></span>
+</div>
+<div class="entry" id="hvo11732">
+<span class="headword" lang="itl-Cyrl">чисӽ</span><span class="variantrefs"><span class="variantref-entry-type"><span class="LexEntryType-publishRootVariantType-ReverseAbbrPub" lang="ru"><span lang="ru">мн.</span></span></span><span class="variantref-form" lang="itl-Cyrl">чисӽэʼн</span></span><span class="senses"><span class="sense" id="hvo4318"><span class="definition" lang="ru"><span lang="ru">руль</span></span></span></span>
+</div>
+
+<div class="entry" id="hvo9452">
+<span class="headword" lang="itl-Cyrl">чэʼнӈэтэс</span><span class="senses"><span class="sense" id="hvo9236"><span class="definition" lang="ru"><span lang="ru">шить; пришивать</span></span><span class="examples"><span class="xitem"><span class="example" lang="itl-Cyrl"><span lang="itl-Cyrl">пуговица ӄчиʼнӈитых</span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">пришей пуговицу</span></span></span></span><span class="xitem"><span class="example" lang="itl-Cyrl"><span lang="itl-Cyrl">ӄохч кчиʼнӈи тʼин кәмманкэ</span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">она сшила мне кухлянку</span></span></span></span></span></span></span>
+</div>
+<div class="entry" id="hvo13157">
+<span class="headword" lang="itl-Cyrl">чэʼнӈэʼԓкас</span><span class="senses"><span class="sense" id="hvo4410"><span class="definition" lang="ru"><span lang="ru">шить (занматься шитьём)</span></span><span class="examples"><span class="example" lang="itl-Cyrl"><span lang="itl-Cyrl">чиʼнӈизын</span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">она шьёт</span></span></span></span></span></span>
+</div>
+
+<div class="entry" id="hvo16580">
+<span class="headword" lang="itl-Cyrl">чкатԓэʼн</span><span class="variantrefs"><span class="variantref-entry-type"><span class="LexEntryType-publishRootVariantType-ReverseAbbrPub" lang="ru"><span lang="ru">ед.</span></span></span><span class="variantref-form" lang="itl-Cyrl">чкатԓэлӈән</span></span><span class="senses"><span class="sense" id="hvo21933"><span class="definition" lang="ru"><span lang="ru">летние торбаза</span></span></span></span>
+</div>
+<div class="entry" id="hvo13550">
+<span class="headword" lang="itl-Cyrl">чкэкас</span><span class="senses"><span class="sense" id="hvo13879"><span class="definition" lang="ru"><span lang="ru">найти, находить</span></span><span class="examples"><span class="xitem"><span class="example" lang="itl-Cyrl"><span lang="itl-Cyrl">аʼасх тчкикичэн</span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">я нашел гнездо</span></span></span></span><span class="xitem"><span class="example" lang="itl-Cyrl"><span lang="itl-Cyrl">ӑӈӄа чкичвин?</span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">что ты нашел?</span></span></span></span><span class="xitem"><span class="example" lang="itl-Cyrl"><span lang="itl-Cyrl">фитвит кчкикнэн</span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">он нашел нерпу</span></span></span></span><span class="xitem"><span class="example" lang="itl-Cyrl"><span lang="itl-Cyrl">тчкиваԓхкин</span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">я найду тебя</span></span></span></span></span></span></span>
+</div>
+<div class="entry" id="hvo17248">
+<span class="headword" lang="itl-Cyrl">чкԓкас</span><span class="senses"><span class="sense"><span class="xsensenumber">1</span><span class="sense" id="hvo22080"><span class="definition" lang="ru"><span lang="ru">нырять, погружаться на дно</span></span><span class="examples"><span class="xitem"><span class="example" lang="itl-Cyrl"><span lang="itl-Cyrl">кчкԓӄзукнэн</span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">он нырял</span></span></span></span><span class="xitem"><span class="example" lang="itl-Cyrl"><span lang="itl-Cyrl">чʼит кчклкнэн</span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">ружье утонуло (букв. нырнуло)</span></span></span></span></span></span><span class="xsensenumber">2</span><span class="sense" id="hvo1992"><span class="definition" lang="ru"><span lang="ru">закатываться, садиться (о солнце)</span></span><span class="examples"><span class="example" lang="itl-Cyrl"><span lang="itl-Cyrl">лач чксэн</span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">солнце садится</span></span></span></span></span></span>
+</span></div>
+<div class="entry" id="hvo13291">
+<span class="headword" lang="itl-Cyrl">чкԓэткас</span><span class="senses"><span class="sense" id="hvo21693"><span class="definition" lang="ru"><span lang="ru">нырять (многократно, то и дело)</span></span><span class="examples"><span class="example" lang="itl-Cyrl"><span lang="itl-Cyrl">фитвит чкԓитызын</span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">нерпа ныряет</span></span></span></span></span></span>
+</div>
+<div class="entry" id="hvo7652">
+<span class="headword" lang="itl-Cyrl">чкԓном</span><span class="LexEntry-publishRootPara-CommentPub" lang="ru"><span lang="ru">мн. нет</span></span><span class="senses"><span class="sense" id="hvo17241"><span class="definition" lang="ru"><span lang="ru">запад</span></span></span></span>
+</div>
+
+<div class="entry" id="hvo6599">
+
+</div>
+<div class="entry" id="hvo2668">
+<span class="headword" lang="itl-Cyrl">чкәпч</span><span class="variantrefs"><span class="variantref-entry-type"><span class="LexEntryType-publishRootVariantType-ReverseAbbrPub" lang="ru"><span lang="ru">мн.</span></span></span><span class="variantref-form" lang="itl-Cyrl">чкпчэʼн</span></span><span class="senses"><span class="sense" id="hvo7230"><span class="definition" lang="ru"><span lang="ru">ложка</span></span></span></span>
+</div>
+<div class="entry" id="hvo5213">
+<span class="headword" lang="itl-Cyrl">чкэном</span><span class="variantrefs"><span class="variantref-entry-type"><span class="LexEntryType-publishRootVariantType-ReverseAbbrPub" lang="ru"><span lang="ru">мн.</span></span></span><span class="variantref-form" lang="itl-Cyrl">чкэноʼн</span></span><span class="senses"><span class="sense" id="hvo20226"><span class="definition" lang="ru"><span lang="ru">находка</span></span></span></span>
+</div>
+
+<div class="entry" id="hvo8612">
+<span class="headword" lang="itl-Cyrl">чкэчк</span><span class="variantrefs"><span class="variantref-entry-type"><span class="LexEntryType-publishRootVariantType-ReverseAbbrPub" lang="ru"><span lang="ru">мн.</span></span></span><span class="variantref-form" lang="itl-Cyrl">чкэчкаʼн</span></span><span class="senses"><span class="sense"><span class="xsensenumber">1</span><span class="sense" id="hvo5414"><span class="definition" lang="ru"><span lang="ru">сырость</span></span></span><span class="xsensenumber">2</span><span class="sense" id="hvo9673"><span class="definition" lang="ru"><span lang="ru">влажное место</span></span></span></span>
+</span></div>
+
+<div class="entry" id="hvo13008">
+<span class="headword" lang="itl-Cyrl">чӄаӄ</span><span class="senses"><span class="sense" id="hvo18865"><span class="definition" lang="ru"><span lang="ru">сыро</span></span><span class="examples"><span class="example" lang="itl-Cyrl"><span lang="itl-Cyrl">хичӄаӄ</span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">очень сыро</span></span></span></span></span></span>
+</div>
+<div class="entry" id="hvo16849">
+<span class="headword" lang="itl-Cyrl">чӄатԓэʼн</span><span class="senses"><span class="sense" id="hvo9308"><span class="definition" lang="ru"><span lang="ru">весенне-осенние торбаза</span></span></span></span>
+</div>
+<div class="entry" id="hvo7247">
+<span class="headword" lang="itl-Cyrl">чӄлаӽ</span><span class="senses"><span class="sense" id="hvo16328"><span class="definition" lang="ru"><span lang="ru">сырой, влажный; мокрый</span></span><span class="examples"><span class="example" lang="itl-Cyrl"><span lang="itl-Cyrl">хичӄлаӽ</span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">очень сырой</span></span></span></span></span></span>
+</div>
+
+<div class="entry" id="hvo6785">
+
+</div>
+<div class="entry" id="hvo19549">
+<span class="headword" lang="itl-Cyrl">чԓхʼин</span><span class="senses"><span class="sense"><span class="xsensenumber">1</span><span class="sense" id="hvo6676"><span class="definition" lang="ru"><span lang="ru">пуховый</span></span></span><span class="xsensenumber">2</span><span class="sense" id="hvo11034"><span class="definition" lang="ru"><span lang="ru">шерстяной</span></span></span></span>
+</span></div>
+<div class="entry" id="hvo10474">
+<span class="headword" lang="itl-Cyrl">чокас</span><span class="senses"><span class="sense" id="hvo6766"><span class="definition" lang="ru"><span lang="ru">таять, растаять</span></span><span class="examples"><span class="xitem"><span class="example" lang="itl-Cyrl"><span lang="itl-Cyrl">ӄәллал чозэн</span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">снег тает</span></span></span></span><span class="xitem"><span class="example" lang="itl-Cyrl"><span lang="itl-Cyrl">ӄәллал ӄаʼт кчокнан</span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">снег уже растаял</span></span></span></span></span></span></span>
+</div>
+<div class="entry" id="hvo3269">
+<span class="headword" lang="itl-Cyrl">чопхч</span><span class="variantrefs"><span class="variantref-entry-type"><span class="LexEntryType-publishRootVariantType-ReverseAbbrPub" lang="ru"><span lang="ru">мн.</span></span></span><span class="variantref-form" lang="itl-Cyrl">чопхчэʼн</span></span><span class="senses"><span class="sense" id="hvo19756"><span class="definition" lang="ru"><span lang="ru">хвост птицы</span></span></span></span>
+</div>
+
+<div class="entry" id="hvo23030">
+<span class="headword" lang="itl-Cyrl">чоʼоктунук</span><span class="senses"><span class="sense" id="hvo4049"><span class="definition" lang="ru"><span lang="ru">восемь</span></span></span></span>
+</div>
+<div class="entry" id="hvo20379">
+<span class="headword" lang="itl-Cyrl">чрэчрәм</span><span class="variantrefs"><span class="variantref-entry-type"><span class="LexEntryType-publishRootVariantType-ReverseAbbrPub" lang="ru"><span lang="ru">мн.</span></span></span><span class="variantref-form" lang="itl-Cyrl">чрэʼн</span></span><span class="senses"><span class="sense" id="hvo12651"><span class="definition" lang="ru"><span lang="ru">сажа</span></span></span></span>
+</div>
+
+<div class="entry" id="hvo12996">
+<span class="headword" lang="itl-Cyrl">чтобы</span><span class="senses"><span class="sense" id="hvo7918"><span class="definition" lang="ru"><span lang="ru">чтобы</span></span></span></span>
+</div>
+<div class="entry" id="hvo627">
+<span class="headword" lang="itl-Cyrl">чукчук</span><span class="variantrefs"><span class="variantref-entry-type"><span class="LexEntryType-publishRootVariantType-ReverseAbbrPub" lang="ru"><span lang="ru">мн.</span></span></span><span class="variantref-form" lang="itl-Cyrl">чкуʼн</span></span><span class="senses"><span class="sense" id="hvo3554"><span class="definition" lang="ru"><span lang="ru">ласт нерпы</span></span></span></span>
+</div>
+<div class="entry" id="hvo3934">
+<span class="headword" lang="itl-Cyrl">чускэʼ</span><span class="senses"><span class="sense" id="hvo17452"><span class="definition" lang="ru"><span lang="ru">свинья</span></span></span></span>
+</div>
+<div class="entry" id="hvo12201">
+<span class="headword" lang="itl-Cyrl">чуфчуф</span><span class="variantrefs"><span class="variantref-entry-type"><span class="LexEntryType-publishRootVariantType-ReverseAbbrPub" lang="ru"><span lang="ru">мн.</span></span></span><span class="variantref-form" lang="itl-Cyrl">чуфчуфэʼн</span></span><span class="senses"><span class="sense" id="hvo10986"><span class="definition" lang="ru"><span lang="ru">дождь</span></span></span></span>
+</div>
+
+<div class="entry" id="hvo39">
+<span class="headword" lang="itl-Cyrl">чфкас</span><span class="senses"><span class="sense" id="hvo13254"><span class="definition" lang="ru"><span lang="ru">идти (о дожде)</span></span><span class="examples"><span class="xitem"><span class="example" lang="itl-Cyrl"><span lang="itl-Cyrl">чфәзын</span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">дождь идет</span></span></span></span><span class="xitem"><span class="example" lang="itl-Cyrl"><span lang="itl-Cyrl">чфӄзувэн</span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">дождь шел</span></span></span></span><span class="xitem"><span class="example" lang="itl-Cyrl"><span lang="itl-Cyrl">кчфкнэн</span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">дождь прошел</span></span></span></span><span class="xitem"><span class="example" lang="itl-Cyrl"><span lang="itl-Cyrl">чфӄзахэн</span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">будет дождь</span></span></span></span></span></span></span>
+</div>
+<div class="entry" id="hvo13678">
+<span class="headword" lang="itl-Cyrl">чхройкʼачӽ</span><span class="variantrefs"><span class="variantref-entry-type"><span class="LexEntryType-publishRootVariantType-ReverseAbbrPub" lang="ru"><span lang="ru">мн.</span></span></span><span class="variantref-form" lang="itl-Cyrl">чхройкʼаʼњч</span></span><span class="senses"><span class="sense" id="hvo20366"><span class="definition" lang="ru"><span lang="ru">мелкий картофель</span></span><span class="examples"><span class="example" lang="itl-Cyrl"><span lang="itl-Cyrl">эм чхройкʼаʼњч нахԓчэʼн</span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">мы выкопали (букв. сняли) одну мелочь</span></span></span></span></span></span>
+</div>
+
+<div class="entry" id="hvo13170">
+<span class="headword" lang="itl-Cyrl">чӽмалкас</span><span class="senses"><span class="sense" id="hvo5246"><span class="definition" lang="ru"><span lang="ru">ругаться, ссориться</span></span><span class="examples"><span class="xitem"><span class="example" lang="itl-Cyrl"><span lang="itl-Cyrl">заӄ чӽмалкаӄ</span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">не ругайся</span></span></span></span><span class="xitem"><span class="example" lang="itl-Cyrl"><span lang="itl-Cyrl">тэнаӄ чӽмалызыʼн</span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">опять они ссорятся</span></span></span></span></span></span></span>
+</div>
+<div class="entry" id="hvo6187">
+<span class="headword" lang="itl-Cyrl">чӽмалэс</span><span class="senses"><span class="sense" id="hvo16671"><span class="definition" lang="ru"><span lang="ru">ругать</span></span><span class="examples"><span class="xitem"><span class="example" lang="itl-Cyrl"><span lang="itl-Cyrl">ӑӈӄанкит чӽмалэзэн?</span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">за что ты его ругаешь?</span></span></span></span><span class="xitem"><span class="example" lang="itl-Cyrl"><span lang="itl-Cyrl">заӄ чӽмалаӄ ӄʼисмиӈ</span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">не ругай меня</span></span></span></span></span></span></span>
+</div>
+<div class="entry" id="hvo4185">
+<span class="headword" lang="itl-Cyrl">чӽэӈэкас</span><span class="senses"><span class="sense" id="hvo20636"><span class="definition" lang="ru"><span lang="ru">сыпаться</span></span><span class="examples"><span class="xitem"><span class="example" lang="itl-Cyrl"><span lang="itl-Cyrl">чӽэӈызын</span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">сыплется</span></span></span></span><span class="xitem"><span class="example" lang="itl-Cyrl"><span lang="itl-Cyrl">миԓ кчӽэӈэкнэн</span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">все высыпалось</span></span></span></span></span></span></span>
+</div>
+<div class="entry" id="hvo10529">
+<span class="headword" lang="itl-Cyrl">чәск</span><span class="senses"><span class="sense" id="hvo15248"><span class="definition" lang="ru"><span lang="ru">в; под (внутри чего-л.)</span></span><span class="examples"><span class="xitem"><span class="example" lang="itl-Cyrl"><span lang="itl-Cyrl">чәск кистэнк</span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">в доме</span></span></span></span><span class="xitem"><span class="example" lang="itl-Cyrl"><span lang="itl-Cyrl">чәск сәмтэнк</span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">в земле; под землей</span></span></span></span></span></span></span>
+</div>
+<div class="entry" id="hvo17795">
+<span class="headword" lang="itl-Cyrl">чәскэ</span><span class="senses"><span class="sense" id="hvo22684"><span class="definition" lang="ru"><span lang="ru">в; вод (внутрь чего-л.)</span></span><span class="examples"><span class="xitem"><span class="example" lang="itl-Cyrl"><span lang="itl-Cyrl">чәскэ кэстанкэ</span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">в дом</span></span></span></span><span class="xitem"><span class="example" lang="itl-Cyrl"><span lang="itl-Cyrl">чәскэ эʼйанкэ</span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">в воду; под воду</span></span></span></span></span></span></span>
+</div>
+<div class="entry" id="hvo6708">
+<span class="headword" lang="itl-Cyrl">чәсхʼал</span><span class="senses"><span class="sense" id="hvo5494"><span class="definition" lang="ru"><span lang="ru">из; из-под (изнутри чего-л.)</span></span><span class="examples"><span class="xitem"><span class="example" lang="itl-Cyrl"><span lang="itl-Cyrl">чәсхʼал кэстхʼал</span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">из дома</span></span></span></span><span class="xitem"><span class="example" lang="itl-Cyrl"><span lang="itl-Cyrl">чәсхʼал эʼйхʼал </span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">из воды; из-под воды</span></span></span></span></span></span></span>
+</div>
+<div class="entry" id="hvo6193">
+<span class="headword" lang="itl-Cyrl">чэксхэлэкас</span><span class="senses"><span class="sense" id="hvo18694"><span class="definition" lang="ru"><span lang="ru">заблудиться</span></span><span class="examples"><span class="xitem"><span class="example" lang="itl-Cyrl"><span lang="itl-Cyrl">тчэксхылыкичэн</span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">я заблудился</span></span></span></span><span class="xitem"><span class="example" lang="itl-Cyrl"><span lang="itl-Cyrl">кчэксхылыкнэн</span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">он заблудился</span></span></span></span></span></span></span>
+</div>
+<div class="entry" id="hvo13480">
+<span class="headword" lang="itl-Cyrl">чэԓхчэԓх</span><span class="variantrefs"><span class="variantref-entry-type"><span class="LexEntryType-publishRootVariantType-ReverseAbbrPub" lang="ru"><span lang="ru">мн.</span></span></span><span class="variantref-form" lang="itl-Cyrl">чԓхаʼн</span></span><span class="senses"><span class="sense"><span class="xsensenumber">1</span><span class="sense" id="hvo5345"><span class="definition" lang="ru"><span lang="ru">шерсть</span></span></span><span class="xsensenumber">2</span><span class="sense" id="hvo21126"><span class="definition" lang="ru"><span lang="ru">перо</span></span></span><span class="xsensenumber">3</span><span class="sense" id="hvo10038"><span class="definition" lang="ru"><span lang="ru">пух</span></span></span></span>
+</span></div>
+<div class="entry" id="hvo3033">
+<span class="headword" lang="itl-Cyrl">˚чэԓхчэԓх</span><span class="variantrefs"><span class="variantref-entry-type"><span class="LexEntryType-publishRootVariantType-ReverseAbbrPub" lang="ru"><span lang="ru">мн.</span></span></span><span class="variantref-form" lang="itl-Cyrl">˚чԓхаʼн</span></span><span class="senses"><span class="sense" id="hvo21987"><span class="definition" lang="ru"><span lang="ru">брусника</span></span></span></span>
+</div>
+
+<div class="entry" id="hvo11800">
+<span class="headword" lang="itl-Cyrl">чэркох</span><span class="variantrefs"><span class="variantref-entry-type"><span class="LexEntryType-publishRootVariantType-ReverseAbbrPub" lang="ru"><span lang="ru">мн.</span></span></span><span class="variantref-form" lang="itl-Cyrl">чэркваʼн</span></span><span class="senses"><span class="sense" id="hvo1919"><span class="definition" lang="ru"><span lang="ru">церковь</span></span></span></span>
+</div>
+<div class="entry" id="hvo10392">
+<span class="headword" lang="itl-Cyrl">чэртас</span><span class="senses"><span class="sense" id="hvo2459"><span class="definition" lang="ru"><span lang="ru">чертить, начертить</span></span><span class="examples"><span class="xitem"><span class="example" lang="itl-Cyrl"><span lang="itl-Cyrl">тчэртачэн</span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">я начертил</span></span></span></span><span class="xitem"><span class="example" lang="itl-Cyrl"><span lang="itl-Cyrl">кчэртаʼан</span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">он начертил</span></span></span></span></span></span></span>
+</div>
+<div class="entry" id="hvo21385">
+<span class="headword" lang="itl-Cyrl">чэрэл</span><span class="variantrefs"><span class="variantref-entry-type"><span class="LexEntryType-publishRootVariantType-ReverseAbbrPub" lang="ru"><span lang="ru">мн.</span></span></span><span class="variantref-form" lang="itl-Cyrl">чэрэʼл</span></span><span class="senses"><span class="sense" id="hvo2401"><span class="definition" lang="ru"><span lang="ru">циновка (из травы)</span></span></span></span>
+</div>
+
+<div class="entry" id="hvo20750">
+<span class="headword" lang="itl-Cyrl">чэстной</span><span class="senses"><span class="sense" id="hvo3459"><span class="definition" lang="ru"><span lang="ru">честный</span></span></span></span>
+</div>
+<div class="entry" id="hvo876">
+<span class="headword" lang="itl-Cyrl">чэтвэрг</span><span class="LexEntry-publishRootPara-CommentPub" lang="ru"><span lang="ru">мн. нет</span></span><span class="senses"><span class="sense" id="hvo2320"><span class="definition" lang="ru"><span lang="ru">четверг</span></span></span></span>
+</div>
+<div class="entry" id="hvo11467">
+<span class="headword" lang="itl-Cyrl">чэфэкас</span><span class="senses"><span class="sense" id="hvo20703"><span class="definition" lang="ru"><span lang="ru">торопиться, спешить</span></span><span class="examples"><span class="xitem"><span class="example" lang="itl-Cyrl"><span lang="itl-Cyrl">школанкэ тчэфискичэн</span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">я тороплюсь в школу</span></span></span></span><span class="xitem"><span class="example" lang="itl-Cyrl"><span lang="itl-Cyrl">ӑӈӄанкит чэфисч?</span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">чего ты торопишься?</span></span></span></span><span class="xitem"><span class="example" lang="itl-Cyrl"><span lang="itl-Cyrl">ӄчэфисхч</span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">поспеши</span></span></span></span><span class="xitem"><span class="example" lang="itl-Cyrl"><span lang="itl-Cyrl">заӄ чэфикаӄ</span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">не спеши</span></span></span></span></span></span></span>
+</div>
+<div class="entry" id="hvo5051">
+<span class="headword" lang="itl-Cyrl">чэфэки</span><span class="senses"><span class="sense" id="hvo4152"><span class="definition" lang="ru"><span lang="ru">торопливо</span></span></span></span>
+</div>
+</div>
+<div class="letHead">
+<div class="letter">Чʼ чʼ</div>
+</div>
+<div class="letData">
+<div class="entry" id="hvo19733">
+<span class="headword" lang="itl-Cyrl">чʼаӄ</span><span class="senses"><span class="sense" id="hvo20618"><span class="definition" lang="ru"><span lang="ru">четыре</span></span></span></span>
+</div>
+<div class="entry" id="hvo20589">
+<span class="headword" lang="itl-Cyrl">чʼалэс</span><span class="senses"><span class="sense" id="hvo15325"><span class="definition" lang="ru"><span lang="ru">грызть</span></span><span class="examples"><span class="example" lang="itl-Cyrl"><span lang="itl-Cyrl">чʼалэзнэн</span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">он грызет</span></span></span></span></span></span>
+</div>
+<div class="entry" id="hvo22125">
+<span class="headword" lang="itl-Cyrl">чʼаԓаӄ</span><span class="variantrefs"><span class="variantref-entry-type"><span class="LexEntryType-publishRootVariantType-ReverseAbbrPub" lang="ru"><span lang="ru">мн.</span></span></span><span class="variantref-form" lang="itl-Cyrl">чʼаԓаӄаʼн</span></span><span class="senses"><span class="sense" id="hvo14238"><span class="definition" lang="ru"><span lang="ru">грязнуля</span></span></span></span>
+</div>
+
+<div class="entry" id="hvo6141">
+<span class="headword" lang="itl-Cyrl">чʼамзанлал</span><span class="LexEntry-publishRootPara-CommentPub" lang="ru"><span lang="ru">мн. нет</span></span><span class="senses"><span class="sense" id="hvo15785"><span class="definition" lang="ru"><span lang="ru">народ</span></span></span></span>
+</div>
+<div class="entry" id="hvo6186">
+<span class="headword" lang="itl-Cyrl">чʼамзанлалʼан</span><span class="senses"><span class="sense"><span class="xsensenumber">1</span><span class="sense" id="hvo4746"><span class="definition" lang="ru"><span lang="ru">народный</span></span></span><span class="xsensenumber">2</span><span class="sense" id="hvo6485"><span class="definition" lang="ru"><span lang="ru">человеческий</span></span></span></span>
+</span></div>
+<div class="entry" id="hvo18854">
+<span class="headword" lang="itl-Cyrl">чʼамзанласӽӄ</span><span class="LexEntry-publishRootPara-CommentPub" lang="ru"><span lang="ru">мн. нет</span></span><span class="senses"><span class="sense" id="hvo22559"><span class="definition" lang="ru"><span lang="ru">толпа</span></span></span></span>
+</div>
+
+<div class="entry" id="hvo8481">
+<span class="headword" lang="itl-Cyrl">чʼамзањԓӽ</span><span class="variantrefs"><span class="variantref-entry-type"><span class="LexEntryType-publishRootVariantType-ReverseAbbrPub" lang="ru"><span lang="ru">мн.</span></span></span><span class="variantref-form" lang="itl-Cyrl">чʼамзанлаʼн</span></span><span class="senses"><span class="sense" id="hvo10057"><span class="definition" lang="ru"><span lang="ru">человек</span></span></span></span>
+</div>
+
+<div class="entry" id="hvo20560">
+<span class="headword" lang="itl-Cyrl">чʼахԓэс</span><span class="variantrefs"><span class="variantref-entry-type"><span class="LexEntryType-publishRootVariantType-ReverseAbbrPub" lang="ru"><span lang="ru">мн.</span></span></span><span class="variantref-form" lang="itl-Cyrl">чʼахԓэзэʼн</span></span><span class="senses"><span class="sense" id="hvo2656"><span class="definition" lang="ru"><span lang="ru">праздник</span></span></span></span>
+</div>
+<div class="entry" id="hvo9551">
+<span class="headword" lang="itl-Cyrl">чʼаӽлэзʼан</span><span class="senses"><span class="sense" id="hvo3421"><span class="definition" lang="ru"><span lang="ru">праздничный</span></span></span></span>
+</div>
+<div class="entry" id="hvo534">
+<span class="headword" lang="itl-Cyrl">чʼачʼакас</span><span class="senses"><span class="sense" id="hvo10259"><span class="definition" lang="ru"><span lang="ru">краснеть</span></span><span class="examples"><span class="xitem"><span class="example" lang="itl-Cyrl"><span lang="itl-Cyrl">ӈэйӈэ чʼачʼазын ˚чԓхкит</span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">сопка краснее от брусники</span></span></span></span><span class="xitem"><span class="example" lang="itl-Cyrl"><span lang="itl-Cyrl">кчʼачʼакнан</span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">он покраснел</span></span></span></span></span></span></span>
+</div>
+<div class="entry" id="hvo15932">
+<span class="headword" lang="itl-Cyrl">чʼачʼалаӽ</span><span class="senses"><span class="sense"><span class="xsensenumber">1</span><span class="sense" id="hvo12482"><span class="definition" lang="ru"><span lang="ru">краснеть</span></span></span><span class="xsensenumber">2</span><span class="sense" id="hvo21643"><span class="definition" lang="ru"><span lang="ru">рыжий</span></span></span></span>
+</span></div>
+<div class="entry" id="hvo19180">
+<span class="headword" lang="itl-Cyrl">чʼикʼмәӈ</span><span class="variantrefs"><span class="variantref-entry-type"><span class="LexEntryType-publishRootVariantType-ReverseAbbrPub" lang="ru"><span lang="ru">мн.</span></span></span><span class="variantref-form" lang="itl-Cyrl">чʼикʼмэʼн</span></span><span class="senses"><span class="sense" id="hvo3711"><span class="definition" lang="ru"><span lang="ru">клюква</span></span></span></span>
+</div>
+
+<div class="entry" id="hvo21248">
+<span class="headword" lang="itl-Cyrl">чʼинәӈӄ</span><span class="senses"><span class="sense" id="hvo10364"><span class="definition" lang="ru"><span lang="ru">красиво</span></span><span class="examples"><span class="example" lang="itl-Cyrl"><span lang="itl-Cyrl">хичʼинәӈӄ</span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">очень красиво</span></span></span></span></span></span>
+</div>
+<div class="entry" id="hvo13513">
+<span class="headword" lang="itl-Cyrl">чʼинәӈлаӽ</span><span class="senses"><span class="sense" id="hvo1724"><span class="definition" lang="ru"><span lang="ru">красивый</span></span><span class="examples"><span class="example" lang="itl-Cyrl"><span lang="itl-Cyrl">хичʼинәӈлаӽ</span></span><span class="translations"><span class="translation" lang="ru"><span lang="ru">очень красивый</span></span></span></span></span></span>
+</div>
+<div class="entry" id="hvo15517">
+<span class="headword" lang="itl-Cyrl">чʼинәӈчʼинәӈ</span><span class="LexEntry-publishRootPara-CommentPub" lang="ru"><span lang="ru">мн. нет</span></span><span class="senses"><span class="sense" id="hvo18038"><span class="definition" lang="ru"><span lang="ru">красота</span></span></span></span>
+</div>
+<div class="entry" id="hvo13282">
+<span class="headword" lang="itl-Cyrl">чʼињэкэчӽ</span><span class="variantrefs"><span class="variantref-entry-type"><span class="LexEntryType-publishRootVariantType-ReverseAbbrPub" lang="ru"><span lang="ru">мн.</span></span></span><span class="variantref-form" lang="itl-Cyrl">чʼињэкэʼњч</span></span><span class="senses"><span class="sense" id="hvo8070"><span class="definition" lang="ru"><span lang="ru">цветок</span></span></span></span>
+</div>
+
+</div>
+
+</div><!-- main_content -->
+
+</div><!-- container -->
+
+</body>
+</html>

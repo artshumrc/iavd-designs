@@ -1,0 +1,361 @@
+/**
+  * MoviePlayer.js (C) 2005-2007 n-topus software, tommyers@dreamscape.com
+  * MoviePlayer is an "abstract class" which runs the movie, e.g. on behalf of PlayerManager
+  * AppletMoviePlayer wraps the calls on a MannX.java applet;
+  * FlashSWFMoviePlayer uses CurrentFrame,GotoFrame,Play, and StopPlay
+  * FlashFLVMoviePlayer uses the Javascript API of FlowPlayer 
+  * [http://flowplayer.sourceforge.net]
+  *  as written by Anssi Piirainen <api@iki.fi> at our request, 
+  *  following the standard mplayer Javascript API as guide.
+**/
+
+/*******************************************************************/
+/** definition of MoviePlayer class **/
+
+function MoviePlayer(){} // AppletMoviePlayer or FlashSWFMoviePlayer or FlashFLVMoviePlayer
+
+{
+ // this defines the API for MoviePlayer
+  var MoviePlayerFns = {
+    getMovieTime:0,setMovieTime:0,getMovieTimeScale:0,setMovieTimeScale:0,
+    getMaxTime:0,isPlaying:0,playRange:0,clearRange:0,getMovieState:0,stop:0,
+    getMovieRate:0,setMovieRate:0,setColor:0,
+    getVersion:0,hasHadFatalError:0,getFatalError:0
+  };
+
+  function setNotImplemented(C,f) {
+    C.prototype[f]=new Function("alert('"+f+" not implemented in MoviePlayer')");
+  }
+
+  for(var f in MoviePlayerFns) setNotImplemented(MoviePlayer,f);
+}
+
+function mp_toString() { // for printing
+  var S="{";
+  for(var x in this)S+="\n"+x+"="+this[x];
+  return S+"}";
+}
+MoviePlayer.prototype.toString=mp_toString;
+
+/*******************************************************************/
+/** End user interfaces to MoviePlayer **/
+
+function generatePlayerForm(){
+var obs='';
+obs+=('<form>\n');
+obs+=('  <input type="button" value="Play" onclick="moviePlayer.play()"> \n');
+obs+=('  <input type="button" value="Stop" onclick="moviePlayer.stop()"> \n');
+obs+=('  <input type="button" value="cur" onclick="this.form.frame.value=moviePlayer.getMovieTime()"> \n');
+obs+=('<input type="text" name="frame" size="6" value="30"/>\n');
+obs+=('  <input type="button" value="playRange" ');
+obs+=(' onclick="with(this.form){moviePlayer.playRange(parseInt(startF.value),parseInt(stopF.value)-parseInt(startF.value))}"/> \n');
+obs+=('  <input type="text" name="startF" size="6" value="30"/>\n');
+obs+=('  <input type="text" name="stopF" size="6" value="300"/>\n');
+obs+=('  <input type="button" value="maxFrame" onclick="this.form.frame.value=moviePlayer.getMaxTime()"> \n');
+obs+=('</form>\n');
+return obs;
+}
+function generateMoviePlayerElement(){
+  var S=""; var mp=movieFilePath;var mw=movieWidth; var mh=movieHeight;
+  if(moviePlayerClass=="FlashSWFMoviePlayer"){  // set within config.js
+    S+=generateFlashEmbedElement();
+    if(0<=top.location.toString().indexOf("authorFrames")){
+      movieWidth=0;movieHeight=0;movieFilePath='';// set params so applet is invisible
+      S+=generateAppletElement();
+      S+=generatePlayerForm();
+      }
+  }else if(moviePlayerClass=="FlashFLVMoviePlayer"){
+    S+=generateFlashFLVEmbedElement();
+    if(0<=top.location.toString().indexOf("authorFrames")){
+      movieWidth=0;movieHeight=0;movieFilePath='';// set params so applet is invisible
+      S+=generateAppletElement();
+      S+=generatePlayerForm();
+      }
+  }else if(moviePlayerClass=="AppletMoviePlayer"){
+    S+=(generateAppletElement());
+  }
+  movieFilePath=mp;movieWidth=mw;movieHeight=mh;
+  return S;
+}
+
+/*************************************************************************/
+
+/** AppletMoviePlayer implementation **/
+
+function AppletMoviePlayer(p){this.player=p;}
+
+AppletMoviePlayer.prototype=new MoviePlayer();
+
+
+function amp_getMovieTime(){return this.player.getMovieTime();}
+function amp_setMovieTime(t){this.player.setMovieTime(t);}
+function amp_getMovieTimeScale(){return this.player.getMovieTimeScale();}
+function amp_setMovieTimeScale(s){this.player.setMovieTimeScale(s);}
+function amp_getMaxTime(){return this.player.getMaxTime();}
+function amp_isPlaying(){return this.player.isPlaying();}
+function amp_playRange(a,b){return this.player.playRange(a,b);}
+function amp_stop(a,b){return this.player.stop();}
+function amp_clearRange(){this.player.clearRange();}
+function amp_getMovieState(){return this.player.getMovieState();}
+function amp_getMovieRate(){return this.player.getMovieRate();}
+function amp_setMovieRate(r){this.player.setMovieRate(r);}
+function amp_setColor(r){this.player.setColor(r);}
+function amp_getVersion(){return this.player.getVersion();}
+function amp_hasHadFatalError(){return this.player.hasHadFatalError();}
+function amp_getFatalError(){return this.player.getFatalError();}
+
+{var AppletMoviePlayerFns={
+  getMovieTime:amp_getMovieTime,setMovieTime:amp_setMovieTime,
+  getMovieTimeScale:amp_getMovieTimeScale,setMovieTimeScale:amp_setMovieTimeScale,
+  getMaxTime:amp_getMaxTime,isPlaying:amp_isPlaying,playRange:amp_playRange,stop:amp_stop,
+  clearRange:amp_clearRange, getMovieState:amp_getMovieState,
+  getMovieRate:amp_getMovieRate, setMovieRate:amp_setMovieRate,
+  setColor:amp_setColor,getVersion:amp_getVersion,
+  hasHadFatalError:amp_hasHadFatalError,getFatalError:amp_getFatalError};
+ for(var f in AppletMoviePlayerFns)AppletMoviePlayer.prototype[f]=AppletMoviePlayerFns[f];
+}
+
+function generateAppletElement(){
+var obS='';
+obS+=('<div id="appletDiv"><applet\n');
+obS+=('      id= "JSApplet" name="JSApplet"\n');
+obS+=('       WIDTH="'+movieWidth+'" HEIGHT="'+movieHeight+'"\n');
+obS+=('      ALIGN="top" bgColor="#'+movieColor+'"\n');
+obS+=('      ARCHIVE="'+appletArchive+'"\n');
+obS+=('      prestartMovie="'+prestartMovie+'"\n');
+obS+=('    CODE="'+appletCode+'" file="'+movieFilePath+'" useFile="true" scriptable="true">\n');
+obS+=('</applet></div>\n');
+return obS;
+}
+
+/*************************************************************************/
+
+/** FlashSWFMoviePlayer implementation **/
+
+function FlashSWFMoviePlayer(p){
+  this.player=p;
+  this.fatalError=null;
+  this.stopFrame=null;
+  this.intervalID=null;
+  this.index=FlashSWFMoviePlayer.instances.length;
+  this.selfRef="FlashSWFMoviePlayer.instances["+this.index+"]";
+  FlashSWFMoviePlayer.instances[this.index]=this;
+}
+FlashSWFMoviePlayer.prototype=new MoviePlayer();
+FlashSWFMoviePlayer.instances=new Array();
+
+function swf_getMovieTime(){return this.player.CurrentFrame();}
+function swf_setMovieTime(t){this.player.GotoFrame(t);}
+function swf_getMovieTimeScale(){return 1;}
+function swf_setMovieTimeScale(s){}
+function swf_getMaxTime(){return this.player.TotalFrames();}
+function swf_isPlaying(){return this.player.IsPlaying();}
+// function swf_playRange(a,b){return this.player.playRange(a,b);}
+function swf_clearRange(){}
+function swf_getMovieState(){
+ if(testing)alert("%="+this.player.PercentLoaded());
+  return "";}
+/**
+PercentLoaded=function PercentLoaded() {
+FrameLoaded=function FrameLoaded()
+**/
+function swf_getMovieRate(){return 1.0;}
+function swf_setMovieRate(r){}
+function swf_setColor(r){}
+function swf_getVersion(){return "SWF MannX 1.1";}
+function swf_hasHadFatalError(){return null!=this.fatalError;}
+function swf_getFatalError(){return this.fatalError;}
+function swf_isLoaded(){return this.player.PercentLoaded()==100;}
+function swf_play(){this.player.Play();}
+function swf_stop(){this.player.StopPlay();}
+function swf_killInterval(){
+  this.stop();if(!this.intervalID)return;
+  clearInterval(this.intervalID);this.intervalID=null;
+}
+function swf_playRange(start,len){
+//alert("playRange(start="+start+",len="+len+")");
+  this.killInterval();
+  this.stopFrame=start+len;
+  this.setMovieTime(start);
+  this.play();
+  this.intervalID=setInterval(this.selfRef+".checkStopFrame()",100);
+}
+function swf_checkStopFrame(){
+  if(!this.stopFrame)return this.killInterval();
+  if(this.stopFrame > this.getMovieTime())return;
+  this.killInterval();
+}
+
+{
+  var
+swfFns={
+getMovieTime:swf_getMovieTime,
+setMovieTime:swf_setMovieTime,
+getMovieTimeScale:swf_getMovieTimeScale,
+setMovieTimeScale:swf_setMovieTimeScale,
+getMaxTime:swf_getMaxTime,
+isPlaying:swf_isPlaying,
+playRange:swf_playRange,
+clearRange:swf_clearRange,
+getMovieState:swf_getMovieState,
+getMovieRate:swf_getMovieRate,
+setMovieRate:swf_setMovieRate,
+setColor:swf_setColor,
+getVersion:swf_getVersion,
+hasHadFatalError:swf_hasHadFatalError,
+getFatalError:swf_getFatalError,
+isLoaded:swf_isLoaded,
+play:swf_play,
+stop:swf_stop,
+killInterval:swf_killInterval,
+checkStopFrame:swf_checkStopFrame
+   };
+ for(var f in swfFns)FlashSWFMoviePlayer.prototype[f]=swfFns[f];
+}
+
+function generateFlashEmbedElement(){
+var obs='';
+obs+=('<object id="swfObject" \n');
+obs+=('  CLASSID="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"\n');
+obs+=('  WIDTH="'+movieWidth+'"\n');
+obs+=('  HEIGHT="'+movieHeight+'"\n');
+obs+=('  CODEBASE="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab"\n');
+obs+=('  <PARAM NAME="MOVIE" VALUE="'+movieFilePath+'">\n');
+obs+=('  <PARAM NAME="PLAY" VALUE="false">\n');
+obs+=('  <PARAM NAME="LOOP" VALUE="false">  \n');
+obs+=('  <PARAM NAME="QUALITY" VALUE="high">\n');
+obs+=('  <PARAM NAME="SCALE" VALUE="SHOWALL">\n');
+obs+=('  <embed\n');
+obs+=('   NAME="swfObject"\n');
+obs+=('   SRC="'+movieFilePath+'"\n');
+obs+=('   WIDTH="'+movieWidth+'"\n');
+obs+=('   HEIGHT="'+movieHeight+'"\n');
+obs+=('   PLAY="false" \n');
+obs+=('   LOOP="false"\n');
+obs+=('   QUALITY="high"\n');
+obs+=('   SCALE="SHOWALL" \n');
+obs+=('   swLiveConnect="true"\n');
+obs+=('   PLUGINSPAGE="http://www.macromedia.com/go/flashplayer/">\n');
+obs+=('  </embed>\n');
+obs+=('</object>\n');
+return obs;
+}
+
+/*************************************************************************/
+
+/** FlashFLVMoviePlayer implementation **/
+
+// depends on FlashTag.js; onload must include document.FlowPlayer.setConfig(fpConf());
+
+function fpConf() {
+  return {
+  playList: [ { name: 'clip0', url:movieFilePath } ],
+  showPlayList: false,
+  baseURL: '',
+  // baseURL: 'http://flowplayer.sourceforge.net/video',
+  autoPlay: FLV_autoPlay,
+  autoBuffering: true,
+  bufferLength: 10,
+  loop: false,
+  videoHeight: movieHeight,
+  hideControls: false
+    }
+}
+
+function FlashFLVMoviePlayer(p){
+  this.player=p;
+  this.fatalError=null;
+  this.stopFrame=null;
+  this.intervalID=null;
+  this.index=FlashFLVMoviePlayer.instances.length;
+  this.selfRef="FlashFLVMoviePlayer.instances["+this.index+"]";
+  FlashFLVMoviePlayer.instances[this.index]=this;
+}
+FlashFLVMoviePlayer.prototype=new MoviePlayer();
+FlashFLVMoviePlayer.instances=new Array();
+
+function generateFlashFLVEmbedElement(){
+var tag = new FlashTag('../CODE/FlowPlayer.swf', movieWidth, movieHeight+20); // movieHeight, movieWidth);
+tag.setFlashvars('configInject=true');
+tag.setId("FlowPlayer");
+return tag.toString();
+}
+
+function flv_getMovieTime(){return this.player.getTime();}
+function flv_setMovieTime(t){this.player.Seek(t);}
+function flv_getMovieTimeScale(){return 1;}
+function flv_setMovieTimeScale(s){}
+function flv_getMaxTime(){return this.player.getDuration();}
+function flv_isPlaying(){return this.player.isPlaying() && !this.player.isPaused();}
+function flv_pause(){return this.player.Pause();}
+function flv_isPaused(){return this.player.isPaused();}
+// function flv_playRange(a,b){return this.player.playRange(a,b);}
+function flv_clearRange(){}
+function flv_getMovieState(){
+ if(testing)alert("%="+this.player.PercentLoaded());
+  return "";}
+/**
+PercentLoaded=function PercentLoaded() {
+FrameLoaded=function FrameLoaded()
+**/
+function flv_getMovieRate(){return 1.0;}
+function flv_setMovieRate(r){}
+function flv_setColor(r){}
+function flv_getVersion(){return "FLV MannX 1.1";}
+function flv_hasHadFatalError(){return null!=this.fatalError;}
+function flv_getFatalError(){return this.fatalError;}
+function flv_isLoaded(){return this.player.PercentLoaded()==100;}
+function flv_play(){this.player.DoPlay();}
+function flv_stop(){ if(this.isPlaying() ) this.player.Pause();
+                     else this.player.StopPlay();}
+
+function flv_killInterval(){
+  this.stop();if(!this.intervalID)return;
+  clearInterval(this.intervalID);this.intervalID=null;
+}
+
+function flv_playRange(start,len){
+//alert("playRange(start="+start+",len="+len+")");
+  this.killInterval();
+  var loadedUpTo= this.getMaxTime()*this.player.getPercentLoaded()/100;
+  if(start>loadedUpTo)
+    return "cannot play "+sec2MinSec(start)+" when only loaded up to "+sec2MinSec(loadedUpTo);
+  this.stopTime=start+len;
+  this.setMovieTime(start);
+  this.play();
+  this.intervalID=setInterval(this.selfRef+".checkStopTime()",100);
+}
+function flv_checkStopTime(){
+  if(!this.stopTime)return this.killInterval();
+  if(this.stopTime > this.getMovieTime())return;
+  this.killInterval();
+}
+
+{
+  var
+flvFns={
+pause:flv_pause,
+isPaused:flv_isPaused,
+getMovieTime:flv_getMovieTime,
+setMovieTime:flv_setMovieTime,
+getMovieTimeScale:flv_getMovieTimeScale,
+setMovieTimeScale:flv_setMovieTimeScale,
+getMaxTime:flv_getMaxTime,
+isPlaying:flv_isPlaying,
+playRange:flv_playRange,
+clearRange:flv_clearRange,
+getMovieState:flv_getMovieState,
+getMovieRate:flv_getMovieRate,
+setMovieRate:flv_setMovieRate,
+setColor:flv_setColor,
+getVersion:flv_getVersion,
+hasHadFatalError:flv_hasHadFatalError,
+getFatalError:flv_getFatalError,
+isLoaded:flv_isLoaded,
+play:flv_play,
+stop:flv_stop,
+killInterval:flv_killInterval,
+checkStopTime:flv_checkStopTime
+   };
+ for(var f in flvFns)FlashFLVMoviePlayer.prototype[f]=flvFns[f];
+}

@@ -1,0 +1,23 @@
+#nav1 {
+}
+
+div#nav1 a {
+}
+
+div#nav1 ul ul {
+}
+
+div#nav1 li li a {
+	text-align: left;
+	font-weight: bold;
+	border: 0;
+	color: #004080;
+}
+
+div#nav1 li.highlight {
+	background-color: #cccccc;
+}
+
+
+/****************** nav2 ********************/
+

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <script src="mfDomLib.js">/* base lib */</script>
+    <script src="../MX.js">/* base lib */</script>
+    <title>makeMFPageFromUnit</title>
+<script>
+  function $(x){return document.getElementById(x);}
+  function buildUnit(){
+    var frm=document.forms.theForm;
+    var unit=frm.unitName.value;
+    var scriptFrame=$('scriptFrame');
+    var commFrame=$('commFrame');
+    scriptFrame.src=unit+"/theScript.xhtml";
+    commFrame.src=unit+"/comm01.xhtml";
+    setTimeout("getScrComm(0)",100);
+ }
+ function getScrComm(N){
+    var scriptFrame=$('scriptFrame');
+    var commFrame=$('commFrame');
+    var scriptDiv=null,commTable=null,afterComm=null;
+    try{
+    scriptDiv=scriptFrame.contentDocument.getElementById('xslDiv');
+    commTable=commFrame.contentDocument.getElementById('translationTable');
+    afterComm=commTable.nextSibling;
+    }catch(e){};
+    if(!scriptDiv || !commTable){
+      if(N&lt;50)return setTimeout("getScrComm("+(N+1)+")",100);
+      return alert("getScrComm Failure after "+N+" tries, sorry\n"+
+                   "scriptDiv="+scriptDiv+"\n"+
+                   "commTable="+commTable);
+    }
+    var N=0;
+    var doc=scriptDiv.ownerDocument;
+    var mannXdata=doc.getElementById('MannX_data');
+    if(mannXdata)mannXdata.parentNode.removeChild(mannXdata);
+    commTable=doc.importNode(commTable,true);
+    var rows=commTable.getElementsByTagName("tr");
+    var isFirst=true;
+    var lastSynch=null;
+    for(var nd=scriptDiv.firstChild;nd;nd=nextNode(nd,scriptDiv)){
+      if(nd.tagName=="span" &amp;&amp; nd.className=="synch"){
+        lastSynch=nd;
+        if(isFirst){isFirst=false;continue;}
+        else {addCommentsBefore(nd,rows[N],N); N++ }
+      }
+    }
+   addFinalComments(lastSynch,rows[rows.length-1],afterComm);
+   document.forms.theForm.ta.value=wrapTemplate(doc2String(scriptDiv),document.forms.theForm);
+ }
+ function addCommentsBefore(synchSpan,row,N){
+   if(!row)return alert("no row "+N+" to go before "+doc2String(synchSpan));
+   var doc=synchSpan.ownerDocument;
+   var cols=row.getElementsByTagName("td");
+   var subject=newElement(synchSpan,"div","comm subject");
+   var grammar=newElement(synchSpan,"div","comm grammar");
+   //var subA=cols[1].childNodes; var gramA=cols[2].childNodes;
+   //var SS="["+gramA.length+"]: "+cols[2].innerHTML;
+   //for(var i=0;i&lt;subA.length;i++)subject.appendChild(subA[i]);
+   //for(var i=0;i&lt;gramA.length;i++)grammar.appendChild(gramA[i]);
+   //var SSS=grammar.innerHTML;
+   //if(!confirm("grammar column:\n"+SS+"\ncomm grammar:\n"+SSS))throw "oops";
+   subject.innerHTML=cols[1].innerHTML.replace(XMLNS,"");
+   grammar.innerHTML=cols[2].innerHTML.replace(XMLNS,"");
+   // if(!confirm(doc2String(subject)+"\n\n"+doc2String(grammar)))throw "oops";
+   synchSpan.parentNode.insertBefore(subject,synchSpan);
+   synchSpan.parentNode.insertBefore(grammar,synchSpan);
+ }
+
+ var XMLNS=/xmlns="http:\/\/www.w3.org\/1999\/xhtml"/g;
+
+ function addFinalComments(synchSpan,row,after){
+   if(!row)return alert("no final row for "+doc2String(synchSpan));
+   alert("ss="+doc2String(synchSpan)+"; row="+doc2String(row));
+   var doc=synchSpan.ownerDocument;
+   var cols=row.getElementsByTagName("td");
+   var subject=newElement(synchSpan,"div","comm subject");
+   var grammar=newElement(synchSpan,"div","comm grammar");
+   var afterword=newElement(synchSpan,"div","comm afterword");
+   //var subA=cols[1].childNodes; var gramA=cols[2].childNodes; 
+   //for(var i=0;i&lt;subA.length;i++)subject.appendChild(subA[i]);
+   //var SS=cols[2].innerHTML;
+   //for(var i=0;i&lt;gramA.length;i++)grammar.appendChild(gramA[i]);
+   //var SSS=grammar.innerHTML;
+   //if(!confirm("grammar column:\n"+SS+"\ncomm grammar:\n"+SSS))throw "oops";
+   var aftA=[];while(after){ aftA.push(after);after=after.nextSibling;}
+   subject.innerHTML=cols[1].innerHTML.replace(XMLNS,"");
+   grammar.innerHTML=cols[2].innerHTML.replace(XMLNS,"");
+   // if(!confirm(doc2String(subject)+"\n\n"+doc2String(grammar)))throw "oops";
+   synchSpan.parentNode.appendChild(subject);
+   synchSpan.parentNode.appendChild(grammar);
+   if(aftA.length>0){
+     for(var i=0;i&lt;aftA.length;i++)afterword.appendChild(aftA[i]);
+     synchSpan.parentNode.appendChild(afterword);
+     }
+ }
+
+function send(url,method,val){
+  var request = new XMLHttpRequest(); 
+  request.open(method, url, false); 
+  request.send(val); 
+  var text=request.responseText;
+  return text;
+}
+
+
+function wrapTemplate(divText,frm){
+  var root=frm.inRepository.checked?"../":"./";
+  var fileName=frm.fileName.value;
+divText=divText.replace(/[^>]*>/,'');
+divText='&lt;div id="scriptDiv" class="mxScript"&gt;\n'+divText;
+var S='&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" \n';
+S+= '   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt; \n';
+S+= '&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt; \n';
+  S+= '&lt;head&gt; \n';
+    S+= "&lt;title&gt;"+fileName.split(".")[0]+"&lt;/title&gt; \n";
+    S+= '&lt;script src="'+root+'CODE/mfDomLib.js"&gt;&lt;/script&gt; \n';
+    S+= '&lt;script src="'+root+'MX.js"&gt;&lt;/script&gt; \n';
+  S+= '&lt;/head&gt; \n';
+  S+= '&lt;body onload="mxLoad()"&gt; \n';
+  S+= '&lt;form name="theForm" action="javascript:void(0)"&gt; \n';
+  S+= '&lt;textarea name="ta" id="configData" rows="10" cols="100"&gt; \n';
+  S+= "{  // this object overrides the folders.code config.js file's values \n";
+  S+= '// and some of its values can be overridden on the URL \n';
+  S+= 'folders:{code:"'+root+'CODE/", // relative to this file \n';
+  S+= '         images:"'+root+'IMG/",  // relative to unit, e.g. pencil.xhtml \n';
+  S+= '         code:"'+root+'CODE/", \n';
+  S+= '         shared:"'+root+'SHARED/", \n';
+  S+= '         css:"'+frm.cssFolder.value+'", \n';
+  S+= '         xsl:"'+root+'XSL/"}, \n';
+  S+= 'dict:"'+root+'SHARED/theDict.html", \n';
+  S+= 'cssFiles:{mada:"mada-archi.css", // [movie/script, dict/comm] \n';
+  S+= '     mdaa:"mdaa-archi.css",      // [movie/script, comm] \n';
+  S+= '     author:"author.css"},      // [movie/script, comm] \n';
+  S+= 'movie:{fileName:"'+fileName+'", \n';
+  S+= '       width:320,\n';
+  S+= '       playerClass:"FlashFLVMoviePlayer"} \n';
+  S+= ' }   \n';
+  S+='    &lt;/textarea&gt; \n';
+  S+='&lt;/form&gt; \n';
+  S+=divText;
+  S+='&lt;/body&gt;&lt;/html&gt;\n';
+  return S;
+}
+
+function onChangeUnit(frm){
+  var F=frm.unitName.value.split("/");
+  frm.fileName.value=F[F.length-1]+".flv"; // after last "/"
+}
+function onChangeInRepository(frm){
+  var root=frm.inRepository.checked?"../":"./";
+  frm.cssFolder.value=root+"CSS/";
+}
+
+</script>
+<style type="text/css">
+span.synch {color:red}
+#MannX_data {display:block}
+div.padding {width:100px;height:600px;}
+</style>
+  </head>
+  <body>
+  <form name="theForm" action="javascript:buildUnit()">
+  <table>
+    <tr><td>inRepository:</td><td><input type="checkbox" name="inRepository" 
+      onchange="onChangeInRepository(this.form)" checked="true"/></td></tr>
+    <tr><td>unit name</td><td><input type="text" name="unitName" 
+      onchange="onChangeUnit(this.form)" size="50" value="http://localhost:8080/mx/algo0101"/></td></tr>
+    <tr><td>file name</td><td><input type="text" name="fileName" size="50" value="algo0101.flv"/></td></tr>
+    <tr><td>CSS</td><td><input type="text" name="cssFolder" size="50" value="../CSS/"/></td></tr>
+  </table>
+  <textarea name="ta" rows="10" cols="120"></textarea><br/>
+  <input type="submit" value="buildUnit"/>
+</form>
+<iframe id="scriptFrame" width="600px" height="150px"/>
+<iframe id="commFrame" width="600px" height="150px"/>
+  </body>
+</html>
+

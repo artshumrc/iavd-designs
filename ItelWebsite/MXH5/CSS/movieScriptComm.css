@@ -1,0 +1,110 @@
+body{  background : url(null) fixed no-repeat; overflow:hidden;}
+
+  
+/*********** ID Styles ************/
+
+#topnavbar {
+position: fixed; top: 0px; left: 0px;
+margin: 0px auto; background-color:#96c8e2; overflow:auto; height:28px;width:100%;
+background-image: url(../IMG/header2.gif); background-repeat: no-repeat; float: left;}
+
+#container { position: absolute; top: 27px; left: 0px;
+width: 100%; height: 96.5%; overflow: hidden;}
+
+#glossFrame  {display: none; position: absolute; bottom: 0px; left: 0px; 
+margin: 0px auto; background-color:#DAE6E6;overflow:auto;height:50%;width:49%;
+border-right: 2px solid #009DDC; border-left: 4px solid #009DDC; border-bottom: 4px solid #009DDC; padding: 0px;}
+  
+#movieDiv {position: absolute; top: 0px; left: 0px; 
+margin: 0px auto; background-color:#ABD49A;overflow:hidden;height:50%;width:49%;
+border: 2px solid #009DDC; border-left: 4px solid #009DDC; border-top: 3px solid #009DDC; 
+ text-align: center;}
+ 
+#scriptDiv {position: absolute; top: 0px; right: 0px; background-color:#DAE6E6; overflow:auto; height:99%;width:50%; border-left: 2px solid #009DDC; border-right: 4px solid #009DDC; border-top: 3px solid #009DDC; border-bottom: 4px solid #009DDC; font-size: 12px; font-family: verdana, helvetica, sans-serif; text-align: left; font-weight: normal; }
+  
+#commDiv {position: absolute; bottom: 0px; left: 0px; 
+margin: 0px auto;  background-color:#EFF7EA; overflow:auto; height:50%;width:49%;
+border: 2px solid #009DDC; border-left: 4px solid #009DDC; border-bottom: 4px solid #009DDC; padding: 0px; font-size: 12px; font-family: verdana, helvetica, sans-serif; text-align: left; font-weight: normal; color: #0076a5;}
+  
+  
+#g_0 {display:none}
+  
+/*********** Div Styles ************/
+
+div.navlist {position: absolute; left: 200px; top: 0px; float: left;}
+
+div.clearit {clear:both;}
+
+div.category {margin: 10px 20px 10px 30px; color:#006AA6; font-size: 11px; 
+font-family: verdana, helvetica, sans-serif; text-align: left; font-weight: bold; 
+float: left; letter-spacing: .03em;}
+
+
+ /****Movie Styles*****/
+
+div.viewbuttons {float: left; position: absolute; left:0px;
+width: 40px; height: 260px;  margin-top: 18px; text-align: left;}
+
+div.playbuttons {position: relative; left: 15px;  margin-left: auto; margin-right: auto; text-align: left; width: 363px; height: 30px; margin-top: 5px;}
+
+#viewButtons button { height: 32px; width: 40px;  background: none; border: 1px solid #009DDC; margin-bottom: 2px }
+
+#playerButtons button {height: 24px; width: 43px; margin-right:5px; padding:0px; background: none; border: 1px solid #009DDC }
+
+#viewButtons img {margin-left: -4px; margin-top: -3px; }
+
+#playerButtons img {margin-left: -3px; margin-top: -2px; }
+
+#movieContainer {float: right; width: 100%}
+   
+div.movie {position: relative; left: 15px; text-align: center; margin-left: auto; margin-right: auto;
+background-color: #ABD49A /* #cecece */; width: 363px; height: 260px; margin-top: 15px; }
+
+div.padding {width:100px;height:600px;}
+
+
+ /***Script & Commentary Styles***/
+
+span.synch:before {content:"";display:block;}
+
+span.synch {font-family: verdana, helvetica, sans-serif; font-weight: bold; font-size: 12px; color: #43895c; text-align: left;  margin-top: 10px; padding-left: 15px; }
+
+.scriptNode {display: inline; font-size: 12px; font-family: 
+verdana, helvetica, sans-serif; text-align: left; font-weight: normal; color:  #0076a5; padding: 0px 0px 0px 0px;}
+
+#commDiv .subject {padding: 10px 15px 10px 15px; }
+
+#commDiv .grammar {padding: 10px 15px 10px 15px; background-color: #c7deb6}
+
+.scriptNode.selected {background-color: white;}
+.commGroup.selected {border: 1px solid #009DDC;}
+
+
+/*********** List Styles ************/
+
+#topnavlist li  {display: inline; list-style-type: none; padding-right: 38px; margin-top: -9px;
+font-family: verdana, helvetica, sans-serf; font-size: 12px; font-weight: 700; letter-spacing: .04em; float: left;}
+
+/*****this puts the blue outline around COURSES*****/
+
+li#courses a {padding: 5px 14px 5px 14px; margin-left: -15px; margin-right: -15px; border-top: 3px solid #009DDC; 
+border-left: 3px solid #009DDC; border-right: 3px solid #009DDC;}
+
+li#courses a:hover {padding: 5px 14px 5px 14px; margin-left: -15px; margin-right: -15px; 
+border-top: 3px solid #009DDC; border-left: 3px solid #009DDC; border-right: 3px solid #009DDC;}
+
+/*****this sets the styles for the rest of the list items*****/
+
+li#home a, li#courses a, li#about a, li#contact a, li#help a 
+{color: white}
+
+li#home a:hover, li#courses a:hover, li#about a:hover, li#contact a:hover, li#help a:hover 
+{color: #00975F;}
+
+/*****Basic Link Styles*****/
+
+a {text-decoration: none}
+a:visited {text-decoration: none}
+a:hover {text-decoration: none}
+
+.comm em {padding: 3pt;}

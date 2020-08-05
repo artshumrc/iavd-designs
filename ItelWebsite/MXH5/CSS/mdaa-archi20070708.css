@@ -1,0 +1,111 @@
+   ::-moz-selection{ background:#6374AB; color:#fff; }
+   
+   body{  background : url(null) fixed no-repeat; }
+#topnavbar {
+position: fixed; top: 0px; left: 0px; 
+margin: 0px auto; background-color:#96c8e2;overflow:auto;height:27px;width:100%;
+background-image: url(../IMG/header2.gif); background-repeat: no-repeat; float: left;
+}
+#searchImage {position:absolute; top:3px; left: 810px; border: 1px solid #009DDC; }
+  
+  #glossFrame {height:50%; width:55%; position: absolute; top: 0px; right: 0px; }
+  #editDiv {display:none;}
+  #movieDiv {height:50%; width:45%; position: absolute;  top: 0px; left: 0px; }
+  #scriptDiv {height:50%; width:100%; position: absolute; bottom: 0px;  left: 0px; }
+
+#glossFrame  {
+   margin: 0px auto; background-color:#DAE6E6;overflow:auto;
+   border: 0px solid #009DDC; border-left: 0px solid #009DDC; border-bottom: 0px solid #009DDC; padding: 0px;}
+
+#movieDiv {background-color:gray;overflow:auto;}
+div.movie { margin: 10px; text-align:center; }
+div.playbuttons { margin: 10px; text-align:center; }
+  
+  #scriptDiv { margin: 0px auto; background-color:yellow;overflow:auto; padding: 0px; }
+  span.synch {color:blue; margin-top:1em;}
+  
+  #movieBox {width:360px; height:260px; margin:10px auto; text-align:left; border:0px solid #333; background-color:#eee;}
+  .scriptNode {background-color:lightblue;}
+  .selected {background-color:blue;}
+/*********** Div Styles ************/
+
+div.navlist {position: absolute; left: 200px; top: 0px; float: left;}
+
+div.clearit {clear:both;}
+
+div.category {margin: 10px 20px 10px 30px; color:#006AA6; font-size: 11px; 
+font-family: verdana, helvetica, sans-serif; text-align: left; font-weight: bold; 
+float: left; letter-spacing: .03em;}
+
+
+  #movieControls  {margin: auto; width: 300px; background-color:lightgreen; }
+  #movieControls  button {margin:0px; padding:0px;}
+
+   div.padding {width:100px;height:600px;}
+
+  span {display:block; margin-left:1em; padding:0px}
+  span.mb {color:blue;display:table-row;}
+  span.ge {color:green;display:table-row;}
+  span.ps {color:maroon;display:table-row;}
+  span.class {color:brown;display:table-row;}
+  span.ref {margin-top:0em;}
+  span.tx {display:table; margin-top:2px;}
+  .tx span {margin-left:0em;}
+  .col {display:table-cell; border:2px; border-style:groove; text-align:center;margin:0px;}
+  .subcol {display:inline; border:1px; border-style:solid; } 
+/* from sasha arkhipov */
+  .col {color:red;display:table-cell; border:0px; border-style:groove; text-align:left; padding-right:2ex;margin:0px;}
+  .subcol {display:table-cell; border:0px; border-style:solid;padding:0px;margin:0px; } 
+  .sc {display:inline; border:0px; border-style:solid;padding:0px;margin:0px; } 
+
+.viewbuttons {display:none;}
+#saveButton {background-color:red;}
+#replaceNodeButton {background-color:yellow;}
+#expandButton {background-color:lightgreen;}
+.comm em {padding: 3pt;}
+.comm {border:1px; border-style:solid;border:1px; border-style:solid;  background-color:white;}
+ /***Script & Commentary Styles***/
+ 
+.title {font-weight: bold; font-size: 13px}
+
+span.synch:before {content:"";display:block;}
+span.synch {margin-top:10px;}
+.scriptNode {font-size: 12px; font-family: verdana, helvetica, sans-serif; 
+text-align: left; font-weight: normal; color: #0076a5;}
+
+#commDiv .subject {padding: 10px 15px 10px 15px; }
+
+#commDiv .grammar {padding: 10px 15px 10px 15px; background-color: #c7deb6}
+
+span.synch {font-family: verdana, helvetica, sans-serif; font-weight: bold; font-size: 12px; color: #43895c; text-align: left;  padding-left: 15px; }
+
+.scriptNode.selected {background-color: white;}
+.commGroup.selected {border: 1px solid #009DDC;}
+
+
+/*********** List Styles ************/
+
+#topnavlist li  {display: inline; list-style-type: none; padding-right: 38px; margin-top: -9px;
+font-family: verdana, helvetica, sans-serf; font-size: 12px; font-weight: 700; letter-spacing: .04em; float: left;}
+
+/*****this puts the blue outline around COURSES*****/
+
+li#courses a {padding: 5px 14px 5px 14px; margin-left: -15px; margin-right: -15px; border-top: 3px solid #009DDC; 
+border-left: 3px solid #009DDC; border-right: 3px solid #009DDC;}
+
+li#courses a:hover {padding: 5px 14px 5px 14px; margin-left: -15px; margin-right: -15px; 
+border-top: 3px solid #009DDC; border-left: 3px solid #009DDC; border-right: 3px solid #009DDC;}
+
+/*****this sets the styles for the rest of the list items*****/
+
+li#home a, li#courses a, li#about a, li#contact a, li#help a 
+{color: white}
+
+li#home a:hover, li#courses a:hover, li#about a:hover, li#contact a:hover, li#help a:hover 
+{color: #00975F;}
+
+/*****Basic Link Styles*****/
+
+a {text-decoration: none}
+a:visited {text-decoration: none}
+a:hover {text-decoration: none}

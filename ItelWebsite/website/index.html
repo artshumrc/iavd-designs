@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="style1.css" />
+<title>Itelmen</title>
+</head>
+
+<body>
+<div id="container">
+
+<div id="header">
+	<div id="logo">
+		<a href="index.html"><img src="images/transparentlogo.png" width="220" height="50"/></a>
+	</div>
+	<div id="main_nav">
+		<ul>
+			<li><a href="pages/currentProjects.html">Current Projects</a></li>
+            <li><a href="pages/community.html">Local Communities</a></li>
+            <!--li><a href="pages/scholars.html">Community of Scholars</a></li-->
+            <li><a href="pages/corpus.html">Corpus</a></li>
+            <li><a href="pages/lexicon.html">Lexicon</a></li>
+            <li><a href="pages/contributors.html">About Us</a></li>
+        </ul>
+          
+	</div>
+</div>
+
+<div id="main_content">
+	<div id="photo_reel">
+		<ul class="ppt">
+			<li><img src="images/Toliksleda2.jpg"/></li>
+			<li><img src="images/Elwel.jpg"/></li>
+			<li><img src="images/School.jpg"/></li>
+			<li><img src="images/Bat.jpg"/></li>
+		</ul>	
+
+			<button type="button" class="button" id="back"><img src="images/back.png"/></button>
+		<button type="button" class="button" id="stop"><img src="images/pause.png"/></button>
+		<button type="button" class="button" id="play"><img src="images/play.png"/></button>
+		<button type="button" class="button" id="fwd"><img src="images/forward.png"/></button>
+		
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+		<script type="text/javascript">
+$('.ppt li:gt(0)').hide();
+$('.ppt li:last').addClass('last');
+$('.ppt li:first').addClass('first');
+$('#stop').hide();
+
+var cur = $('.ppt li:first');
+var interval;
+
+$('#fwd').click( function() {
+	goFwd();
+	showPause();
+} );
+
+$('#back').click( function() {
+	goBack();
+	showPause();
+} );
+
+$('#stop').click( function() {
+	stop();
+	showPlay();
+} );
+
+$('#play').click( function() {
+	start();
+	showPause();
+} );
+
+function goFwd() {
+	stop();
+	forward();
+	start();
+}
+
+function goBack() {
+	stop();
+	back();
+	start();
+}
+
+function back() {
+	cur.fadeOut( 1000 );
+	if ( cur.attr('class') == 'first' )
+		cur = $('.ppt li:last');
+	else
+		cur = cur.prev();
+	cur.fadeIn( 1000 );
+}
+
+function forward() {
+	cur.fadeOut( 1000 );
+	if ( cur.attr('class') == 'last' )
+		cur = $('.ppt li:first');
+	else
+		cur = cur.next();
+	cur.fadeIn( 1000 );
+}
+
+function showPause() {
+	$('#play').hide();
+	$('#stop').show();
+}
+
+function showPlay() {
+	$('#stop').hide();
+	$('#play').show();
+}
+
+function start() {
+	interval = setInterval( "forward()", 3000 );
+}
+
+function stop() {
+	clearInterval( interval );
+}
+
+$(function() {
+	stop();
+} );
+		</script>
+
+
+	</div>
+	
+<!--	<div id="home1">
+		<h1>News & Events</h1>
+		<p>In 1930 a Latin-based alphabet was designed for all the native languages of northern Siberia, and in 1932 a 27-letter Itelmen alphabet was created. A few textbooks were written in this alphabet during the 1930s, but it was quickly abandoned. More recently a Cyrillic-based alphabet, designed in 1986 and consisting of 32 letters, has been used.</p>
+<p style="text-align: right;"><a href="/">read more…</a></p>
+	</div>
+-->    
+	<div id="home2">
+    	<h2>About this Website</h2>
+    	<p>This website has been created to provide information about the project “Integrated Audio-Visual Documentation of Itelmen.”  This is a collaborative endeavor between the University of Connecticut (Jonathan Bobaljik, PI) and the University of Alaska Fairbanks (David Koester, PI), with the further collaboration of Chiba University in Japan(Chikako Ono, PI).  It inolves directly also Tatiana Degai (Ph.D. candidate, University of Arizona) and technical consultants and developers, Alexandre Arkhipov, Tom Myers, and Alexander Nakhimovsky. With funding from the National Science Foundation, the aim of the project is to integrate accumulated recordings of the Itelmen language with transcriptions into a digital corpus with additional linkages to Itelmen language.</p>
+    </div>
+    
+	<div id="home3">
+    	<h2>About Itelmen</h2> 
+		<p>Originally Itelmen was spoken throughout Kamchatka, and possibly also in the northern Kuril Islands. Vladimir Atalsov, who annexed Kamchatka and established military bases in the region, estimated in 1697 that there were about 20,000 ethnic Itelmens. The 18th century explorer Stepan Krasheninnikov, who gave the first detailed description of the Itelmen language and culture, identified the three main dialects, but explained that all Itelmens could understand each other.</p>
+	</div>
+</div>
+
+</div>
+</body>
+</html>
